@@ -26,3 +26,9 @@ console.log(a*b);
 console.log(a/b);
 console.log(a%b);
 console.log(a**b);
+
+//Unary Operators
+console.log(m++);
+console.log(++m);
+console.log(n--);
+console.log(--n);
