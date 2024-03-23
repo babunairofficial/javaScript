@@ -38,3 +38,6 @@ let age = 10;
 console.log(age>18);
 console.log(age<18);
 console.log(age!=18);
+let y = '10';
+console.log(age==y);
+console.log(age===y);
