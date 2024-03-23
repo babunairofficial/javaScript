@@ -16,3 +16,13 @@ let markerPrice = 30;
 //Temperate Literals
 let output = `The total price is : ${penPrice+markerPrice} Rupees`;
 console.log(output);
+
+//Arithmetic Operators
+let m = 10;
+let n = 5;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a**b);
