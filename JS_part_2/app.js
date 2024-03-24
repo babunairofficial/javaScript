@@ -118,3 +118,10 @@ switch(color){
                 default:
                     console.log("Light is broken");
 }
+
+//alerts & prompts
+
+alert("New to JavaScript");
+let firstName = prompt("Enter first name");
+let secondName = prompt("Enter second name");
+console.log("Hello!",firstName,secondName,);
