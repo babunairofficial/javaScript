@@ -88,3 +88,10 @@ if(marks >= 33){
 else{
     console.log("Better Luck Next Time");
 }
+
+//Logical Operators
+let mark=93;
+if(mark>=33 && mark >=80){
+    console.log("pass");
+    console.log("A+");
+}
