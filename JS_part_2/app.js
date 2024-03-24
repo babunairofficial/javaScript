@@ -101,3 +101,20 @@ let x="boy";
 if (!(x ==="girl")){
     console.log("NOT a boy");
 }
+
+//switch statement
+let color = "green";
+
+switch(color){
+    case "red":
+        console.log("Stop");
+        break;
+        case "yellow":
+            console.log("Slow Down");
+            break;
+            case "green":
+                console.log("Go");
+                break;
+                default:
+                    console.log("Light is broken");
+}
