@@ -55,3 +55,13 @@ console.log(name,"is",age,"years old");
  else{
     console.log("largest number is", c);
  }
+
+ //Q6
+ let x=prompt("enter a number");
+ let y=prompt("enter another number");
+ if(x[x.length-1] == y[y.length-1]){
+    console.log(x,"and",y,"have the same last digit i.e.",x[x.length-1]);
+ }
+ else{
+    console.log("no match");
+ }
