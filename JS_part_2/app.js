@@ -74,3 +74,17 @@ else{
     //no conditions are required for else statement. it can execute whatever is written inside.
     console.log("The Traffic Light is broken");
 }
+
+//Nested if-else
+let marks = 32;
+if(marks >= 33){
+    if(marks >= 80){
+        console.log("Grade : O");
+    }
+    else{
+        console.log("Grade : A");
+    }
+}
+else{
+    console.log("Better Luck Next Time");
+}
