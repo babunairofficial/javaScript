@@ -58,3 +58,19 @@ if(age >= 18){
 else if(age<18){
     console.log("you cannot vote");
 }
+
+//else statement
+let trafficLight = "white";
+if(trafficLight === "red"){
+    console.log("Stop! The Traffic Light is Red");
+}
+if(trafficLight === "yellow"){
+    console.log("Slow Down, The Traffic Light is Yellow");
+}
+if(trafficLight === "green"){
+    console.log("Go, the Traffic Light is Green");
+}
+else{
+    //no conditions are required for else statement. it can execute whatever is written inside.
+    console.log("The Traffic Light is broken");
+}
