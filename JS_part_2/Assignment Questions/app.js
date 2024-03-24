@@ -28,3 +28,12 @@ console.log(name,"is",age,"years old");
         console.log("Months in Quater 4 : October, November, December");
         break;
  }
+
+ //Q4
+ let str = prompt("enter string");
+ if(str[0] === 'A' || str[0] ==='a' && str.length >5){
+    console.log(str,"is a golden string");
+ }
+ else{
+    console.log(str,"is NOT a golden string");
+ }
