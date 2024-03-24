@@ -95,3 +95,9 @@ if(mark>=33 && mark >=80){
     console.log("pass");
     console.log("A+");
 }
+
+//Logical NOT
+let x="boy";
+if (!(x ==="girl")){
+    console.log("NOT a boy");
+}
