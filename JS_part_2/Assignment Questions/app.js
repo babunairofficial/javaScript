@@ -37,3 +37,21 @@ console.log(name,"is",age,"years old");
  else{
     console.log(str,"is NOT a golden string");
  }
+
+ //Q5
+ let a=34;
+ let b=54;
+ let c=12;
+ let largest;
+ if(a>b){
+    console.log(largest=a);
+ }
+ else{
+    console.log(largest=b);
+ }
+ if(largest>c){
+    console.log("largest number is",largest);
+ }
+ else{
+    console.log("largest number is", c);
+ }
