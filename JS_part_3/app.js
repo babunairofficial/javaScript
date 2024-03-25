@@ -27,3 +27,7 @@ console.log(str.replace("love", "pasand"));
 //repeat
 let fruit = "Mango";
 console.log(fruit.repeat(3));
+
+//Array
+let cricketers = ["tendulkar", "sehwag","ganguly","dravid"];
+console.log(cricketers);
