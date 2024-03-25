@@ -23,3 +23,7 @@ console.log("slice from the end:",prog.slice(-1));
 //replace
 let str = "IloveCoding";
 console.log(str.replace("love", "pasand"));
+
+//repeat
+let fruit = "Mango";
+console.log(fruit.repeat(3));
