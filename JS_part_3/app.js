@@ -33,3 +33,9 @@ let cricketers = ["tendulkar", "sehwag","ganguly","dravid"];
 console.log(cricketers);
 console.log(cricketers[0]);
 console.log(cricketers[0][0]);
+
+//arrays are mutable
+cricketers[0] = "rohit";
+console.log(cricketers);
+cricketers[10] = "kumble";
+console.log(cricketers);
