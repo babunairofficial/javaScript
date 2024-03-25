@@ -19,3 +19,7 @@ let prog = "JavaScript";
 console.log("slice from 0 to 4:",prog.slice(0,4));
 console.log("slice from 5th position to end of lenght:",prog.slice(5));
 console.log("slice from the end:",prog.slice(-1));
+
+//replace
+let str = "IloveCoding";
+console.log(str.replace("love", "pasand"));
