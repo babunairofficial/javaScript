@@ -39,3 +39,16 @@ cricketers[0] = "rohit";
 console.log(cricketers);
 cricketers[10] = "kumble";
 console.log(cricketers);
+
+//array methods
+let cars = ["audi", "bmw", "mercedes", "aston"];
+console.log(cars);
+cars.push("toyota")
+console.log(cars);
+cars.pop();
+console.log(cars);
+cars.unshift("toyota");
+console.log(cars);
+let removed = cars.shift();
+console.log(removed);
+console.log(cars);
