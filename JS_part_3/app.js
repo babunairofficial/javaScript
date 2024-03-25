@@ -31,3 +31,5 @@ console.log(fruit.repeat(3));
 //Array
 let cricketers = ["tendulkar", "sehwag","ganguly","dravid"];
 console.log(cricketers);
+console.log(cricketers[0]);
+console.log(cricketers[0][0]);
