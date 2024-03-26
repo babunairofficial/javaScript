@@ -69,3 +69,10 @@ let allcolors = primary.concat(secondary);
 console.log(allcolors);
 let colorsall = secondary.concat(primary);
 console.log(colorsall);
+
+//reverse
+console.log(cars);
+console.log(cars.reverse());
+//changes are made to the original array
+console.log(cars);
+console.log(cars.reverse());
