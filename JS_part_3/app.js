@@ -52,3 +52,10 @@ console.log(cars);
 let removed = cars.shift();
 console.log(removed);
 console.log(cars);
+
+//indexOf
+let primary = ["red","yellow","blue"];
+console.log(primary);
+console.log(primary.indexOf("yellow"));
+console.log(primary.indexOf("green"));
+console.log(primary.indexOf("Yellow"));
