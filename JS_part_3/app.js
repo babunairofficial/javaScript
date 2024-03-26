@@ -76,3 +76,9 @@ console.log(cars.reverse());
 //changes are made to the original array
 console.log(cars);
 console.log(cars.reverse());
+
+//slice
+let colors = ["red","yellow","blue","orange","pink","white"];
+console.log(colors.slice(2,3));
+console.log(colors.slice(-2));
+console.log(colors.slice(2));
