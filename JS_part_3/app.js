@@ -59,3 +59,6 @@ console.log(primary);
 console.log(primary.indexOf("yellow"));
 console.log(primary.indexOf("green"));
 console.log(primary.indexOf("Yellow"));
+
+//includes
+console.log(primary.includes("blue"));
