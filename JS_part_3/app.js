@@ -62,3 +62,10 @@ console.log(primary.indexOf("Yellow"));
 
 //includes
 console.log(primary.includes("blue"));
+
+//concat
+let secondary = ["orange","green","violet"];
+let allcolors = primary.concat(secondary);
+console.log(allcolors);
+let colorsall = secondary.concat(primary);
+console.log(colorsall);
