@@ -109,3 +109,12 @@ console.log(days);
 days.sort();
 console.log(days);
 //numbers are converted into string and then sorting is done. 
+
+//array references
+//Elements in array eventhough similar have different address in memory, 
+//hence they are not identified as equal
+let arr = ['a', 'b'];
+let arrCopy = arr;
+console.log("arrCopy = ",arrCopy);
+arrCopy.push('c');
+console.log("arr = ",arr);
