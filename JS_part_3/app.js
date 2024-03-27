@@ -102,3 +102,10 @@ cars.splice(1,1,"gwagon");
 //1,1 -> means at the 1nth positon, 1 deletion
 //string "tatasumo" is deleted, and "gwagon" is inserted
 console.log(cars);
+
+//sort
+let days = ["Monday", "Sunday", "Wednesday", "Tuesday"];
+console.log(days);
+days.sort();
+console.log(days);
+//numbers are converted into string and then sorting is done. 
