@@ -82,3 +82,23 @@ let colors = ["red","yellow","blue","orange","pink","white"];
 console.log(colors.slice(2,3));
 console.log(colors.slice(-2));
 console.log(colors.slice(2));
+
+//splice
+console.log(cars);
+console.log(cars.splice(3));
+console.log(cars);
+console.log(cars.splice(0,1));
+console.log(cars);
+console.log(cars.push("maruti"));
+cars.push("ferrari");
+console.log(cars);
+cars.splice(0,0,"toyota","xuv");
+console.log(cars);
+cars.splice(1,0,"tatasumo");
+//1,0 -> means at the 1nth position , 0 deletion
+//insert string "tatasumo" at that position.
+console.log(cars);
+cars.splice(1,1,"gwagon");
+//1,1 -> means at the 1nth positon, 1 deletion
+//string "tatasumo" is deleted, and "gwagon" is inserted
+console.log(cars);
