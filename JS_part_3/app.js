@@ -118,3 +118,8 @@ let arrCopy = arr;
 console.log("arrCopy = ",arrCopy);
 arrCopy.push('c');
 console.log("arr = ",arr);
+
+//constant arrays
+const arra = [1,2,3,4];
+arra.push(5);
+console.log(arra);
