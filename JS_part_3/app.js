@@ -123,3 +123,11 @@ console.log("arr = ",arr);
 const arra = [1,2,3,4];
 arra.push(5);
 console.log(arra);
+
+//nested arrays
+let nums = [[1,2],[3,4],[5,6]];
+console.log("nums = ",nums);
+console.log("length of nums = ",nums.length);
+console.log("nums[0] = ",nums[0]);
+console.log("length of nums[0] = ",nums[0].length);
+console.log("nums[0][1] = ",nums[0][1]);
