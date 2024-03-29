@@ -15,3 +15,13 @@ console.log("the string is blank");
 else {
 console.log("the string is not blank");
 }
+
+//Q4
+let strTest = "sAcHIn TichkUle";
+let num = 4;
+if(strTest[num] == strTest[num].toLowerCase()){
+console.log("the given character is at lowercase");
+}
+else {
+console.log("the given character is not at lowercase");
+}
