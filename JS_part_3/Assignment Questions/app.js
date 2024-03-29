@@ -25,3 +25,8 @@ console.log("the given character is at lowercase");
 else {
 console.log("the given character is not at lowercase");
 }
+
+//Q5
+let newStr = "     web development    ";
+console.log(newStr);
+console.log(newStr.trim());
