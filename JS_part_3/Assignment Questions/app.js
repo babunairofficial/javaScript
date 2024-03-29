@@ -30,3 +30,16 @@ console.log("the given character is not at lowercase");
 let newStr = "     web development    ";
 console.log(newStr);
 console.log(newStr.trim());
+
+//Q6
+let fruits = ["mango", "orange", "apple", "grapes", "kiwi"];
+let elem = "apple";
+//Method 1 - using includes()
+console.log("Method 1 : ",fruits.includes(elem));
+//Method 2 - using indexOf()
+if(fruits.indexOf(elem) != -1){
+console.log("Method 2 : element exists in the array");
+}
+else{
+console.log("Method 2 : element doesnot exist in the array");
+}
