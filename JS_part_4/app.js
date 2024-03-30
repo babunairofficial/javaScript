@@ -21,3 +21,11 @@ console.log("the multiplication table of ",n,"is :");
 for(let a=1; a<=10;a++){
     console.log(n,"x",a,"=",a*n);
 }
+
+//nested loop
+for(let m=1;m<=3;m++){
+    console.log(`outer loop ${m}`);
+    for(let p=1;p<=3;p++){
+        console.log(p);
+    }
+}
