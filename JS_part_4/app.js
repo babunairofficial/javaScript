@@ -14,3 +14,10 @@ console.log("print even numbers from 2 to 20");
 for(let k=2;k<=20;k=k+2){
     console.log(k);
 }
+
+//print multiplication table
+let n = prompt("enter a number n for a multiplication table");
+console.log("the multiplication table of ",n,"is :");
+for(let a=1; a<=10;a++){
+    console.log(n,"x",a,"=",a*n);
+}
