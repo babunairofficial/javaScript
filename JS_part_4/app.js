@@ -29,3 +29,11 @@ for(let m=1;m<=3;m++){
         console.log(p);
     }
 }
+
+//while
+console.log("while loop: ");
+let q=1;
+while(q<=5){
+    console.log(q);
+    q++
+}
