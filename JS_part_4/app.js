@@ -53,3 +53,9 @@ for(let i=0;i<heroes.length;i++){
         console.log(`j=${j},${heroes[i][j]}`);
     }
 }
+
+//for of loop
+let fruits1=["mango","litchi","apple","banana","orange"];
+for(fruit of fruits1){
+    console.log(fruit);
+}
