@@ -43,3 +43,13 @@ let fruits = ["banana","grapes","orange","mango","apple"];
 for(let i =0;i<fruits.length;i++){
     console.log(i,fruits[i]);
 }
+
+//nested loops with nested arrays
+let heroes = [["ironman","spiderman","thor"],["superman","wondarwoman","flash"]];
+console.log(heroes);
+for(let i=0;i<heroes.length;i++){
+    console.log(heroes[i]);
+    for(let j=0;j<heroes[i].length;j++){
+        console.log(`j=${j},${heroes[i][j]}`);
+    }
+}
