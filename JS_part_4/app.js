@@ -59,3 +59,11 @@ let fruits1=["mango","litchi","apple","banana","orange"];
 for(fruit of fruits1){
     console.log(fruit);
 }
+//Nested for of loop
+console.log("nested for of loop");
+let heroes1 = [["ironman","spiderman","thor"],["superman","wondarwoman","flash"]];
+for(list of heroes1){
+    for(hero of list){
+        console.log(hero);
+    }
+}
