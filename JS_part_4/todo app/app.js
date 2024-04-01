@@ -20,6 +20,8 @@ while(true){
     } else if(req == "delete"){
         let idx = prompt("please enter the task index");
         todo.splice(idx,1);
+    } else {
+        console.log("wrong request");
     }
     req = prompt("please enter your request");
 }
