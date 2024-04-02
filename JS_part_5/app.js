@@ -14,6 +14,7 @@ const student = {
 console.log(delhi);
 console.log(student);
 
+//thread post using object literals
 const post = {
     username: "@babunair",
     content: "This is my #firstPost",
@@ -22,3 +23,7 @@ const post = {
     tags: ["@navybrat","@villain"]
 };
 console.log(post);
+
+//get values of object literals
+console.log(post.content);
+console.log(post["content"]);
