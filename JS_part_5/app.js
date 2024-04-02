@@ -13,3 +13,12 @@ const student = {
 
 console.log(delhi);
 console.log(student);
+
+const post = {
+    username: "@babunair",
+    content: "This is my #firstPost",
+    likes: 150,
+    reposts: 5,
+    tags: ["@navybrat","@villain"]
+};
+console.log(post);
