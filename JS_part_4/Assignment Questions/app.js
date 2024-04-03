@@ -38,3 +38,14 @@ for(let i = 1; i<=n;i++){
     factorial = factorial * i;
 }
 console.log("factorial of", n, "is =",factorial);
+
+//Q5
+let array = [2, 5, 10,4,2,7,1,9];
+console.log(array);
+let largest = 0;
+for(let i = 0;i<array.length;i++){
+    if(array[i]>largest){
+        largest = array[i];
+    }
+}
+console.log("the largest number in the array is :", largest);
