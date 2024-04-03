@@ -19,3 +19,13 @@ while(number>0){
     number = Math.floor(number/10);
 }
 console.log("count = ",counter);
+
+//Q3
+number = 287152;
+console.log("number = ",number);
+let sum = 0;
+while(number>0){
+    sum = sum + number%10;
+    number = Math.floor(number/10);
+}
+console.log("sum =",sum);
