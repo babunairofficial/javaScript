@@ -29,3 +29,12 @@ while(number>0){
     number = Math.floor(number/10);
 }
 console.log("sum =",sum);
+
+//Q4
+let n = prompt("Enter a number to find its factorial");
+console.log("n =",n);
+let factorial = 1;
+for(let i = 1; i<=n;i++){
+    factorial = factorial * i;
+}
+console.log("factorial of", n, "is =",factorial);
