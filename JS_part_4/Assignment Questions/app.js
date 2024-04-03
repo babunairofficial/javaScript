@@ -8,3 +8,14 @@ for(let i = 0; i < arr.length; i++){
     }
 }
 console.log("Result : ",arr);
+
+//Q2
+let number = 287152;
+console.log("number = ",number);
+let counter = 0;
+while(number>0){
+    counter++;
+    //Math.floor() method is used to give nearest integer
+    number = Math.floor(number/10);
+}
+console.log("count = ",counter);
