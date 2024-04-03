@@ -44,3 +44,25 @@ console.log(obj[1]);
 console.log(obj[true]);
 console.log(obj.null);
 //obj.1 will give error
+
+//add/update values in objects
+const person = {
+    name: "babu",
+    age: 23,
+    marks: 96.2,
+    city: "Delhi"
+};
+console.log(person);
+person.city = "Mumbai";
+console.log(person);
+person.gender = "male";
+console.log(person);
+person.marks = "A";
+/*values can be changed from numbers to strings*/
+console.log(person);
+person.marks = [99,89,97];
+/*arrays can also be entered as values */
+console.log(person);
+//key can also be deleted
+delete person.age;
+console.log(person);
