@@ -129,3 +129,18 @@ console.log("Math.ceil(5.00001) :",Math.ceil(5.00001));
 console.log("Math.ceil(5.5) :",Math.ceil(5.5));
 console.log("Math.random :",Math.random());
 console.log("Math.random :",Math.random());
+
+//Random Integers
+console.log("random integers:");
+
+let step1 = Math.random();
+console.log(step1);
+let step2 = step1 * 10;
+console.log(step2);
+let step3 = Math.floor(step2);
+console.log(step3);
+
+/*one liner code. 
++1 is added to get 10 from 0 to 10  */
+let random = Math.floor(Math.random()*10) + 1;
+console.log("random integer =",random);
