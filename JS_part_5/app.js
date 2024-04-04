@@ -66,3 +66,26 @@ console.log(person);
 //key can also be deleted
 delete person.age;
 console.log(person);
+
+//object of objects
+const classInfo = {
+    Dharmendra: {
+        grade: "A+",
+        city: "Delhi"
+    },
+    sunny: {
+        grade: "A+",
+        city: "Pune"
+    },
+    bobby: {
+        grade: "O",
+        city: "Mumbai"
+    }
+};
+console.log("object of objects :",classInfo);
+console.log("Dharmendra =",classInfo.Dharmendra);
+console.log("sunny =",classInfo.sunny);
+console.log("city of bobby =",classInfo.bobby.city);
+/*making changes in objects.*/
+classInfo.sunny.city = "Mumbai";
+console.log("sunny has changed city, sunny =",classInfo.sunny);
