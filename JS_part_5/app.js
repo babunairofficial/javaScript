@@ -116,3 +116,16 @@ console.log("grade key in index 2:",classInfo2[2].grade);
 console.log("city key in index 2:",classInfo2[2].city);
 classInfo2[2].city = "Pune";
 console.log("changed city in array to",classInfo2[2].city);
+
+//Math Object
+console.log("Math Object =",Math);
+console.log("value of PI :",Math.PI);
+console.log("Value of E :",Math.E);
+console.log("absolute value of -123 :",Math.abs(-123));
+console.log("2 to the power of 3 :",Math.pow(2,3));
+console.log("Math.floor(5.0001) :",Math.floor(5.0001));
+console.log("Math.floor(5.9999999) :",Math.floor(5.9999999));
+console.log("Math.ceil(5.00001) :",Math.ceil(5.00001));
+console.log("Math.ceil(5.5) :",Math.ceil(5.5));
+console.log("Math.random :",Math.random());
+console.log("Math.random :",Math.random());
