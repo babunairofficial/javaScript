@@ -89,3 +89,30 @@ console.log("city of bobby =",classInfo.bobby.city);
 /*making changes in objects.*/
 classInfo.sunny.city = "Mumbai";
 console.log("sunny has changed city, sunny =",classInfo.sunny);
+
+//array of objects
+const classInfo2 = [
+    {
+        name: "manoj",
+        grade: "B+",
+        city: "chambal"
+    },
+    {
+        name: "vikram",
+        grade: "A+",
+        city: "delhi"
+    },
+    {
+        name: "sandeep",
+        grade: "A+",
+        city: "Bengaluru"
+    }
+];
+console.log("array of objects :",classInfo2);
+console.log("element in index 0 is an object:",classInfo2[0]);
+console.log("element in index 1 is an object:",classInfo2[1]);
+console.log("name key in object at indexed 2 is:",classInfo2[2].name);
+console.log("grade key in index 2:",classInfo2[2].grade);
+console.log("city key in index 2:",classInfo2[2].city);
+classInfo2[2].city = "Pune";
+console.log("changed city in array to",classInfo2[2].city);
