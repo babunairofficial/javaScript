@@ -9,3 +9,14 @@ const car = {
     color: prompt("enter color of car")
 };
 console.log("the car's name is ",car.name);
+
+//Q3
+const Person = {
+    name: "babu",
+    age: 33,
+    city: "Mumbai"
+};
+console.log(Person);
+Person.city = "New York";
+Person.country = "India";
+console.log(Person);
