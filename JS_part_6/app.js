@@ -33,3 +33,7 @@ function calSum(a,b){
     console.log(sum1);
 }
 calSum(1,2);
+for(let i=1;i<=10;i++){
+    console.log(i); //block scope
+}
+
