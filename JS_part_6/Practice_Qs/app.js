@@ -7,3 +7,11 @@ function printPoem(){
 }
 
 printPoem();
+
+//Practice Q2
+function diceRoll(){
+    let dice = Math.floor(Math.random()*6)+1;
+    console.log("The dice roll gives:",dice);
+}
+
+diceRoll();
