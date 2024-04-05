@@ -35,3 +35,14 @@ function numTable(number){
 }
 console.log(numTable);
 numTable(7);
+
+//Practice Q5
+function returnSum(n){
+    let total = 0;
+    for(let i=1;i<=n;i++){
+        total = total+i;
+    }
+    return total;
+}
+console.log(returnSum);
+console.log("the sum to numbers is ",returnSum(100));
