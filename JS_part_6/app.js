@@ -25,3 +25,11 @@ let s = sum(3,4);
 console.log(s);
 console.log(sum(2,8));
 console.log(sum(sum(3,5),4));
+
+//Scope
+let sum1 = 54; //Global Scope
+function calSum(a,b){
+    let sum1 = a+b; //Function Scope
+    console.log(sum1);
+}
+calSum(1,2);
