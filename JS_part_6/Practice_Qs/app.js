@@ -25,3 +25,13 @@ function avg(a,b,c){
 console.log(avg);
 avg(5,71,35);
 avg(32,94,19);
+
+//Practice Q4
+function numTable(number){
+    for(let i =1;i<=10;i++){
+        let multiply = number*i;
+        console.log(`${number} x ${i} = ${multiply}`);
+    }
+}
+console.log(numTable);
+numTable(7);
