@@ -46,3 +46,19 @@ function returnSum(n){
 }
 console.log(returnSum);
 console.log("the sum to numbers is ",returnSum(100));
+
+//Practice Q6
+let str = ["hi","hello","bye","!"];
+function concatStrings(str){
+    let result = "";
+
+    for(let i=0; i<str.length;i++){
+        result += str[i];
+    }
+
+    return result;
+
+}
+console.log(concatStrings);
+console.log(str);
+console.log(concatStrings(str));
