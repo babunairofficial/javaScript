@@ -15,3 +15,13 @@ function diceRoll(){
 }
 
 diceRoll();
+
+//Practice Q3
+function avg(a,b,c){
+    let sum = a+b+c;
+    console.log("average of 3 numbers is ",sum/3);
+}
+
+console.log(avg);
+avg(5,71,35);
+avg(32,94,19);
