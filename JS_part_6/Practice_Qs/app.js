@@ -62,3 +62,16 @@ function concatStrings(str){
 console.log(concatStrings);
 console.log(str);
 console.log(concatStrings(str));
+
+//Practice Q7
+let greet = "hello";
+
+function changeGreet(){
+    let greet = "namaste";
+    console.log(greet);
+    function innerGreet(){
+        console.log(greet);
+    }
+}
+console.log(greet);
+changeGreet();

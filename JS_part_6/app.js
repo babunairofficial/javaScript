@@ -37,3 +37,12 @@ for(let i=1;i<=10;i++){
     console.log(i); //block scope
 }
 
+function outerfunc(){
+    let x = 5;
+    let y = 6;
+    function innerFunc(){
+        console.log(x); //Lexical Scope
+        console.log(y);
+    }
+    innerFunc();   
+}
