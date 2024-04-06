@@ -46,3 +46,17 @@ function outerfunc(){
     }
     innerFunc();   
 }
+outerfunc();
+
+//function expressions
+let name = "babu";
+let sum2 = function(a,b){
+    return a+b;
+}
+console.log(sum2); 
+console.log(sum2(1,2)); //calling a function using its associated variable name
+
+let welcome = function(){
+    console.log("hello");
+}
+console.log(welcome);
