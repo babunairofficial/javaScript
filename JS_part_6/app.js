@@ -73,3 +73,23 @@ let greet = function(){
     console.log("hello");
 }
 multipleGreet(greet,2);
+
+/*Returns a function */
+function oddEvenTest(request){
+    if(request == "odd"){
+        return function(n){
+            console.log(!(n%2 == 0));
+        }
+    } else if(request == "even"){
+        return function(n){
+            console.log(n%2 == 0);
+        }
+    } else{
+        console.log("wrong request");
+    }
+}
+let request = "even";
+let funct = oddEvenTest(request);
+console.log(funct);
+console.log(funct(10));
+console.log(funct(5));
