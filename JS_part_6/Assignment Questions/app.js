@@ -62,3 +62,14 @@ function countVowels(str2){
 }
 
 console.log(countVowels(str));
+
+//Q5
+let start = 5;
+let end = 10;
+function ranNum(start, end){
+    let diff = end - start;
+    let random = Math.floor(Math.random()*diff)+start;
+    return random;
+}
+
+console.log(ranNum(start, end));
