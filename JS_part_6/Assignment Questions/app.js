@@ -28,3 +28,18 @@ function uniqueChar(str){
 }
 
 console.log(uniqueChar(str));
+
+//Q3
+let country = ["Australia", "Germany", "United States of America"];
+
+function longestCountryName(country){
+    let longest = "";
+    for(let i = 0; i<country.length;i++){
+        let str = country[i];
+        if(str.length>longest.length){
+            longest = str;
+        }
+    }
+    return longest;
+}
+console.log(longestCountryName(country));
