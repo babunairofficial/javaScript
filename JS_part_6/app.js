@@ -93,3 +93,29 @@ let funct = oddEvenTest(request);
 console.log(funct);
 console.log(funct(10));
 console.log(funct(5));
+
+//Methods
+const calculator = {
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul: function(a,b){
+        return a*b;
+    }
+};
+console.log(calculator);
+console.log(calculator.add);
+console.log(calculator.sub);
+console.log(calculator.mul(4,9));
+//methods shorthand
+// const calculator = {
+//     add (a,b) {
+//         return a+b;
+//     },
+//     sub(a,b){
+//         return a-b;
+//     }
+// };
