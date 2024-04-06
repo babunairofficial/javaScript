@@ -43,3 +43,22 @@ function longestCountryName(country){
     return longest;
 }
 console.log(longestCountryName(country));
+
+//Q4
+let str2 = "Happy Birthday";
+
+function countVowels(str2){
+    let count = 0;
+    for(let i = 0; i<str2.length; i++){
+        if((str2[i]=="a") ||
+        (str2[i]=="e") ||
+        (str2[i]=="i") ||
+        (str2[i]=="o") ||
+        (str2[i]=="u")){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels(str));
