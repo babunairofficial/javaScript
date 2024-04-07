@@ -52,3 +52,12 @@ console.log(mul(4,8));
 
 const square = (x) =>(x*x);
 console.log(square(9));
+
+//set Timeout
+console.log("Hi there!");
+
+setTimeout(() =>{
+    console.log("My World");
+},4000);
+
+console.log("welcome to");
