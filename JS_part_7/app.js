@@ -68,3 +68,35 @@ let id = setInterval(()=>{
 },2000); //this will create infinite execution of setInterval
 console.log(id);
 clearInterval(id);//to stop setInterval from executing
+
+//this with arrow functions
+const student1 = {
+    name: "sachin",
+    marks: 95,
+    prop: this, //global scope
+    getName: function(){
+        console.log(this);
+        return this.name;
+    },
+    getMarks: () =>{
+        console.log(this); //parent's scope
+        return this.marks;
+    },
+    getInfo1: function (){
+        setTimeout(() => {
+            console.log(this); //student
+        }, 2000);
+    },
+    getInfo2: function (){
+        setTimeout(function (){
+            console.log(this); //window
+        },2000);
+    },
+};
+console.log(student1);
+const a = 5; //global scope
+console.log(student1.getName());
+console.log(student1.getMarks());
+
+console.log(student1.getInfo1());
+console.log(student1.getInfo2());
