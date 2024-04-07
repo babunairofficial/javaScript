@@ -61,3 +61,10 @@ setTimeout(() =>{
 },4000);
 
 console.log("welcome to");
+
+//set Interval
+let id = setInterval(()=>{
+    console.log("babu's world");
+},2000); //this will create infinite execution of setInterval
+console.log(id);
+clearInterval(id);//to stop setInterval from executing
