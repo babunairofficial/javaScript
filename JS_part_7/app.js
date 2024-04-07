@@ -46,3 +46,9 @@ const hello = () =>{
     console.log("hello world");
 }
 hello();
+/*Arrow functions - Implicit return */
+const mul = (a,b) => (a*b);
+console.log(mul(4,8));
+
+const square = (x) =>(x*x);
+console.log(square(9));
