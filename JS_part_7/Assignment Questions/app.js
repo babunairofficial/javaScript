@@ -18,3 +18,14 @@ const isEven = (n) =>{
     }
 }
 isEven(987);
+
+//Q3
+const object = {
+    message: "Hello, World!",
+    
+    logMessage(){
+        console.log(this.message);
+    }
+};
+
+setTimeout(object.logMessage,1000);
