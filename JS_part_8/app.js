@@ -75,3 +75,7 @@ let b = [1,2,3,4];
 let c = [1,3];
 console.log(b.some((el) => el%2 == 0));
 console.log(c.some((el) => el%2 == 0));
+
+//reduce method
+let d = [10,11,12,13];
+console.log(d.reduce((res,el) => (res+el)));
