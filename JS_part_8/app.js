@@ -95,3 +95,12 @@ function sum(a,b=2){
     return a+b;
 }
 console.log(sum(5)); //always assigned to first parameter
+
+//spread
+let arr2 = [1,2,3,4,5,6,6,7,8,9,0,11,2,11,3,44,66,17,23];
+let min = Math.min(...arr2);
+console.log(min);
+console.log(arr2);
+console.log(...arr2);
+let str = "babu nair";
+console.log(...str);
