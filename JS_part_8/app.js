@@ -65,3 +65,7 @@ let ans = nums.filter((el) => {
     return el % 2 == 0; //even ->true, odd -> false
 });
 console.log(ans);
+
+//Every
+let a = [2, 4, 6];
+console.log(a.every((el) => el % 2 == 0 ));
