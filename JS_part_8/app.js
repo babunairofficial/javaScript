@@ -89,3 +89,9 @@ let result = numbers.reduce((max,el) =>{
     }
 });
 console.log(result);
+
+//Default parameters
+function sum(a,b=2){
+    return a+b;
+}
+console.log(sum(5)); //always assigned to first parameter
