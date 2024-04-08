@@ -69,3 +69,9 @@ console.log(ans);
 //Every
 let a = [2, 4, 6];
 console.log(a.every((el) => el % 2 == 0 ));
+
+//some
+let b = [1,2,3,4];
+let c = [1,3];
+console.log(b.some((el) => el%2 == 0));
+console.log(c.some((el) => el%2 == 0));
