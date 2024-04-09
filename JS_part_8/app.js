@@ -104,3 +104,16 @@ console.log(arr2);
 console.log(...arr2);
 let str = "babu nair";
 console.log(...str);
+
+//Spread - with array literals
+let arr3 = [1,3,5,7,9];
+let newArr = [...arr3];
+console.log(newArr);
+
+let chars = [..."hello"];
+console.log(chars);
+
+let odd = [1,3,5,7,9];
+let even = [2,4,6,8,10];
+let all = [...odd, ...even];
+console.log(all);
