@@ -160,3 +160,31 @@ let names = ["tony", "bruce", "peter", "steve"];
 
 let [winner, runnerup, ...others] = names;
 console.log(others);
+
+
+//Destructing (objects)
+const student = {
+    name: "babu",
+    age:33,
+    class: 9,
+    subjects: ["hindi", "english", "math", "science"],
+    username: "babuofficial",
+    password: "abcd"
+};
+
+// let username = student.username;
+// let password = student.password;
+
+// console.log(username);
+// console.log(password);
+
+let {username, password} = student;
+console.log(username);
+console.log(password);
+
+// let {username: user, password: secret} = student;
+// console.log(user);
+// console.log(secret);
+
+let {username: user, password: secret, city: place = "mumbai"} = student; //city given default value as mumbai.
+console.log(place); 
