@@ -21,3 +21,11 @@ const newArr = arr2.map((el) =>el+5);
 
 console.log(arr2);
 console.log(newArr);
+
+//Q3
+const words = ["tendulkar","sehwag","dravid","laxman","ganguly","singh"];
+
+let UPPER = words.map((word) =>word.toUpperCase());
+
+console.log(words);
+console.log(UPPER);
