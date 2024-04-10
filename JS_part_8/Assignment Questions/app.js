@@ -13,3 +13,11 @@ console.log(sum);
 
 let average = sum/arr.length;
 console.log(average);
+
+//Q2
+let arr2 = [10,11,12,13,14];
+
+const newArr = arr2.map((el) =>el+5);
+
+console.log(arr2);
+console.log(newArr);
