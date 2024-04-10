@@ -29,3 +29,12 @@ let UPPER = words.map((word) =>word.toUpperCase());
 
 console.log(words);
 console.log(UPPER);
+
+//Q4
+const doubleAndReturnArgs = (arr3, ...args) => [
+    ...arr3, 
+    ...args.map((v) =>v*2),
+];
+
+console.log(doubleAndReturnArgs([1,2,3],4,4)); //1,2,3,8,8
+console.log(doubleAndReturnArgs([2],10,4)); //2,20,8
