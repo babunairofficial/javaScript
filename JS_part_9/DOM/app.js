@@ -25,3 +25,13 @@ for(let i= 0; i<oldImg.length; i++){
     console.dir(oldImg[i]); //each image as an object
     console.dir(oldImg[i].src); //check source of each image
 }
+
+
+//getElementByTagName
+let para = document.getElementsByTagName("p");
+console.log(para);
+console.dir(para);
+document.getElementsByTagName("p")[1].innerText = "abc";
+console.dir(para);
+
+console.dir(document.getElementsByTagName("span"));
