@@ -35,3 +35,13 @@ document.getElementsByTagName("p")[1].innerText = "abc";
 console.dir(para);
 
 console.dir(document.getElementsByTagName("span"));
+
+console.dir(document.querySelector("h1")); //Selects first h1 element
+
+console.dir(document.querySelector("#description")); //Selects first element with id = description
+
+console.dir(document.querySelector(".stamp")); //Selects first element with class = stamp
+
+console.dir(document.querySelector("div a")); //Selects first element within div element's a (anchortag) element
+
+console.dir(document.querySelectorAll("p")); //Selects all p elements
