@@ -14,3 +14,14 @@ console.log(imgObj.src);
 let paragraph = document.getElementById("description");
 console.log(paragraph);
 console.dir(paragraph); /*check tagname, id in the object*/
+
+
+//getElementByClassName
+let oldImg= document.getElementsByClassName("stamp");
+console.log(oldImg);
+console.dir(oldImg);
+
+for(let i= 0; i<oldImg.length; i++){
+    console.dir(oldImg[i]); //each image as an object
+    console.dir(oldImg[i].src); //check source of each image
+}
