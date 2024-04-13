@@ -36,6 +36,8 @@ console.dir(para);
 
 console.dir(document.getElementsByTagName("span"));
 
+
+//query Selectors
 console.dir(document.querySelector("h1")); //Selects first h1 element
 
 console.dir(document.querySelector("#description")); //Selects first element with id = description
