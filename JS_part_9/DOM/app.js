@@ -67,3 +67,10 @@ heading.innerText = "Bruce Wayne";
 heading.innerHTML = `<u>${heading.innerText}</u`; //making changes to markup without knowing the innertext
 console.dir(heading.innerHTML);
 console.dir(heading.innerText);
+
+//manipulating attributes - getters & setters
+let image = document.querySelector("img");
+console.log(image);
+console.dir(image.getAttribute("id")); //getter
+image.setAttribute("id","Batmanimg"); //setter
+console.log(image);
