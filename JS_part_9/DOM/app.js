@@ -74,3 +74,20 @@ console.log(image);
 console.dir(image.getAttribute("id")); //getter
 image.setAttribute("id","Batmanimg"); //setter
 console.log(image);
+
+//manipulating style
+/*style property - can access only inline styling*/
+console.log(heading.style);
+console.dir(heading.style);
+
+heading.style.color = "purple";
+console.log(heading.style);
+heading.style.backgroundColor = "yellow";
+console.log(heading.style);
+
+let links = document.querySelectorAll('.box a');
+console.log(links);
+for(let i = 0;i <links.length; i++){
+    links[i].style.color = "red";
+}
+
