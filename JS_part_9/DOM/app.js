@@ -47,3 +47,23 @@ console.dir(document.querySelector(".stamp")); //Selects first element with clas
 console.dir(document.querySelector("div a")); //Selects first element within div element's a (anchortag) element
 
 console.dir(document.querySelectorAll("p")); //Selects all p elements
+
+
+//DOM Manipulation - using properties & Methods
+let para2 = document.querySelector('p');
+console.dir(para2.innerText); //shows the visible text contained in a node
+console.dir(para2.innerHTML); //shows all the full markup
+console.dir(para2.textContent); //shows all the full text
+/*to manipulate*/
+para2.innerText = "xyz";
+para2.innerText = "hi guys, i am manipulating innertext using javascript"
+para2.innerHTML = "hi guys, using <b>markup</b> changes"
+
+let heading = document.querySelector('h1');
+console.dir(heading.innerText);
+heading.innerHTML = "<u>Batman</u>";
+
+heading.innerText = "Bruce Wayne";
+heading.innerHTML = `<u>${heading.innerText}</u`; //making changes to markup without knowing the innertext
+console.dir(heading.innerHTML);
+console.dir(heading.innerText);
