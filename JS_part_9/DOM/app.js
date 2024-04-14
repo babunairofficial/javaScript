@@ -80,7 +80,7 @@ console.log(image);
 console.log(heading.style);
 console.dir(heading.style);
 
-heading.style.color = "purple";
+//heading.style.color = "purple";
 console.log(heading.style);
 heading.style.backgroundColor = "yellow";
 console.log(heading.style);
@@ -91,3 +91,18 @@ for(let i = 0;i <links.length; i++){
     links[i].style.color = "red";
 }
 
+/*using classList*/
+console.dir(image.classList);
+console.dir(heading.classList);
+heading.classList.add("green"); //green class is added to heading
+console.log(heading.classList);
+heading.classList.remove("green") //to remove class
+console.log(heading.classList);
+
+console.dir(heading.classList.contains("green")); //to check if a class exists
+
+heading.classList.toggle("underline"); //to toggle between add & remove
+console.dir(heading.classList);
+console.log(heading.classList);
+heading.classList.toggle("underline");
+console.log(heading.classList);
