@@ -106,3 +106,27 @@ console.dir(heading.classList);
 console.log(heading.classList);
 heading.classList.toggle("underline");
 console.log(heading.classList);
+
+
+//Navigation
+/*parentElement*/
+let h4 = document.querySelector("h4");
+console.log(h4);
+console.log(h4.parentElement);
+console.dir(h4.parentElement);
+/*children*/
+console.log(h4.children);
+console.dir(h4.children);
+let box = document.querySelector(".box");
+console.log(box.children);
+/*sibling*/
+let ul = document.querySelector("ul");
+console.log(ul.children);
+console.log(ul.children[0]);
+console.log(ul.children[1]);
+console.log(ul.children[2]);
+console.log(ul.children[1].previousElementSibling);
+console.log(ul.children[1].nextElementSibling);
+console.log(image.previousElementSibling);
+console.log(image.previousElementSibling.style);
+console.log(image.previousElementSibling.style.color = "green"); //changed the color to green without accessing the h1 element.
