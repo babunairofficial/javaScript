@@ -130,3 +130,24 @@ console.log(ul.children[1].nextElementSibling);
 console.log(image.previousElementSibling);
 console.log(image.previousElementSibling.style);
 console.log(image.previousElementSibling.style.color = "green"); //changed the color to green without accessing the h1 element.
+
+
+//Adding Elements
+let newP = document.createElement('p');
+newP.innerText = "Hi I am new paragraph";
+let body = document.querySelector("body");
+body.appendChild(newP);
+/*append new/additional lines  */
+newP.append("this is new text.")
+console.log(body);
+/*prepend*/
+newP.prepend("prepending new text");
+/*insert adjacent */
+let btn = document.createElement('button');
+btn.innerHTML = "NEW BUTTON";
+let p = document.querySelector('p');
+
+p.insertAdjacentElement('beforebegin', btn);
+p.insertAdjacentElement('afterbegin', btn);
+p.insertAdjacentElement('beforeend',btn);
+p.insertAdjacentElement("afterend",btn);
