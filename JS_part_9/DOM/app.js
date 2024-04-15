@@ -151,3 +151,8 @@ p.insertAdjacentElement('beforebegin', btn);
 p.insertAdjacentElement('afterbegin', btn);
 p.insertAdjacentElement('beforeend',btn);
 p.insertAdjacentElement("afterend",btn);
+
+
+//remove element
+body.removeChild(newP);
+btn.remove();
