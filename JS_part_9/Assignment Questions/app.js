@@ -29,3 +29,15 @@ document.querySelector("#btn");
 /*add new class*/
 btn.classList.add("btnstyle");//add new class btnstyle to btn element
 console.log(body);
+
+//Q4
+/*create h1 element*/
+let head1 = document.createElement("h1");
+/*add text and underline using innerHTML*/
+head1.innerHTML = "<u>DOM Practice<U>";
+/*add color by assigning new class "head"*/
+head1.classList.add("head");
+/*append head1 to body*/
+body.append(head1);
+/*display body in javaScript*/
+console.log(body);
