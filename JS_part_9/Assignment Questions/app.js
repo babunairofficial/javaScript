@@ -22,3 +22,10 @@ input.setAttribute("id","btn");
 input.setAttribute("placeholder","username");
 /*display body in javaScript*/
 console.log(body);
+
+//Q3
+/*select btn element*/
+document.querySelector("#btn");
+/*add new class*/
+btn.classList.add("btnstyle");//add new class btnstyle to btn element
+console.log(body);
