@@ -41,3 +41,13 @@ head1.classList.add("head");
 body.append(head1);
 /*display body in javaScript*/
 console.log(body);
+
+//Q5
+/*create new p element*/
+let para = document.createElement("p");
+/*add text and bold using innerHTML*/
+para.innerHTML = "JavaScript Part 9 <b>Assignment</b> Questions";
+/*append para in javaScript*/
+body.append(para);
+/*display body in javaScript*/
+console.log(body);
