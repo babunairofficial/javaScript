@@ -11,3 +11,14 @@ body.append(input);
 body.append(btn);
 /*display body in javaScript*/
 console.log(body);
+
+//Q2
+/*setAttribute*/
+// input.placeholder = "username"; 
+//or
+input.setAttribute("id","btn");
+// btn.id = "btn";
+//or
+input.setAttribute("placeholder","username");
+/*display body in javaScript*/
+console.log(body);
