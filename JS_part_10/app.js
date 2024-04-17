@@ -14,8 +14,16 @@ function sayHello(){
 //onmouseenter
 let btns = document.querySelectorAll("button");
 for(btn of btns){
-    btn.onclick = sayHello;
+    // btn.onclick = sayHello;
     btn.onmouseenter = function(){
         console.log("you entered a button");
     };
+    
+    //event listener
+    btn.addEventListener("click",sayHello);
+    btn.addEventListener("click",sayName );
+}
+
+function sayName(){
+    alert("Event Listeners");
 }
