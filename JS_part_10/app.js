@@ -27,3 +27,14 @@ for(btn of btns){
 function sayName(){
     alert("Event Listeners");
 }
+
+let p = document.querySelector("p");
+p.addEventListener("click",function(){
+    console.log("paragraph was clicked");
+});
+
+let bx = document.querySelector("div") ;
+bx.addEventListener("mouseenter",function(){
+    console.log("mouse inside box");
+});
+
