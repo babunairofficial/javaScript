@@ -38,3 +38,12 @@ user.addEventListener("input", function(){
     console.log("input event");
     console.log("final value = ", this.value);
 });
+
+let textEditor = document.querySelector("#editor");
+let p = document.querySelector("#para");
+
+//text editor using input event
+textEditor.addEventListener("input", function(){
+    console.log(textEditor.value);
+    p.innerText = textEditor.value;
+})
