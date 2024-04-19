@@ -24,3 +24,17 @@ form.addEventListener("submit", function(event){
 
     alert(`Hi ${user.value}, your password is set to ${pass.value}`);
 });
+
+//change event
+let user = document.querySelector("#user");
+
+user.addEventListener("change", function(){
+    console.log("input changed");
+    console.log("final value = ", this.value);
+});
+
+//input event - tracks each changes in element
+user.addEventListener("input", function(){
+    console.log("input event");
+    console.log("final value = ", this.value);
+});
