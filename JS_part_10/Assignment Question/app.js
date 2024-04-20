@@ -53,3 +53,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
   log.textContent += `DOMContentLoaded\n`;
 });
 
+
+//Q2
+let newBtn = document.createElement("button");
+
+newBtn.innerText = "click here";
+
+let currentQ2 = document.getElementById("q2");
+currentQ2.append(newBtn);
+newBtn.addEventListener("click", function(){
+  newBtn.style.backgroundColor = "green";
+});
