@@ -64,3 +64,19 @@ currentQ2.append(newBtn);
 newBtn.addEventListener("click", function(){
   newBtn.style.backgroundColor = "green";
 });
+
+
+//Q3
+let name = document.querySelector("#name"); 
+let heading = document.querySelector("h2");
+
+name.addEventListener("input", updateName); // calling the funciton
+
+
+function updateName() {
+    let nameInput = name.value;
+    let sanitizedInput = nameInput.replace(/[^a-zA-Z ]/g, ''); // Replace non-letter and non-space characters with empty string
+    name.value = sanitizedInput; // Update the input value
+    heading.innerText = "User's Name: " + sanitizedInput; // Update the heading text
+}
+
