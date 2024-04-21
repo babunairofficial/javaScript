@@ -24,3 +24,13 @@ btn.addEventListener("click", function(){
     input.value = "";
 });
 
+ul.addEventListener("click", function(event){
+    console.log(event.target.nodeName); // lets us know which event has been clicked
+    if(event.target.nodeName == "BUTTON"){ //BUTTON here is case-sensitive
+        //to choose the parent Element of target 
+        let listItem = event.target.parentElement;
+        //to delete the entire parent line
+        listItem.remove();
+        console.log("deleted");
+    }
+});
