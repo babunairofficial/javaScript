@@ -36,6 +36,7 @@ function userFlash(btn){
 
 //level up once game starts
 function levelUp(){
+    userSeq = [] //reset user sequence on level up
     level++; /*increase level*/
     h2.innerText = `Level ${level}`;
 
@@ -49,8 +50,25 @@ function levelUp(){
     console.log(randomColor);
     console.log(randomBtn);
 
+    gameSeq.push(randomColor);
+    console.log("game sequence = ",gameSeq);
+
     //flash button function 
     gameFlash(randomBtn);
+}
+
+function checkAns(idx){
+    console.log("current level = ", level);
+    
+    if(userSeq[idx] == gameSeq[idx]){
+       if(userSeq.length == gameSeq.length){
+        setTimeout(levelUp,1000);
+        // levelUp();
+       }
+    }
+    else{
+        h2.innerText = "Game over! Press any key to start";
+    }
 }
 
 //the function after a box is clicked
@@ -58,6 +76,13 @@ function btnPress(){
     console.log("btn was pressed");
     let btnPressed = this;
     userFlash(btnPressed);
+
+    userColor = btnPressed.getAttribute("id");
+    console.log(userColor);
+    userSeq.push(userColor);
+    console.log(userSeq);
+
+    checkAns(userSeq.length-1);
 }
 
 //set click property for box
