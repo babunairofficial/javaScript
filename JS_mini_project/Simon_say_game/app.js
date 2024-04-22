@@ -20,10 +20,17 @@ document.addEventListener("keypress", function(){
     }
 });
 
-function btnFlash(btn){
-    btn.classList.add("flash"); /*added a new class for button flash */
+function gameFlash(btn){
+    btn.classList.add("gameflash"); /*added a new class for button flash */
     setTimeout(function(){
-        btn.classList.remove("flash");
+        btn.classList.remove("gameflash");
+    }, 250);    
+}
+
+function userFlash(btn){
+    btn.classList.add("userflash"); /*added a new class for user button flash */
+    setTimeout(function(){
+        btn.classList.remove("userflash");
     }, 250);    
 }
 
@@ -43,5 +50,18 @@ function levelUp(){
     console.log(randomBtn);
 
     //flash button function 
-    btnFlash(randomBtn);
+    gameFlash(randomBtn);
+}
+
+//the function after a box is clicked
+function btnPress(){
+    console.log("btn was pressed");
+    let btnPressed = this;
+    userFlash(btnPressed);
+}
+
+//set click property for box
+let allBtns = document.querySelectorAll(".btn");
+for(btn of allBtns){
+    btn.addEventListener("click", btnPress);
 }
