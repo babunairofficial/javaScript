@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+}
+
+.btn{
+    /*creating boxes*/
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+
+.btn-container{
+    /*to set boxes in same line*/
+    display: flex;
+    justify-content: center;
+}
+
+/*setting color to boxes*/
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
