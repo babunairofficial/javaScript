@@ -68,6 +68,7 @@ function checkAns(idx){
     }
     else{
         h2.innerText = "Game over! Press any key to start";
+        setTimeout(reset,1250);
     }
 }
 
@@ -89,4 +90,12 @@ function btnPress(){
 let allBtns = document.querySelectorAll(".btn");
 for(btn of allBtns){
     btn.addEventListener("click", btnPress);
+}
+
+function reset(){
+    started = false;
+    gameSeq = [];
+    userSeq = [];
+    level = 0;
+    console.log("Game reset");
 }
