@@ -12,3 +12,20 @@ function demo(){ /*level 2*/
 console.log("calling demo function- level 1") /*level 1*/
 demo();
 console.log("done! thanks- level 4"); /*level 4*/
+
+
+//visualizing the Call Stack
+function one(){
+    return 1;
+}
+
+function two(){
+    return one() + one();
+}
+
+function three(){
+    let ans = two() + one();
+    console.log(ans);
+}
+
+three();
