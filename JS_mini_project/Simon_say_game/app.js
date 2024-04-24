@@ -7,6 +7,10 @@ let btns = ["yellow", "red", "blue", "green"]; /*btns array*/
 //initial values
 let started = false; /*initial value set to false as the game has not started*/
 let level = 0; /*initial level of game*/
+let highScore = 0;
+let body = document.querySelector("body");
+let hS = document.createElement("h2");
+body.append(hS);
 
 let h2 = document.querySelector("h2");
 
@@ -72,6 +76,17 @@ function checkAns(idx){
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor = "white";
         },150);
+        
+        //High Score        
+        if(level-1 > highScore){
+            highScore = level-1;
+            console.log("new High score", highScore);
+            hS.innerText += `${highScore}`; 
+        }
+        //display highScore               
+        hS.innerText = `High Score = ${highScore}`;
+        
+
         reset();
     }
 }
@@ -100,6 +115,11 @@ function reset(){
     started = false;
     gameSeq = [];
     userSeq = [];
+
+    // hS.remove();
+
     level = 0;
     console.log("Game reset");
 }
+
+
