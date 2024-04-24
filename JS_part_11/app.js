@@ -29,3 +29,22 @@ function three(){
 }
 
 three();
+
+//JS is single threaded
+/*synchronous nature*/
+let a = 25;
+console.log(a);
+let b = 10;
+console.log(b);
+console.log(a-b);
+
+//browser holds the setTimeout function and displays after the required delay
+//browser is multi threaded
+/*asynchonous nature of javascript*/
+setTimeout(() => {
+   console.log("JavaScript") 
+}, 2000); //this line will execute after 2 seconds
+setTimeout(() => {
+    console.log("Hello world") 
+ }, 2000); //this line will execute after 2 seconds
+console.log("hello....");
