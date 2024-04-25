@@ -167,3 +167,22 @@ request.then(() => {
     console.log("promise was rejected");
     console.log(request);
 });
+
+
+//Promise chaining - Improved Version
+
+let req = savetoDb("javascript"); //req = promise object
+req.then(() => {
+    console.log("data 1 saved");
+    return savetoDb("helloworld");    
+    })
+    .then(()=> {
+        console.log("data 2 saved");
+        return savetoDb("babu nair");
+})
+.then(() => {
+    console.log("data 3 saved");
+})
+.catch(() => {
+    console.log("promise was rejected");    
+});
