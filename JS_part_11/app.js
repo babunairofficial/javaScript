@@ -156,4 +156,14 @@ function savetoDb(data){
     });
 }
 
-savetoDb("javascript");
+
+
+let request = savetoDb("javascript"); //req = promise object
+request.then(() => {
+    console.log("promise was resolved");
+    console.log(request);
+})
+.catch(() => {
+    console.log("promise was rejected");
+    console.log(request);
+});
