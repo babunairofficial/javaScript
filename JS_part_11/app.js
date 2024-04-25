@@ -117,6 +117,7 @@ function savetoDb(data){
 savetoDb("babu nair");
 */
 
+/*
 function savetoDb(data, success, failure){
     let internetSpeed = Math.floor(Math.random()*10)+1;
     if(internetSpeed >4){
@@ -141,3 +142,18 @@ savetoDb("babu nair", () => {
 }, () => {
     console.log("failure: weak connection, data not saved");
 });
+*/
+
+function savetoDb(data){
+    
+    return new Promise((resolve, reject) => {
+        let internetSpeed = Math.floor(Math.random()*10)+1;
+        if(internetSpeed > 4){
+            resolve("success: data was saved");
+        } else {
+            reject("failed: weak connection");
+        }
+    });
+}
+
+savetoDb("javascript");
