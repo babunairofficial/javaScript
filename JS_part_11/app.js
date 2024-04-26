@@ -185,4 +185,25 @@ req.then(() => {
 })
 .catch(() => {
     console.log("promise was rejected");    
-});
+}); 
+
+
+savetoDb("javascript")
+req.then((result) => {
+    console.log("data A is saved");
+    console.log(result);
+    return savetoDb("hello world");    
+    })
+    .then((result)=> {
+        console.log("data B is saved");
+        console.log(result);
+        return savetoDb("babu nair");
+})
+.then((result) => {
+    console.log("data C is saved");
+    console.log(result);
+})
+.catch((error) => {
+    console.log("promise was rejected");
+    console.log(error);
+}); 
