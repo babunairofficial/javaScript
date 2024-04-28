@@ -10,3 +10,19 @@ console.log("now let's covert the json data to JS object:");
 let validRes = JSON.parse(jsonRes);
 console.log(validRes);
 
+
+//JSON data - stringify
+let student = {
+    name: "babu nair",
+    marks: 95,
+};
+
+/*JS object*/
+console.log("JS object form:")
+console.log(student);
+
+/*converting JS object to  json data*/
+console.log("JSON data form:")
+let stuReq = JSON.stringify(student);
+console.log(stuReq);
+
