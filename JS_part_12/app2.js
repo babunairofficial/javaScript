@@ -30,12 +30,30 @@ console.log(stuReq);
 //first API request
 let url = "https://catfact.ninja/fact";
 
+// fetch(url)
+// .then((res) => {
+//     console.log(res);
+//     res.json().then((data) => {
+//         console.log(data);
+//     });
+// })
+// .catch((err) => {
+//     console.log("Error - ", err);
+// });
+
 fetch(url)
 .then((res) => {
-    console.log(res);
-    res.json().then((data) => {
-        console.log(data);
-    });
+    return res.json();
+})
+.then((data) => {
+    console.log("data = ", data.fact);
+    return fetch(url);
+})
+.then((res) =>{
+    return res.json();
+})
+.then((data2) =>{
+    console.log("data2 = ", data2.fact);
 })
 .catch((err) => {
     console.log("Error - ", err);
