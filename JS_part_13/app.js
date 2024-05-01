@@ -43,3 +43,15 @@ async function getImage(){
         return "No image Found";
     }
 }
+
+const url3 = "https://icanhazdadjoke.com/";
+
+async function getJokes(){
+    try{
+        const config = {headers:{Accept: "application/json"}}; //json format
+        let res3 = await axios.get(url3, config);
+        console.log(res3);
+    } catch(err){
+        console.log(err);
+    }
+}
