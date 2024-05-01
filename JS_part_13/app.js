@@ -1,7 +1,7 @@
-let btn = document.querySelector("button");
+let btn = document.querySelector("#fact");
 
 btn.addEventListener("click", async () =>{
-    console.log("button was clicked");
+    console.log("fact button was clicked");
     let fact = await getFacts();
     console.log(fact);
     let p = document.querySelector("#result");
@@ -18,5 +18,28 @@ async function getFacts(){
     } catch (e){
         console.log("error - ", e);
         return "No fact Found";
+    }
+}
+
+let btn2 = document.querySelector("#image");
+
+btn2.addEventListener("click", async () =>{
+    console.log("image button was clicked");
+    let link = await getImage();
+    console.log(link);
+
+    let img = document.querySelector("#display");
+    img.setAttribute("src", link);
+})
+
+let url2 = "https://dog.ceo/api/breeds/image/random";
+
+async function getImage(){
+    try{
+        let res2 = await axios.get(url2);
+       return res2.data.message;
+    } catch (e2){
+        console.log("error - ", e2);
+        return "No image Found";
     }
 }
