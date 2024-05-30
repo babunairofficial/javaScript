@@ -33,3 +33,6 @@ console.log(mySTr); //variable names are case sensitive
 
 // length of string
 console.log("the length of string is ",name.length);
+
+//Bracket notation
+console.log("the first letter of the string (using bracket notation) is ",name[0]);
