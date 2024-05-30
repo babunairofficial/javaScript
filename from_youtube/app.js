@@ -30,3 +30,6 @@ console.log(myStr);
  */
 var mySTr = "FirstLine\n\t\\SecondLine\nThirdLine";
 console.log(mySTr); //variable names are case sensitive
+
+// length of string
+console.log("the length of string is ",name.length);
