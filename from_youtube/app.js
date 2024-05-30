@@ -36,3 +36,15 @@ console.log("the length of string is ",name.length);
 
 //Bracket notation
 console.log("the first letter of the string (using bracket notation) is ",name[0]);
+
+console.log(name[name.length-1]); //to print the last character of string
+console.log(name[name.length-2]); //to print the 2nd last character of string
+
+//Word Blanks using function
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = ""; //an empty string
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + " to the store.";
+    return result; 
+}
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
