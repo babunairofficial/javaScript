@@ -49,9 +49,14 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 console.log(wordBlanks("dog", "big", "ran", "quickly"));
 console.log(wordBlanks("bike", "slow", "flew", "slowly"));
 
+//shift function
 var myArray = [["John", 23], ["dog", 3]];
 console.log(myArray);
 var removedFromMyArray = myArray.shift(); //removes array elements from the start
 console.log("the removed array",removedFromMyArray);
+console.log(myArray);
+
+//unshift function - add elements to the beginning of the array
+myArray.unshift(["Paul", 35]);
 console.log(myArray);
 
