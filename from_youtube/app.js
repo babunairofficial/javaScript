@@ -71,3 +71,9 @@ function myfood(){
 
 console.log("example for local scope function - ", myfood()); //calling the function
 console.log("example for global scope - ", fruit) //displays the global scoped variable
+
+//function value returned
+function timesFive(num){ //the funciton
+    return num * 5; //returning to the function called
+}
+console.log(timesFive(5)); //calling the function and printing the returned value
