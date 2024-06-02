@@ -60,3 +60,14 @@ console.log(myArray);
 myArray.unshift(["Paul", 35]);
 console.log(myArray);
 
+//global vs local scone in function
+var fruit = "apple"; //global
+
+function myfood(){
+    var fruit = "orange"; //local
+
+    return fruit;
+}
+
+console.log("example for local scope function - ", myfood()); //calling the function
+console.log("example for global scope - ", fruit) //displays the global scoped variable
