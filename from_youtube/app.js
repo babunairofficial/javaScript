@@ -98,4 +98,16 @@ processed = processArg(15) //calling the function
 
 console.log("processed = ", processed);
 
+//stand in line
+function nextInLine(arr, item){
+    arr.push(item); //adds element to the end of array
+    return arr.shift(); //removes the first element in array and returns it
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr)); //JSON.stringify() Converts a JavaScript object and array into a string
+console.log(nextInLine(testArr, 6)); //calling the function
+console.log("After" + JSON.stringify(testArr));
+
 
