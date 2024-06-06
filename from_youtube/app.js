@@ -77,3 +77,25 @@ function timesFive(num){ //the funciton
     return num * 5; //returning to the function called
 }
 console.log(timesFive(5)); //calling the function and printing the returned value
+
+//assignment with a returned value
+var changed = 0;
+
+function change(num){
+    return (num + 5) / 3;
+}
+
+changed = change(10) //calling the function and storing the return value in another variable named 'changed'
+console.log("changed = ", changed);
+
+var processed = 0;
+
+function processArg(num){
+    return (num + 3) / 5;
+}
+
+processed = processArg(15) //calling the function
+
+console.log("processed = ", processed);
+
+
