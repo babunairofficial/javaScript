@@ -110,4 +110,8 @@ console.log("Before: " + JSON.stringify(testArr)); //JSON.stringify() Converts a
 console.log(nextInLine(testArr, 6)); //calling the function
 console.log("After" + JSON.stringify(testArr));
 
-
+//returning boolean value from functions
+function isGreater(a,b){
+    return a > b; //will return a boolean value
+}
+console.log(isGreater(15,5)); //calling the function and printing the returned vale
