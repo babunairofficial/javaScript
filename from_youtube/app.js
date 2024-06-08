@@ -136,3 +136,20 @@ console.log(playerDetails); //printing the original object
 playerDetails[playerOrder] = "two"; //changing property of object
 playerDetails.name = "Sehwag"; //changing property of object
 console.log(playerDetails);
+
+//Testing objects for properties
+var myObj = {
+    gift: "pony",
+    pet: "puppy",
+    bed: "sleigh"
+};
+
+function checkObj(checkProp){
+    if(myObj.hasOwnProperty(checkProp)){ //checking if the object has a particular property
+        return myObj[checkProp];
+    } else{
+        return "Not Found";
+    }
+
+}
+console.log(checkObj("gift")); //calling the function for a particular property
