@@ -115,3 +115,18 @@ function isGreater(a,b){
     return a > b; //will return a boolean value
 }
 console.log(isGreater(15,5)); //calling the function and printing the returned vale
+
+//bracket notation in object
+var playerDetails = {
+    "name": "sachin",
+    "nick name": "master blaster", //property name having space in between
+    "playing order": "one",
+    "a sponsor": "MRF"
+};
+var playerName = playerDetails.name; //calling the property value
+var playerAlias = playerDetails["nick name"]; //incase of property name being spaced
+var playerOrder = playerDetails["playing order"];
+
+console.log(playerName);
+console.log(playerAlias);
+console.log(playerOrder);
