@@ -130,3 +130,9 @@ var playerOrder = playerDetails["playing order"];
 console.log(playerName);
 console.log(playerAlias);
 console.log(playerOrder);
+
+//updating Object Property
+console.log(playerDetails); //printing the original object
+playerDetails[playerOrder] = "two"; //changing property of object
+playerDetails.name = "Sehwag"; //changing property of object
+console.log(playerDetails);
