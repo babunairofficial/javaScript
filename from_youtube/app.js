@@ -153,3 +153,21 @@ function checkObj(checkProp){
 
 }
 console.log(checkObj("gift")); //calling the function for a particular property
+
+//nested objects
+var myStorage = {
+    "car":{
+        "inside":{
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside":{
+            "trunk":"jack"
+        }
+    }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; //object 'myStorage' -> property 'car' -> property 'inside' -> property 'glove box'
+
+console.log(gloveBoxContents);
+
