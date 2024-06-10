@@ -39,3 +39,10 @@ function lookUpProfile(name, prop){ //passing the name and property
 
 var data = lookUpProfile("Tony", "likes");
 console.log(data);
+
+//Ternary Operator
+function checkEqual(a,b){
+    return a === b ? true : false;
+    // return a === b ?;
+}
+console.log(checkEqual(1,2));

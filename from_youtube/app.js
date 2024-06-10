@@ -171,3 +171,11 @@ var gloveBoxContents = myStorage.car.inside["glove box"]; //object 'myStorage' -
 
 console.log(gloveBoxContents);
 
+
+//Ternary Operator
+function checkEqual(a,b){
+    return a === b ? true : false;
+    // return a === b ?;
+}
+
+console.log(checkEqual(1,2));
