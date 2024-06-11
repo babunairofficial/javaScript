@@ -246,3 +246,35 @@ console.log(array);
 // [ 'a', 'b', 'c', 'd' ]
 console.log(array2);
  // [ 'a', 'b', 'c' ]
+
+ //Destructuring assignment
+ var voxel = {x: 3.6, y: 7.4, z: 6.54};
+//assigning values without destructuring
+ var x = voxel.x; // x = 3.6
+ var y = voxel.y; // y = 7.4
+ var z = voxel.z; //z = 6.54
+
+//  const {x:a,y:b,z:c} = voxel; //destructuring syntax
+
+ var i, j;
+[i, j] = [10, 20]; //array destructuring
+console.log(i); // 10
+console.log(j); // 20
+
+({x, y, ...restof} = {x: 10, y: 20, m: 30, n: 40}); //object destructuring
+console.log(x); // 10
+console.log(y); // 20
+console.log(restof); // {m: 30, n: 40}
+
+const AVG_Temperatures = {
+    today: 77.5,
+    tomorrow: 79
+};
+
+function getTempofTomorrow(AvgTemp){ //the object 'AVG_Temperatures' is the parameter here
+    "use strict";
+    const {tomorrow:tempofTomorrow} = AvgTemp; //the value of keyword 'tomorrow' from the parameter is saved in variable 'tempofTomorrow'
+    return tempofTomorrow; //the value extracted is returned
+}
+
+console.log(getTempofTomorrow(AVG_Temperatures)); //calling the function 'getTempofTomorrow' and sending a value ie. an object 'AVG_Temperatures'
