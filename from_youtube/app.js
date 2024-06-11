@@ -222,3 +222,27 @@ function fun(...input) { //function with a rest parameter
 console.log(fun(1, 2)); //3
 console.log(fun(1, 2, 3)); //6
 console.log(fun(1, 2, 3, 4, 5)); //15 - use of the rest parameter, we can gather any number of arguments into an array and do what we want with them. 
+
+//spread operator
+    
+let arr = ['a', 'b', 'c'];
+let arr2 = arr;
+
+arr2.push('d'); // changed the original array
+
+console.log(arr2); 
+console.log(arr); //even affected the original array(arr) 
+
+let array = ['a', 'b', 'c'];
+let array2 = [...array]; // spread operator for copying 
+
+console.log(array); 
+// [ 'a', 'b', 'c' ]
+
+array.push('d'); 
+//inserting an element at the end of array2
+
+console.log(array); 
+// [ 'a', 'b', 'c', 'd' ]
+console.log(array2);
+ // [ 'a', 'b', 'c' ]
