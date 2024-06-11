@@ -185,3 +185,20 @@ function checkSign(num){ //multiple ternary operator
 }
 
 console.log(checkSign(15));
+
+//mutate an array
+const s = [4,8,6]; //a read only variable declared
+console.log(s);
+function editVariable(){
+    "use strict";
+
+    //s = [6,4,8]; //variable cannot be assigned new values
+    s[0] = 6; //variable values are changed individually
+    s[1] = 4;
+    s[2] = 8;
+    
+}
+
+editVariable();
+console.log(s);
+
