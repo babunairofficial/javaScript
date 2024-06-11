@@ -205,3 +205,20 @@ function editVariable(){
 editVariable();
 console.log(s);
 
+//rest operator
+function sum(a, b){ //normal function
+    return a + b;
+}
+console.log(sum(1, 2)); // 3
+console.log(sum(1, 2, 3, 4, 5)); // 3 - no error will be thrown even when we are passing arguments more than the parameters, but only the first two arguments will be evaluated.
+
+function fun(...input) { //function with a rest parameter
+    let sum = 0;
+    for (let i of input) {
+        sum += i;
+    }
+    return sum;
+}
+console.log(fun(1, 2)); //3
+console.log(fun(1, 2, 3)); //6
+console.log(fun(1, 2, 3, 4, 5)); //15 - use of the rest parameter, we can gather any number of arguments into an array and do what we want with them. 
