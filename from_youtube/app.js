@@ -278,3 +278,17 @@ function getTempofTomorrow(AvgTemp){ //the object 'AVG_Temperatures' is the para
 }
 
 console.log(getTempofTomorrow(AVG_Temperatures)); //calling the function 'getTempofTomorrow' and sending a value ie. an object 'AVG_Temperatures'
+
+//Destructuring assignment with Nested Objects
+const Local_Forecast ={
+    today: {min: 72, max: 83},
+    tomorrow: {min: 73.3, max: 84.6}
+};
+
+function getMaxofTomorrow(forecast){
+    "use strict";
+    const {tomorrow : {max : maxofTomorrow}} = forecast;
+    return maxofTomorrow;
+}
+
+console.log(getMaxofTomorrow(Local_Forecast));
