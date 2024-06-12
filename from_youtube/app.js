@@ -292,3 +292,7 @@ function getMaxofTomorrow(forecast){
 }
 
 console.log(getMaxofTomorrow(Local_Forecast));
+
+//Destructuring assignments for arrays
+const [p, q, , r] = [1,2,3,4,5,6]; // elements in array of stored in order
+console.log(p,q,r);
