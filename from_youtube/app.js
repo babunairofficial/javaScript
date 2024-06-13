@@ -340,3 +340,16 @@ function getDetails({ id: empID, designation: desg }) {
     console.log(`Employee ID: ${empID}, Designation: ${desg}`);
 }
 getDetails(emp);
+
+//simple fields - object literal declaraton
+const createPerson = (name, age, gender) => { //normal method
+    return{
+        a1: name,
+        b1: age,
+        c1: gender
+    };
+};
+console.log(createPerson("Rahul", 53, "male"));
+
+const createPerson2 = (a2, b2, c2) =>({name, age, gender}); //using simple fields
+console.log(createPerson("Sachin", 56, "male"));
