@@ -307,3 +307,36 @@ function removeFirstTwo(list){
 const arr_rest = removeFirstTwo(source);
 console.log("first two removed ",arr_rest);
 console.log("source = ",source);
+
+//Destructuring - pass an object as function parameter 
+//Example 1
+const stats = { //creating the object named 'stats'
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+};
+
+const half = (function(){
+    return function half({max, min}){ //as only the max and min keywords of stats object will be used it is enough to only call their values
+        return (max + min); 
+    };
+})();
+
+console.log(stats);
+console.log(half(stats)); //calling the half function and using object 'stats' as its parameter
+//Example 2
+const emp = { 
+    name: 'Rohit', 
+    id: 1211, 
+    designation: 'Software Engineer'
+};
+
+// Using aliases to access the emp properties
+// skipping the 'name' property
+function getDetails({ id: empID, designation: desg }) {
+    console.log(`Employee ID: ${empID}, Designation: ${desg}`);
+}
+getDetails(emp);
