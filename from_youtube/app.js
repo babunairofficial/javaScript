@@ -296,3 +296,14 @@ console.log(getMaxofTomorrow(Local_Forecast));
 //Destructuring assignments for arrays
 const [p, q, , r] = [1,2,3,4,5,6]; // elements in array of stored in order
 console.log(p,q,r);
+
+//Destructuring using rest operator
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function removeFirstTwo(list){
+    const [ , , ...arr_rest] = list; //keeping blanks to remove first two elements in array
+    // const [a, b, ...arr_rest] = list; //another method
+    return arr_rest;
+}
+const arr_rest = removeFirstTwo(source);
+console.log("first two removed ",arr_rest);
+console.log("source = ",source);
