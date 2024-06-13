@@ -353,3 +353,16 @@ console.log(createPerson("Rahul", 53, "male"));
 
 const createPerson2 = (a2, b2, c2) =>({name, age, gender}); //using simple fields
 console.log(createPerson("Sachin", 56, "male"));
+
+//Declarative functions
+const bicycle = {
+    gear: 2,
+    // setGear: function(newGear){ //function inside object - >normal method
+    setGear(newGear){ //shorter method
+        "use strict";
+        this.gear = newGear;
+    }
+}; 
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
