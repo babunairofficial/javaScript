@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(71 85 105);
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+}
+
+div{
+    border: 10px solid ;
+    height: 100%;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    display: block;
+    border-radius: 25px;
+    border-width: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+li{
+    border: 5px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;  
+    text-align: center;
+    display: grid;
+    font-size: 30px;
+    color: black;
+}
