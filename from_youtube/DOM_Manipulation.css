@@ -19,6 +19,7 @@ div{
 
 li{
     border: 5px solid black;
+    width: 80%;
     padding: 20px;
     margin: 20px;
     background-color: whitesmoke;  
