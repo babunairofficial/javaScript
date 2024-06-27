@@ -1,0 +1,39 @@
+Project 1
+
+--Markup--
+
+	
+Step 1: link to stylesheet
+	(Stylesheet)
+
+step 2: google font - Roboto regular 400 
+	(Global font links)
+
+step 3: link to icons - cdnjs - font-awesome
+	(Font-awesome link)
+
+step 4: (Project 1 : Quote Generator)
+
+step 5: class ="container"
+		class = "header"
+			header - JavaScript Quote Generator
+		class = "main-content"
+			class = "text-area"
+				span class = "quote"
+			class = "person" - Abraham Lincoln
+			class = "button-area"
+				button id = "new quote" -New quote
+
+--General Styling--
+
+(General Styles)
+
+step 6: for all page- 
+			margin=0
+			padding=0
+			boxsize=border-box
+			fontfamily=Lato, sans-serif
+
+
+
+
