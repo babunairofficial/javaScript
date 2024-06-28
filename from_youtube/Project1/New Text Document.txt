@@ -86,8 +86,23 @@ step 13: button-area button -
 step 14: button-area button:active - 
 					background-color=lightblue
 
+--script--
 
-		
+step 15: create script link in html file
+
+step 16: create variables for different tags in script
+	btn=button
+	quote=quote
+	person=person
+
+step 17: create an array of quotes in array name "quotes"
+
+step 18: event listener for button - click event
+	use random formula
+	quote.innerText = quotes[random].quote;
+	person.innerText = quotes[random].person;
+
+
 
 
 
