@@ -1,0 +1,17 @@
+Project 2
+
+--HTML Markup--
+
+Step 1: copy outline from project1 HTML
+
+Step 2: create button
+        id=open-btn
+        Were's Our Modal
+
+Step 3: create div
+        id=Modal
+        Here I am!
+            create div inside 
+            id=close-btn
+            symbol - &times;
+            
