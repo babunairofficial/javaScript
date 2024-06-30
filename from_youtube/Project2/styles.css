@@ -6,3 +6,74 @@
     box-sizing: border-box;
     font-family: 'Lato',sans-serif; /*using font family 'Lato' in the project*/
 }
+
+body{
+    background: url(sebastian-unrau-sp-p7uuT0tw-unsplash.jpg) no-repeat center center/ cover; /*background-repeat background-center background-center/cover*/
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn{
+    
+    /*button positioning*/
+    position: absolute;
+    top: 70%;
+    left: 10%;
+
+    /*button sizing*/
+    width: 350px;
+    height: 80px;
+
+    /*button text font */
+    font-size: 2rem;
+    color: blanchedalmond;
+
+    /*button transparency*/
+    background: transparent;
+
+    /*button box*/
+    border: solid 2px cornsilk;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 3px black;
+    transition: .3s;
+}
+
+#open-btn:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+#modal{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+
+#close-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    color: red;
+}
+
+#modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
