@@ -71,5 +71,16 @@ Step 12: .accordion .content-container .answer
             height=0px
             overflow=hidden
             transition=.5s
-            
+
+--JavaScript--
+
+Step 13: (create variables)
+            const accordion=content-container
+
+Step 14: for loop
+            i<accordion.length
+                accordion[i].addEventListener('click')
+                    this.classList.toggle('active')
+                    
+
         
