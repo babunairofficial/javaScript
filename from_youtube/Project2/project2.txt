@@ -102,3 +102,17 @@ Step 13: default event listener
             }
 
 
+--css styling part 2--
+
+step 14: (Modal Animaiton section)
+        @keyframes animatemodal{
+            from{
+                top=-300px
+                opacity=0
+            }
+            
+            to{
+                top=50%
+                opacity=1
+            }
+        }
