@@ -14,4 +14,9 @@ Step 3: create div
             create div inside 
             id=close-btn
             symbol - &times;
-            
+
+--General styling--
+Step 4: copy the general styling form project1
+
+
+
