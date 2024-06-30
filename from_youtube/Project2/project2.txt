@@ -81,4 +81,24 @@ Step 10: #modal-container
         height=100%
         z-index=1
 
+--script--
+
+
+Step 11:(variables) 
+        openBtn=open-btn
+        modalContainer=modal-container
+        closeBtn=close-btn
+
+Step 12: (event listeners)
+        openBtn.addEventlistener(onclick)
+            modalContainer.style.display=block
+        closeBtn.addEventlistener(onClick)
+            modalContainer.style.display=none
+
+Step 13: default event listener
+        window.addEventlistener(on click, function(e))
+            if (e.target === modalContainer){
+                modalContainer.style.display=none
+            }
+
 

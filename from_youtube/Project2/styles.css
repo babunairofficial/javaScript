@@ -37,6 +37,8 @@ body{
     padding: 5px;
     box-shadow: 0 0 3px black;
     transition: .3s;
+
+    cursor: pointer;
 }
 
 #open-btn:hover{
