@@ -81,6 +81,17 @@ Step 14: for loop
             i<accordion.length
                 accordion[i].addEventListener('click')
                     this.classList.toggle('active')
-                    
 
-        
+--Toggle styling--
+
+Step 15: .accordion .content-container .active .answer
+            height=150px
+
+Step 16: .accordion .content-container .active .question
+            font-size=18px
+            transition=.5s
+            
+Step 17: .accordion .content-container .active .question::after
+            content='-'
+            font-size=30px
+            transition=.5s              
