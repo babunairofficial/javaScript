@@ -1,0 +1,27 @@
+Project 3
+
+--Markup--
+
+Step 1: copy markup template from previous projects
+
+Step 2: create a div class named 'accordion'
+            create a h2 class named 'accordion-title'
+                "Frequently asked questions"
+            
+Step 3:       create a div class named 'content-container'
+                    create a div class named 'question'
+                        "What is the return policy"
+                    create a div class named 'answer'
+                        Loremipsum30
+
+Step 4:       create a div class named 'content-container'
+                    create a div class named 'question'
+                        "When will I receive my order"
+                    create a div class named 'answer'
+                        Loremipsum20
+
+Step 5:       create a div class named 'content-container'
+                    create a div class named 'question'
+                        "Where are you located"
+                    create a div class named 'answer'
+                        Loremipsum15
