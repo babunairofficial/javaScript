@@ -1,0 +1,16 @@
+Project 4
+
+--Markup--
+
+Step 1: Copy html template from previous projects
+
+Step 2: create div class "container"
+            create div id "timer"
+                00:00:00
+
+Step 3: create div class buttons inside container class
+            create button id=startStopBtn
+                copy play icon from font-awesome
+            create button id=resetBtn
+                copy arrow-rotate-left icon from font-awesome
+                
