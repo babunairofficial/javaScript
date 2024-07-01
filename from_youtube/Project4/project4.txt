@@ -18,3 +18,46 @@ Step 3: create div class buttons inside container class
 
 Step 4: Copy general Styling from Previous projects
 
+--CSS styling--
+
+Step 5: body
+            height=100vh
+            background=url() no-repeat center center/cover
+            display=flex
+            justify-content=center
+            align-itmes=center
+
+Step 6: .container
+            width=60%
+            height=250px
+            background-color=white
+            border-radius=30px
+            box-shadow=0 0 30px
+
+Step 7: #timer
+            width=100%
+            font-size=72px
+            text-align=centermargin=0px auto
+            padding=35px
+
+Step 8: .buttons
+            text-align=center
+
+Step 9: button
+            margin=0 10px
+            border=none
+
+Step 10: button i 
+            font-size=2rem
+            padding=10px
+            color=white
+            width=50px
+
+Step 11: #play
+            background-color=green
+
+Step 12: #pause
+            background-color=orange
+
+Step 13: #reset
+            background-color=red
