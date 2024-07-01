@@ -14,3 +14,7 @@ Step 3: create div class buttons inside container class
             create button id=resetBtn
                 copy arrow-rotate-left icon from font-awesome
                 
+--General Styling--
+
+Step 4: Copy general Styling from Previous projects
+
