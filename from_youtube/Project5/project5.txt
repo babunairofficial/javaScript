@@ -1,0 +1,15 @@
+To-Do List
+
+--Markup--
+
+Step 1: copy markup template from previous projects
+
+Step 2: create a container class
+            create add-task-container id
+                input text
+        
+            create task-container id
+
+
+
+
