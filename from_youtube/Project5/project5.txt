@@ -10,6 +10,8 @@ Step 2: create a container class
         
             create task-container id
 
+--General Styling--
 
+Step 3: Copy General Styling from previous projects
 
 
