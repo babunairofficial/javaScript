@@ -31,5 +31,18 @@ addTask.addEventListener('click', function(){
         taskContainer.appendChild(task);
     }
     
-    inputTask.value = ""
-})
+    inputTask.value = "";
+
+    checkButton.addEventListener('click', function(){
+
+        checkButton.parentElement.style.textDecoration = "line-through";
+    });
+
+    deleteButton.addEventListener('click', function(e){
+
+        let target = e.target;
+
+        target.parentElement.parentElement.remove();
+
+    })
+});
