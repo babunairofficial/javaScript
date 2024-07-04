@@ -6,3 +6,50 @@
     box-sizing: border-box;
     font-family: 'Lato',sans-serif; /*using font family 'Lato' in the project*/
 }
+
+/*CSS styles*/
+
+body{
+    background: url(images/calista-tee-gizUZzz4HPI-unsplash.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;    
+}
+
+#add-task-container{
+    background-color: aliceblue;
+    width: 350px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    display: flex;
+}
+
+input{
+    flex: 5; /*increased the length of input element */
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task{
+    flex: 1; /*increase the size of add-task element*/
+    transition: .3s;
+
+    font-size: 1.2rem;
+    padding: 5px;
+    
+    background-color: antiquewhite;
+    color: green;
+    
+    border: green solid 2px;
+    border-radius: 10px;
+}
+
+#add-task:hover{
+    background-color: green;
+    color: antiquewhite;    
+}

@@ -14,4 +14,44 @@ Step 2: create a container class
 
 Step 3: Copy General Styling from previous projects
 
+--CSS Styling--
 
+Step 4: body element
+            background=url() no-repeat center center/cover
+            display=flex;
+            justify-content=center;
+            align-items=center;
+            height=100vh;
+            text-align=center;   
+
+Step 5: #add-task-container
+            background-color=aliceblue;
+            width=350px;
+            padding=20px 10px;
+            border-radius=20px;
+            box-shadow=0 0 3px;
+            display=flex;
+
+Step 6: input
+            flex=5; (increased the length of input element)
+            margin-right=10px;
+            border-radius=10px;
+            font-size=1.2rem;
+            padding=5px;
+
+Step 7: #add-task
+            flex=1; (increase the size of add-task element)
+            transition=.3s;
+
+            font-size=1.2rem;
+            padding=5px;
+    
+            background-color=antiquewhite;
+            color=green;
+    
+            border=green solid 2px;
+            border-radius=10px;
+
+Step 8: #add-task:hover
+            background-color=green;
+            color=antiquewhite;    
