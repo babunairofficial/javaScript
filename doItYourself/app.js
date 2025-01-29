@@ -7,3 +7,12 @@ alert("Welcome to Javascript");
 
 window.alert("alert using longer version");
 //alternatively window.alert can be used instead of the shorter version.
+
+/*variables*/
+var msg = "Hello"; //variable declared using keyword var. 
+
+msg = "have a nice day"; //variable value reassigned
+//while re-assigning values there is no need to declare the same variable again. 
+
+alert(msg);
+//alert keyword will display the value of the variable msg
