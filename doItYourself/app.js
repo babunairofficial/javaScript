@@ -108,3 +108,32 @@ var balanceRemaining = 102 % 5; //this will assign the variable to number 2.
 alert(5+9); //the resultant of the mathematical expression is 14, which would be displayed as a string value. 
 alert(firstNumber / secondNumber); //mathematical operators can be used for variables assigned to numbers
 alert(firstNameOfPerson / second$name); //the output would be NaN (Not a number), as string variables cannot perform mathematical operations. 
+
+
+/*Unfamiliar Mathematical Operators*/
+
+//increament operator: a++, ++a
+// decrement operator: a--, --a
+
+var num = 1;
+console.log("value of num = " + num);
+
+var newNum = num++;
+//num++ expression means num = num + 1
+//increment is made after assigning the value
+
+console.log("value assigned to newNum = " + newNum);
+console.log("new value of num after increment operation = " + num);
+
+var num2 = 10;
+console.log("value of num2 = " + num2);
+
+var newNum2 = ++num2;
+//increment is made before assigning the value
+
+console.log("value assigned to newNum2 = " + newNum2);
+console.log("new value of num2 after increment operation = " + num2);
+
+//note: here i have used strings to make the output readable. 
+// the extra + sign is for concatenation, in simple terms it means to display a string and variable together on one line.
+// without concatenation the program will display an error. 
