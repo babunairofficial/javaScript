@@ -15,6 +15,8 @@
 # 4. Legal and illegal Variable Names
     Explored legal variable names (e.g., userName, _count, $total).
     Identified illegal variable names (e.g., 2name, my-variable, var).
+# 5. Familiar Mathematical Expressions
+    Practiced using basic arithmetic operators (+, -, *, /, %).
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
