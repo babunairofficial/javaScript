@@ -90,3 +90,21 @@ var firstNameOfPersonWhoWon = "mahendra";
 console.log(firstNameOfPersonWhoWon);
 
 //check terminal/console for outputs
+
+
+/*Familiar Mathematical Operators*/
+
+//Math expressions are associated with numbers or variables assigned to numbers.
+//The familiar operators are +,-,*,/ (arithmetic operators).
+var firstNumber = 5;
+var secondNumber = firstNumber + 100;
+var thirdNumber = 15 * 20;
+var fourthNumber = thirdNumber - secondNumber;
+
+//one more operator the modulus % is used to find the remainder.
+var balanceRemaining = 102 % 5; //this will assign the variable to number 2.
+
+//in alert keyword too, mathematical operators work for numbers
+alert(5+9); //the resultant of the mathematical expression is 14, which would be displayed as a string value. 
+alert(firstNumber / secondNumber); //mathematical operators can be used for variables assigned to numbers
+alert(firstNameOfPerson / second$name); //the output would be NaN (Not a number), as string variables cannot perform mathematical operations. 
