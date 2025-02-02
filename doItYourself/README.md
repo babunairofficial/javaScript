@@ -17,6 +17,10 @@
     Identified illegal variable names (e.g., 2name, my-variable, var).
 # 5. Familiar Mathematical Expressions
     Practiced using basic arithmetic operators (+, -, *, /, %).
+# 6. Unfamiliar Mathematical Operators
+    Learned about increment (++) and decrement (--) operators.
+    Practiced pre-increment (++variable) vs post-increment (variable++).
+    note: similar for pre-decrement and post-decrement.  
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
