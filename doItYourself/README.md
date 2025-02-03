@@ -21,6 +21,10 @@
     Learned about increment (++) and decrement (--) operators.
     Practiced pre-increment (++variable) vs post-increment (variable++).
     note: similar for pre-decrement and post-decrement.  
+# 7. Math Expressions - Eliminating Ambiguity
+    Learned how to use parentheses () to control the order of operations.
+    Practiced grouping expressions to ensure correct calculations.
+    Explored JavaScript's default operator precedence and how to override it.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
