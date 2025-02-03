@@ -153,3 +153,29 @@ console.log(newTotal);
 var total = (7 + 2) * (4 + 6); //the result is 90
 //this removes ambiguity by using parenthesis
 console.log(total);
+
+
+/*Concatenating string */
+
+//Concatenation is used to combine elements.
+var message = "you are learning javascript";
+alert("Thanks, " + message);
+//here concatenating a string with a variable
+
+//concatenation of three variables
+var person = "babu";
+var exclaim = "!"
+alert(person + message + exclaim);
+
+//concatenation of strings too can be done
+alert("Hello friends, "+"hope you are doing well "+"!");
+
+//concatenation of variables
+var newmessage = person + message + exclaim;
+alert(newmessage);
+
+//concatenation of number strings
+alert("2"+"2"); //will give the alert as 22.
+
+//When code mixes strings and numbers, numbers are converted to strings.
+alert("15"+6);
