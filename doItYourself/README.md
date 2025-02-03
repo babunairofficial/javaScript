@@ -25,6 +25,10 @@
     Learned how to use parentheses () to control the order of operations.
     Practiced grouping expressions to ensure correct calculations.
     Explored JavaScript's default operator precedence and how to override it.
+# 8. Concatenating Text Strings
+    Learned how to combine strings using the + operator.
+    Explored string concatenation with variables.
+    Practiced combining numbers and strings in expressions.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
