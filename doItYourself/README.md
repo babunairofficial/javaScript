@@ -29,6 +29,10 @@
     Learned how to combine strings using the + operator.
     Explored string concatenation with variables.
     Practiced combining numbers and strings in expressions.
+# 9. Prompts
+    Learned how to use the prompt() function to get user input.
+    Explored storing user input in variables.
+    Practiced displaying user input through alerts and concatenation.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
