@@ -137,3 +137,19 @@ console.log("new value of num2 after increment operation = " + num2);
 //note: here i have used strings to make the output readable. 
 // the extra + sign is for concatenation, in simple terms it means to display a string and variable together on one line.
 // without concatenation the program will display an error. 
+
+
+/*Order of Precedence in Mathematical expressions*/
+
+//JavaScript like in algebra follows precedence rules. 
+//incase of ambiguity or confusion one can use paranthesis () to clear up the ambiguity.
+var totalCost = 1 + 5 * 8; //the result is 41 and not 48
+console.log(totalCost);
+
+var newTotal = (2 + 9) * 3; //the result is 33
+//notice the order in which calculations are to be done is clear
+console.log(newTotal);
+
+var total = (7 + 2) * (4 + 6); //the result is 90
+//this removes ambiguity by using parenthesis
+console.log(total);
