@@ -179,3 +179,30 @@ alert("2"+"2"); //will give the alert as 22.
 
 //When code mixes strings and numbers, numbers are converted to strings.
 alert("15"+6);
+
+
+/* Prompts */
+
+//prompt asks for a response from the user. 
+var adult = prompt("How old are you?", "18");
+//prompt comes with the question and a default response
+//value is stored in a variable
+//all values stored in a variable are a string
+console.log(adult); //displaying the value of the variable
+
+//the strings can be stored in a variable and the respective variable can be used in prompts
+var question = "Are you Indian?";
+var defaultAnswer = "Yes";
+var indian = prompt(question, defaultAnswer);
+console.log(indian);
+
+//default responses are not mandatory
+var fruits = prompt("How many fruits do you have?");
+var morefruits = fruits + 1;
+//the variable stores values as string
+//concatenation of string and number gives a string
+console.log(morefruits); 
+
+//longer form of prompt method
+var dogName = window.prompt("What is the name of your dog?");
+console.log(dogName);
