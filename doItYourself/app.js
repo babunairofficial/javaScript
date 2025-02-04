@@ -206,3 +206,23 @@ console.log(morefruits);
 //longer form of prompt method
 var dogName = window.prompt("What is the name of your dog?");
 console.log(dogName);
+
+
+/* if statements */
+
+var x = prompt("What is your nationality? (Enter your anser in all caps)");
+//the if statement tests for a condition
+if (x === "INDIAN"){
+    //incase the condition is true then it will execute the below line
+    alert("Bharat Mata ki jai");
+}
+//the tripe equal sign tests the both sides of the condition.
+//single equal sign is used for assigning a value to a variable, it cannot be used for comparison of two values.
+
+//comparison can be done using variables too
+var a = "mango";
+var b = prompt("Enter your favourite fruit");
+if (a === b){
+    alert("Our choices match");
+    //you can have any number of statements to execute here.
+}
