@@ -226,3 +226,37 @@ if (a === b){
     alert("Our choices match");
     //you can have any number of statements to execute here.
 }
+
+
+/* Comparison Operators */
+
+//equality operator - equal to, not equal to
+//equal to already covered 
+
+//not equal to
+var yourTicketNumber = prompt("Enter your 6-digit ticket number");
+if (yourTicketNumber !== 456127) {
+    alert("Better luck next time.");
+}
+// alternatively you can use != instead of !==
+
+//other comparison operators
+    // > is greater than
+    // < is less than
+    // >= is greater than or equal to 
+    // <= is less than or equal to
+if (1 > 0) {
+    alert("greater than tested");
+}
+
+if (0 < 1) {
+    alert("less than tested");
+}
+
+if (1 >= 0) {
+    alert("greater than or equal to tested");
+}
+
+if (0 <= 1) {
+    alert("less than or equal to tested");
+}
