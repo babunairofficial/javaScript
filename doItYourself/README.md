@@ -39,7 +39,10 @@
 # 11. Comparison Operators
     Explored equality (===) and inequality (!==).
     Learned other comparison operators like greater than (>), less than (<), greater than or equal to (>=), less than or equal to (<=).
-
+# 12. If...Else and Else If Statements
+    Learned how to use if...else for two-way decision-making.
+    Practiced using else if for multiple conditions.
+    
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
