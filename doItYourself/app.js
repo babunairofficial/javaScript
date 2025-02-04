@@ -260,3 +260,30 @@ if (1 >= 0) {
 if (0 <= 1) {
     alert("less than or equal to tested");
 }
+
+
+/* if else and else if statements */
+
+// if else statement
+if (x === "India") {
+    alert("Correct!");
+}
+else {
+    alert("Wrong answer");
+}
+
+//else if statements
+var correctAnswer = "mango";
+if ("apple" === correctAnswer) {
+    alert("your answer matches in the 1st check");
+}
+else if ("orange" === correctAnswer) {
+    alert("your answer is correct in the 2nd check");
+}
+else if ("mango" === correctAnswer){
+    alert("you got the answer right finally");
+}
+else {
+    alert("All chances over");
+}
+//you can have any number of chains for else if statements.
