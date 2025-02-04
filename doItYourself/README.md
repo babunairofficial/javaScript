@@ -33,6 +33,9 @@
     Learned how to use the prompt() function to get user input.
     Explored storing user input in variables.
     Practiced displaying user input through alerts and concatenation.
+# 10. If Statements
+    Learned how to use if statements for conditional logic.
+    Explored === operator
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
