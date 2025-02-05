@@ -287,3 +287,51 @@ else {
     alert("All chances over");
 }
 //you can have any number of chains for else if statements.
+
+
+/* Testing Sets of conditions */
+
+// && operator (AND operator)
+// condition checks if both the expressions are true
+
+var age = 25;
+var citizen = "Indian";
+
+//let us check if age is greater than or equal to 18 AND citizen is Indian
+if (age >= 18 && citizen === "Indian") {
+    alert("you can vote in Indian elections");
+    //the statement is executed only if both the conditions are true at the same time.
+} 
+else {
+    alert("sorry you are not eligible to vote");
+    //this statement is executed if any of the conditions is false or both the conditions are false.
+}
+
+// || operator (OR operator)
+// condition checks if any one of the expressions are true 
+
+var x = 8;
+var y = 6;
+
+// let us check if either x or y is greater than 5
+if (x > 2 || y > 2) {
+    alert("you win!");
+    //this line executes when atleast one of the conditions is true
+    //it will also execute if both the conditions are true.
+}
+else {
+    alert ("sorry! better luck next time");
+    //incase both the conditions are false then this line will execute
+}
+
+// we can have combinations of both AND operator along with || operator depending upoo possible requirements
+
+var personAge = 80;
+var familyStatus =  "poor";
+if (personAge >=65 || (personAge < 15 && familyStatus === "poor")) {
+    //note: use paranthesis to make the conditions clear for future use.
+    alert("Congratulations! You are eligible for the scheme");
+}
+else {
+    alert("Sorry!! You are not eligible");
+}
