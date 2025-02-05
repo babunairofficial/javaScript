@@ -46,7 +46,10 @@
     Learned how to combine multiple conditions using && (AND) and || (OR) operators.
     Explored how logical conditions affect control flow.
     Practiced writing nested and complex conditional statements.
-    
+# 14. If Statements Nested
+    Learned how to nest if statements inside one another.
+    Explored how nested conditions improve program logic.
+    Practiced handling multiple decision-making levels.
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
