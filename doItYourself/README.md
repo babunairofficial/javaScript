@@ -42,6 +42,10 @@
 # 12. If...Else and Else If Statements
     Learned how to use if...else for two-way decision-making.
     Practiced using else if for multiple conditions.
+# 13. Testing Sets of Conditions
+    Learned how to combine multiple conditions using && (AND) and || (OR) operators.
+    Explored how logical conditions affect control flow.
+    Practiced writing nested and complex conditional statements.
     
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
