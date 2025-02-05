@@ -50,6 +50,9 @@
     Learned how to nest if statements inside one another.
     Explored how nested conditions improve program logic.
     Practiced handling multiple decision-making levels.
+# 15. Arrays
+    Learned how to declare and initialize arrays.
+    Explored accessing elements using indexes.
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
