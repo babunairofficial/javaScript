@@ -335,3 +335,24 @@ if (personAge >=65 || (personAge < 15 && familyStatus === "poor")) {
 else {
     alert("Sorry!! You are not eligible");
 }
+
+
+/* nested if statements */
+
+if (a >= b) {
+    if (a >= c) {
+        alert("a is largest");
+    }
+    else {
+        alert("c is largest");
+    }
+}
+else {
+    if (b >= c) {
+        alert("b is largest");
+    }
+    else {
+        alert("c is largest");
+    }
+}
+// nested if statements are good to simplify complicated condition statements.
