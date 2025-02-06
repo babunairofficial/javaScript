@@ -56,6 +56,12 @@
 # 16. Adding and Removing elements in Arrays
     Practiced adding elements to already declared array using index number
     Learned how to use push() and pop() for adding and removing elements at the end.
+# 17. Arrays - Removing, Inserting, and Extracting Elements
+    Explored shift() and unshift() for modifying the beginning of an array.
+    Explored how to remove elements from arrays using splice().
+    Learned how to insert elements at specific positions using splice(index, 0, value).
+    Practiced extracting elements using slice(start, end).
+    Understood how slice() creates a shallow copy of the array.
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
