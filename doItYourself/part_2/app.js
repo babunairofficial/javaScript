@@ -40,3 +40,32 @@ cities.pop();
 //deletes the last element.
 
 console.log("array after deleting last element: " + cities);
+
+
+/* Removing, Inserting, and Extracting elements in Arrays */
+
+//shift method is used to remove elements from the beginning of the elements of the array
+cities.shift();
+console.log("the elements of the array after using the shift method: " + cities);
+
+//unshift method is used to add one or more elements to the beginning of an array
+cities.unshift("Nagpur", "Kharagpur");
+
+console.log("the elements of the array after using the unshift method: " + cities);
+
+//splice method is used to insert one or more elements anywhere in the array
+cities.splice(2, 3, "Sambalpur", "Bhopal");
+//the first number indicates the from (indexnumber)
+//the second number indicates the number of elements to be deleted after insertion.
+//here starting with the index number 2 (3rd element in array), new elements would be added, after insertion three elements would be deleted.
+
+console.log("the elements of the array after using the splice method: " + cities);
+
+//slice method is used to copy one or more consecutive elements in any position 
+//remember to always put the copied elements into a new array.
+var newCities = cities.slice(2, 4);
+//the first number indicates the from (indexNumber)
+//the second number indicated the end (indexNumber)
+//all elements starting from the first number and just before the second number would be copied.
+
+console.log("new array after slice method: " + newCities);
