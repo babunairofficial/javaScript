@@ -53,6 +53,9 @@
 # 15. Arrays
     Learned how to declare and initialize arrays.
     Explored accessing elements using indexes.
+# 16. Adding and Removing elements in Arrays
+    Practiced adding elements to already declared array using index number
+    Learned how to use push() and pop() for adding and removing elements at the end.
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
