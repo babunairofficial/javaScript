@@ -66,7 +66,11 @@
     Learned how to use for loops to iterate over arrays and perform repetitive tasks.
     Explored loop initialization, condition, and increment/decrement expressions.
     Learned how to iterate over arrays and modify their elements.
-    
+# 19. For Loops - Flags, Booleans, Array Length, and Loopus Interruptus
+    Learned how to use Boolean flags to control loops.
+    Explored the concept of breaking out of a loop using break.
+    Understood how to use array.length in loops for dynamic iteration.
+
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
