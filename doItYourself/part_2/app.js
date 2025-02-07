@@ -162,3 +162,25 @@ for (var i = 0; i < 5; i++) {
 if (matchFound === false) {
     alert ("Game not on list");
 }
+
+//Array Length
+//length property is used to find the length of an array without manually counting it.
+
+var citiesNum = cities.length;
+//cities array previous declared and has several values
+
+var city = "Hyderabad";
+var cityFound = false; //flag
+for (var i = 0; i < citiesNum; i++) {
+    if (city === cities[i]) {
+        cityFound = true;
+        alert("Your city is on the list");
+        break; //loopus interruptus
+    }
+}
+if (cityFound === false) {
+    alert("sorry! city not on list");
+}
+
+//note every time for loop is used the variable (i) is declared each time, this is because the variable is declared locally each time.
+//outside the loop the variable and its value does not exist.
