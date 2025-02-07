@@ -62,6 +62,11 @@
     Learned how to insert elements at specific positions using splice(index, 0, value).
     Practiced extracting elements using slice(start, end).
     Understood how slice() creates a shallow copy of the array.
+# 18. For Loops
+    Learned how to use for loops to iterate over arrays and perform repetitive tasks.
+    Explored loop initialization, condition, and increment/decrement expressions.
+    Learned how to iterate over arrays and modify their elements.
+    
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
