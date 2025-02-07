@@ -120,3 +120,25 @@ if (checkForOdd === "yes") {
 else {
     alert("there are only even numbers in the array");
 }
+
+//Booleans
+//Boolean values are = true, false
+//instead of using strings "yes" and "no", boolean values true, false can be used.
+
+//consider the numbers array previous used
+let checkForEven = false; //flag in which boolean value is used
+
+//this time, check if array has any even number 
+for (var i = 0; i < 5; i++) {
+    if (numbers[i] % 2 === 0) {
+        checkForOdd = true; //boolean value used 
+    }
+}
+
+//now check the flag for a condition
+if (checkForOdd === true) {
+    alert("there is an even number in the array");
+}
+else {
+    alert("there are only odd numbers in the array");
+}
