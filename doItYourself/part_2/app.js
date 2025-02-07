@@ -69,3 +69,29 @@ var newCities = cities.slice(2, 4);
 //all elements starting from the first number and just before the second number would be copied.
 
 console.log("new array after slice method: " + newCities);
+
+
+/* for loops */
+
+//for loop is used to run a particular code multiple times 
+
+//create a array of fruits having 5 elements
+var fruits = ["apple", "mango", "orange", "pineapple", "banana"];
+
+//fruit to check for
+var checkFruit = "pineapple";
+
+//find a particular fruit in the array
+for (var i = 0; i < 5; i++) {
+    //notice in the conditions of the for loop there are three parts
+        //1. the variable used for counting (here starting with 0) and for changing array index
+        //the counter variable can be named anything.
+        //always declare the variable either globally or locally before using.
+        //2. the loop limit. As the array has 5 elements and starting indexing from zero the last index number would be 4
+        //you can alternatively write the loop limit as i <= 4.
+        //3. increment part - the counter variable is increased by 1 after each iteration
+        //please note: always maintain this order
+    if (checkFruit === fruits[i]) {
+        alert ("found your fruit");
+    }
+}
