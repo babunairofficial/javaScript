@@ -95,3 +95,28 @@ for (var i = 0; i < 5; i++) {
         alert ("found your fruit");
     }
 }
+
+
+/* for loops - Flags, Booleans, Loopus Interruptus, Array Length */
+
+//Flags
+// Flag is a variable used to signal the program that a certain condition has been met
+// Flag initially has a default value which is either changed (when a condition is met) or remains the same.
+
+let numbers = [12,38,52,25,76];
+let checkForOdd = "no"; //flag
+
+//let us check if array has any odd number 
+for (var i = 0; i < 5; i++) {
+    if (numbers[i] % 2 !== 0) {
+        checkForOdd = "yes"; 
+    }
+}
+
+//now check the flag for a condition
+if (checkForOdd === "yes") {
+    alert("there is an odd number in the array");
+}
+else {
+    alert("there are only even numbers in the array");
+}
