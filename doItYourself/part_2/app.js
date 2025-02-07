@@ -142,3 +142,23 @@ if (checkForOdd === true) {
 else {
     alert("there are only odd numbers in the array");
 }
+
+
+//Loopus Interruptus
+//break keyword is used to exit the loop when a condition is satisfied 
+//checking for the same condition in the next elements would not create any difference 
+
+var games = ["cricket", "football", "volleyball", "basketball", "tennis"];
+checkGame = "football";
+matchFound = false; //flag
+
+for (var i = 0; i < 5; i++) {
+    if(checkGame === games[i]) {
+        alert("Game found!");
+        matchFound = true;
+        break; // loopus interruptus - break keyword
+    }
+}
+if (matchFound === false) {
+    alert ("Game not on list");
+}
