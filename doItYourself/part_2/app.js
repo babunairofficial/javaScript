@@ -240,3 +240,28 @@ firstChar = firstChar.toUpperCase();
 otherChars = otherChars.toLowerCase();
 
 console.log(firstChar + otherChars);
+
+//Measuring lengths
+// .length property is used to get the length of a string.
+
+var month = prompt("Enter a month");
+var charsInMonth = month.length;
+console.log("the number of characters in " + month + " is " + charsInMonth);
+
+// .length property can be used for lengthy strings, whenever there is need to iterate a loop
+
+if (charsInMonth > 4) {
+    var monthAbbrev = month.slice(0, 4);
+    console.log("shorter version of " + month + " is " + monthAbbrev)
+}
+//notice here whenever month length is more than 4, slice is used to give the shorter version.
+
+//this can be used whenever there is need to check of double spaces in a string.
+var str = prompt("Enter a string");
+var numOfChars = str.length;
+for (var i = 0; i < numOfChars; i++) {
+    //check for spaces at 2 adjacent places simultaneously
+    if (str.slice(i, i+2) === "  ") { 
+        alert("Double Spaces!");
+    }
+}
