@@ -184,3 +184,20 @@ if (cityFound === false) {
 
 //note every time for loop is used the variable (i) is declared each time, this is because the variable is declared locally each time.
 //outside the loop the variable and its value does not exist.
+
+
+/* for loops nested */
+
+// loop within another loop 
+
+var firstName = ["Rahul", "Prashant", "Kajal", "Nitin", "Suyash"];
+var lastName = ["Gupta", "Shinde", "Rathore", "Singhania", "Jha"];
+var fullName = [];
+
+for (var i = 0; i < firstName.length; i++) { //outer loop
+    for (var j = 0; j < lastName.length; j++) { //inner loop
+        fullName.push(firstName[i] + " " + lastName[j]);
+    }
+}
+//for each iteration of outer loop, the inner loop will be executed one complete time.
+console.log("full names are " + fullName); //display the new added elements in the array
