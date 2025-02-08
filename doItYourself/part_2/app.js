@@ -201,3 +201,17 @@ for (var i = 0; i < firstName.length; i++) { //outer loop
 }
 //for each iteration of outer loop, the inner loop will be executed one complete time.
 console.log("full names are " + fullName); //display the new added elements in the array
+
+
+/* Changing Case */
+
+//changing the string to lowercase or UPPERCASE
+
+// toLowerCase() method is used to change the string to lowercase
+var cityToCheck = prompt("Enter your city");
+
+var cityToCheck1 = cityToCheck.toLowerCase();
+console.log(cityToCheck + " city in all lowercase " + cityToCheck1);
+
+//toUpperCase() method is used to change the string to UPPERCASE.
+console.log(cityToCheck + " city in all uppercase " + cityToCheck.toUpperCase());
