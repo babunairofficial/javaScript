@@ -76,6 +76,9 @@
 # 21. Changing Case
     Learned how to convert strings to uppercase using toUpperCase().
     Explored converting strings to lowercase using toLowerCase().
+# 22. Strings - Measuring Length and Extracting Parts
+    Explored extracting parts of a string using slice().
+    Learned how to measure string length using .length property.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
