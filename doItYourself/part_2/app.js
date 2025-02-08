@@ -215,3 +215,28 @@ console.log(cityToCheck + " city in all lowercase " + cityToCheck1);
 
 //toUpperCase() method is used to change the string to UPPERCASE.
 console.log(cityToCheck + " city in all uppercase " + cityToCheck.toUpperCase());
+
+
+/* Measuring Lengths and Extracting parts of String */
+
+//Extracting parts
+
+//A string is indexed like an array
+//each character of a string behaves similar to the elements of an array
+// Slice method is used to extract parts of a string
+
+var city = prompt("enter a city");
+
+//store the value of the first character in a variable
+var firstChar = city.slice(0, 1);
+//the first number within the parenthesis represents the index number of the first character
+//the second number within the parenthesis represents the index number just after the end of slice;
+
+var otherChars = city.slice(1);
+//the second number within the parenthesis when omitted means the slice it to be done till the end of the characters of the string.
+
+//changing case
+firstChar = firstChar.toUpperCase();
+otherChars = otherChars.toLowerCase();
+
+console.log(firstChar + otherChars);
