@@ -70,6 +70,9 @@
     Learned how to use Boolean flags to control loops.
     Explored the concept of breaking out of a loop using break.
     Understood how to use array.length in loops for dynamic iteration.
+# 20. For Loops - Nested Loops
+    Learned how to use nested for loops for multi-dimensional iteration.
+    Explored how inner loops run multiple times for each iteration of the outer loop.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
