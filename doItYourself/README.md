@@ -73,6 +73,9 @@
 # 20. For Loops - Nested Loops
     Learned how to use nested for loops for multi-dimensional iteration.
     Explored how inner loops run multiple times for each iteration of the outer loop.
+# 21. Changing Case
+    Learned how to convert strings to uppercase using toUpperCase().
+    Explored converting strings to lowercase using toLowerCase().
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
