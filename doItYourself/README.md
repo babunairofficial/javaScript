@@ -79,6 +79,10 @@
 # 22. Strings - Measuring Length and Extracting Parts
     Explored extracting parts of a string using slice().
     Learned how to measure string length using .length property.
+# 23. Strings - Finding Segments
+    Learned how to find substrings within a string using indexOf() and lastIndexOf().
+    Explored searching for specific words or characters in a string.
+    Practiced using these methods to locate and extract relevant text.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
