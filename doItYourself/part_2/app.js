@@ -265,3 +265,51 @@ for (var i = 0; i < numOfChars; i++) {
         alert("Double Spaces!");
     }
 }
+
+
+/* Finding Segments of strings */
+
+var passage = "There are good people who are dealt a bad hand by fate, and bad people who live long, comfortable, privileged lives. A small twist of fate can save or end a life; random chance is a permanent, powerful player in each of our lives, and in human history as well.";
+console.log(passage);
+// let us find strings "good people", from the above
+
+//one method is to run a loop to check for the group of characters for all iterations of the length of the string
+
+for (var i = 0; i < passage.length; i++) {
+    if (passage.slice(i, i+11) === "good people") {
+        passage = passage.slice(0, i) + "nice human beings" + passage.slice(i+11);
+    }
+}
+
+//display the final passage
+console.log(passage);
+
+//another method is to check for the index of the first occurence of the string in the text.
+var text = "Think about one of the most powerful influences on a young child's life - the absence of a father figure. Look back on recent presidents, and you'll find an absent, or weak, or failed father in the lives of Lyndon Johnson, Richard Nixon, Ronald Reagan, Bill Clinton and Barack Obama.";
+console.log(text);
+
+//find the starting index of the string
+var firstOccurence = text.indexOf("most powerful");
+//if string found then the starting index number is saved in the variable, 
+// or else -1 is assigned to the variable
+
+console.log(firstOccurence); //display the value assigned to the variable
+
+if (firstOccurence !== -1) {
+    text = text.slice(0, firstOccurence) + "strongest" + text.slice(firstOccurence + 13);
+}
+//the only limitation of this method is that it only checks for the first occurence and ignores any other occurences
+
+console.log(text);
+
+// lastIndexOf is used to find the last instance of a segment
+var saying = "To be or not to be";
+console.log(saying);
+
+var lastOccurence = saying.lastIndexOf("be");
+console.log(lastOccurence);
+//try changing the last occurence string
+if (lastOccurence !== -1) {
+    saying = saying.slice(0, lastOccurence) + "BE" + saying.slice(lastOccurence + 2);
+}
+console.log(saying); //display the final string
