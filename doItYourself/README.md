@@ -83,6 +83,8 @@
     Learned how to find substrings within a string using indexOf() and lastIndexOf().
     Explored searching for specific words or characters in a string.
     Practiced using these methods to locate and extract relevant text.
+# 24. Strings - Finding a Character at a Location
+    Learned how to retrieve a specific character from a string using charAt(index).
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
