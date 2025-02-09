@@ -85,6 +85,9 @@
     Practiced using these methods to locate and extract relevant text.
 # 24. Strings - Finding a Character at a Location
     Learned how to retrieve a specific character from a string using charAt(index).
+# 25. Strings - Replacing Characters
+    Learned how to replace parts of a string using replace(oldValue, newValue).
+    Explored the differences in first instance replace and global replace.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
