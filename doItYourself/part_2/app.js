@@ -324,3 +324,26 @@ var secondLetter = firstName.charAt(1);
 
 console.log(firstLetter);
 console.log(secondLetter);
+
+
+/* Replacing characters in a string */
+
+// replace() method searches a string for a value and replaces it with another value.
+var texts = "Visit Us Again!";
+console.log(texts);
+
+var result = texts.replace("Again", "Next Time");
+//first value within the parenthesis is the Search Value (Required)
+//second value within the parenthesis is the new Value (Required)
+console.log(result);
+//there is a limitation to this method, it only searches for the first instance.
+
+// global replace is used to replace all instances
+var tongueTwister = "Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick!";
+console.log(tongueTwister);
+
+// in global replace, the search value is enclosed within slashes instead of quotation marks
+//followed by g
+//the new value to be inserted is enclosed by quotation marks 
+var result2 = tongueTwister.replace(/Peter Piper/g, "Mr. Pan");
+console.log(result2);
