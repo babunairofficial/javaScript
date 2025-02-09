@@ -313,3 +313,14 @@ if (lastOccurence !== -1) {
     saying = saying.slice(0, lastOccurence) + "BE" + saying.slice(lastOccurence + 2);
 }
 console.log(saying); //display the final string
+
+
+/* Finding a character of a string at a location */
+
+//.charAt(indexNumber) is used to find the character at a particular index number of a string
+
+var firstLetter = firstName.charAt(0);
+var secondLetter = firstName.charAt(1);
+
+console.log(firstLetter);
+console.log(secondLetter);
