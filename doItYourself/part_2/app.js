@@ -374,3 +374,30 @@ var z = 0.99999;
 var floorZ = Math.floor(z);
 //0.99999 would be rounded down to 0.
 console.log(floorZ);
+
+
+/* Random numbers */
+
+//Math.random gives a random number (a decimal) between 0 (inclusive) and 1 (exclusive).
+var randomNum = Math.random();
+console.log(randomNum);
+
+//to get a random number between 0 and 6, multiply the randomNum variable with 6
+var impNum = randomNum * 6;
+console.log(impNum);
+
+//to get a random number starting with 1.
+var numStart = impNum + 1;
+console.log(numStart);
+
+//to get a random integer from 1 to 6
+var intNum = Math.floor(numStart);
+console.log(intNum);
+
+//find a random number between 1 and 10
+var ranNum = Math.floor(Math.random() * 10 + 1);
+console.log("Random number between 1 and 10 is " + ranNum);
+
+//find a random number between 0 and 10
+var randomNumber = Math.floor(Math.random() * 10);
+console.log("Random number between 0 and 10 is " + randomNumber);
