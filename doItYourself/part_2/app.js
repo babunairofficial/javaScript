@@ -362,3 +362,15 @@ console.log(roundX);
 
 var roundY = Math.round(y);
 console.log(roundY);
+
+//Math.ceil method is used to round up small fractions to nearest integer
+var a = 0.000001;
+var ceilingA = Math.ceil(a);
+// 0.000001 would be rounded up to 1. 
+console.log(ceilingA);
+
+//Math.floor() method is used to round down to nearest integer
+var z = 0.99999;
+var floorZ = Math.floor(z);
+//0.99999 would be rounded down to 0.
+console.log(floorZ);
