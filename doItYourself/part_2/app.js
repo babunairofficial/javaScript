@@ -318,6 +318,7 @@ console.log(saying); //display the final string
 /* Finding a character of a string at a location */
 
 //.charAt(indexNumber) is used to find the character at a particular index number of a string
+firstName = "Sachin"; //variable already declared
 
 var firstLetter = firstName.charAt(0);
 var secondLetter = firstName.charAt(1);
