@@ -88,6 +88,8 @@
 # 25. Strings - Replacing Characters
     Learned how to replace parts of a string using replace(oldValue, newValue).
     Explored the differences in first instance replace and global replace.
+# 26. Rounding Numbers
+    Learned how to round numbers using Math.round().
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
