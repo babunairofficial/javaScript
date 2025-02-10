@@ -90,6 +90,7 @@
     Explored the differences in first instance replace and global replace.
 # 26. Rounding Numbers
     Learned how to round numbers using Math.round().
+    Explored Math.floor() for rounding down and Math.ceil() for rounding up.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
