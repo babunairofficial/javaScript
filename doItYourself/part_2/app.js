@@ -348,3 +348,17 @@ console.log(tongueTwister);
 //the new value to be inserted is enclosed by quotation marks 
 var result2 = tongueTwister.replace(/Peter Piper/g, "Mr. Pan");
 console.log(result2);
+
+
+/* Rounding Numbers */
+
+//Math.round() method rounds a number to the nearest integer
+
+var x = 2.49;
+var y = -2.49;
+
+var roundX = Math.round(x);
+console.log(roundX);
+
+var roundY = Math.round(y);
+console.log(roundY);
