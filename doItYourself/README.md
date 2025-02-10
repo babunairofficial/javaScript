@@ -91,6 +91,9 @@
 # 26. Rounding Numbers
     Learned how to round numbers using Math.round().
     Explored Math.floor() for rounding down and Math.ceil() for rounding up.
+# 27. Learned how to generate random numbers using Math.random().
+    Explored scaling random values to a desired range (e.g., dice roll simulation).
+    Practiced creating random number generators.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
