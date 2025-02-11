@@ -464,3 +464,19 @@ var numberAsNumber = "98";
 var numberAsString = numberAsNumber.toString();
 console.log(numberAsString);
 console.log(typeof(numberAsString));
+
+
+/* Controlling the length of decimal */
+
+// toFixed(n) can be used to round off a decimal to a n number of places, where n is any number
+var price = 5.5;
+var tax = 0.05; //5% tax
+var total = price * (1 + tax);
+console.log("total = " + total);
+
+var prettyTotal = total.toFixed(2); //rounding off to two decimal points
+console.log("total rounded to two deciaml places = " + prettyTotal);
+
+////incases where the number within the paranthesis is left blank, the number is shortened to no decimal places
+var prettiestTotal = total.toFixed(); //rounding off to no decimal points
+console.log("total rounded to no deciaml places = " + prettiestTotal);
