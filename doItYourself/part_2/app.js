@@ -401,3 +401,43 @@ console.log("Random number between 1 and 10 is " + ranNum);
 //find a random number between 0 and 10
 var randomNumber = Math.floor(Math.random() * 10);
 console.log("Random number between 0 and 10 is " + randomNumber);
+
+
+/* Converting strings to integers and decimals */
+
+// Except + operator, all other operators like *, /, -, % have a the property to change a string to a number temporarily to perform mathematical operations
+
+var currentAge = prompt("enter your age"); //a string is stored in the variable
+var newAge = currentAge - 2; //subtraction operator is performed on a string and a number
+console.log(newAge);
+console.log(typeof(newAge)); //displays the data type of the variable - here a number
+
+//even when mathematical operation is perfomed on two strings having numeric values the resultant becomes number (except for + operator)
+var profit = "500" * "300"; //multiplication of two strings having numeric value
+console.log(profit);
+console.log(typeof(profit)); //number
+
+//numeric string and a number 
+profit = "400" / 5; //mathematical operation performed here too
+console.log(profit);
+console.log(typeof(profit)); //number
+
+//numeric string and a string - not a number operation
+profit = "400" - "duck"; 
+console.log(profit);
+console.log(typeof(profit)); //NaN
+
+//But for addition operator, a numeric string and a number concatenate
+result = "200" + 150;
+console.log(result);
+console.log(typeof(result));
+
+// parseInt is used to solve this problem of concatenation using numberic string and a number
+// parseInt is used to covert an integer value string to an integer
+result = parseInt("200") + 150;
+console.log("result after using parseInt : " + result);
+console.log(typeof(result));
+//similarly, parseFloat can be used to convert a decimal value string to decimal number.
+var myFraction = parseFloat("1.9999999999999");
+console.log("On using parseFloat : " + myFraction);
+console.log(typeof(myFraction));
