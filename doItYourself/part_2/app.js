@@ -441,3 +441,26 @@ console.log(typeof(result));
 var myFraction = parseFloat("1.9999999999999");
 console.log("On using parseFloat : " + myFraction);
 console.log(typeof(myFraction));
+
+
+/* Converting strings to numbers,
+    numbers to strings */
+
+// as learned previously, parseInt and parseFloat can be used to convert a string representing a number to an integer and a floating point number respectively
+// Number() method converts a value to a number.
+
+var integerString = "27";
+var integerNum = Number(integerString);
+console.log(integerNum);
+console.log(typeof(integerNum));
+
+var floatingString = "27.745345674537";
+var floatingNum = Number(floatingString);
+console.log(floatingNum);
+console.log(typeof(floatingNum));
+
+// toString() method can convert a number to a string
+var numberAsNumber = "98";
+var numberAsString = numberAsNumber.toString();
+console.log(numberAsString);
+console.log(typeof(numberAsString));
