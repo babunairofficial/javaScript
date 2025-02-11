@@ -94,7 +94,10 @@
 # 27. Learned how to generate random numbers using Math.random().
     Explored scaling random values to a desired range (e.g., dice roll simulation).
     Practiced creating random number generators.
-
+# 28. Learned how to convert strings to numbers using parseInt() and parseFloat().
+    Explored handling different number formats and ensuring valid conversions.
+    Practiced converting user input into numerical values for calculations.
+    
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
