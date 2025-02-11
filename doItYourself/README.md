@@ -97,7 +97,10 @@
 # 28. Learned how to convert strings to numbers using parseInt() and parseFloat().
     Explored handling different number formats and ensuring valid conversions.
     Practiced converting user input into numerical values for calculations.
-    
+# 29. Converting Strings to Numbers, Numbers to Strings
+    Learned converting strings to numbers using Number().
+    Explored how to convert numbers to strings using .toString().
+
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
 
