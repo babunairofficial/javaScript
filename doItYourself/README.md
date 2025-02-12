@@ -105,6 +105,9 @@
 # 31. Getting the Current Date and Time
     Learned how to retrieve the current date and time using new Date().
     Explored extracting specific components like year, month, day, hours, minutes, and seconds.
+# 32. Extracting Parts of the Date and Time
+    Learned how to extract specific date components using methods like getFullYear(), getMonth(), getDate(), etc.
+    Explored retrieving time-related values such as getHours(), getMinutes(), and getSeconds().
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
