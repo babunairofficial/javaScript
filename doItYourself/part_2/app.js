@@ -507,3 +507,34 @@ console.log(day); //displays a number
 var dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 //call the array with the index number as the day
 console.log(dayNames[day]);
+
+
+/* date and time */
+
+//continuing from the previous Date object 'now'
+
+//extract informations from the date object
+
+var currentMonth = now.getMonth(); 
+console.log("month number of the month is " + currentMonth);
+
+var dayOfMonth = now.getDate();
+console.log("number for the day of the month is " + dayOfMonth);
+
+var currYear = now.getFullYear();
+console.log("year is " + currYear);
+
+var currentHours = now.getHours();
+console.log("hours is " + currentHours);
+
+var currMins = now.getMinutes();
+console.log("minutes is " + currMins);
+
+var currSecs = now.getSeconds();
+console.log("seconds is " + currSecs);
+
+var currMills = now.getMilliseconds();
+console.log("milliseconds is " + currMills);
+
+var millsSince = now.getTime();
+console.log("milliseconds since midnight Jan 1, 1970" + millsSince);
