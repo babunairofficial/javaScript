@@ -102,6 +102,9 @@
     Explored how to convert numbers to strings using .toString().
 # 30. Controlling the Length of Decimals
     Learned how to control decimal places using toFixed() for fixed-point notation.
+# 31. Getting the Current Date and Time
+    Learned how to retrieve the current date and time using new Date().
+    Explored extracting specific components like year, month, day, hours, minutes, and seconds.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
