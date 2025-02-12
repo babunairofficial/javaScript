@@ -480,3 +480,30 @@ console.log("total rounded to two deciaml places = " + prettyTotal);
 ////incases where the number within the paranthesis is left blank, the number is shortened to no decimal places
 var prettiestTotal = total.toFixed(); //rounding off to no decimal points
 console.log("total rounded to no deciaml places = " + prettiestTotal);
+
+
+/* Current Date and Time */
+
+//Date object
+var now = new Date();
+console.log(now);
+
+console.log(typeof(now));
+//the date object looks like a string but it is not a string. 
+//methods like charAt, indexOf, slice cannot be used with it.
+
+//convert date object to string
+var dateString = now.toString();
+console.log(dateString);
+console.log(typeof(dateString));
+
+//extract information without converting into a string
+//suppose, extract the information of day in the date
+var day = now.getDay(); 
+console.log(day); //displays a number
+//extracting days will be represented by a number.
+
+//to get the day name from this number, create an array of days' names.
+var dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+//call the array with the index number as the day
+console.log(dayNames[day]);
