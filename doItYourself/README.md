@@ -108,6 +108,9 @@
 # 32. Extracting Parts of the Date and Time
     Learned how to extract specific date components using methods like getFullYear(), getMonth(), getDate(), etc.
     Explored retrieving time-related values such as getHours(), getMinutes(), and getSeconds().
+# 33. Specifying a Date and Time
+    Learned how to create custom date objects using new Date(year, month, day, hours, minutes, seconds).
+    Explored different formats for specifying dates and times.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
