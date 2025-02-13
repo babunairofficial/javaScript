@@ -111,6 +111,9 @@
 # 33. Specifying a Date and Time
     Learned how to create custom date objects using new Date(year, month, day, hours, minutes, seconds).
     Explored different formats for specifying dates and times.
+# 34. Changing Elements of a Date and Time
+    Learned how to modify date and time values using methods like setFullYear(), setMonth(), setDate(), etc.
+    Explored updating time components with setHours(), setMinutes(), and setSeconds().
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
