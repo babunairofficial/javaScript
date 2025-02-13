@@ -538,3 +538,38 @@ console.log("milliseconds is " + currMills);
 
 var millsSince = now.getTime();
 console.log("milliseconds since midnight Jan 1, 1970" + millsSince);
+
+
+/* Specifying date and time */
+
+// new Date(year, month, day, hours, minutes, seconds)
+
+//get a Date object
+var today = new Date();
+console.log("today's date is " + today);
+
+//get the end date object
+var endDate = new Date("March 12, 2025"); //time part is left blank , so it would show as 00:00:00 after the date part
+console.log("end date is " + endDate);
+
+//get the milliseconds since January 1, 1970 for both the dates
+var msToday = today.getTime();
+var msEndDate = endDate.getTime();
+
+//calculate the difference
+var msDiff = msEndDate - msToday;
+
+//convert the differene of milliseconds to days
+var dayDiff = msDiff / (1000 * 60 * 60 * 24); //gives a floating number
+
+//convert the floating number to an integer
+var dayDiffInt = Math.floor(dayDiff);
+
+console.log("days remaining " + dayDiffInt);
+
+// time also can be added in the below format
+var endDateWithTime = new Date("September 7, 2025 17:30:00");
+// note: there is no comma or any other punctuation between the date part and time part
+// note: time is written in 24-hr format
+// colons separate hours, minutes and seconds
+console.log(endDateWithTime);
