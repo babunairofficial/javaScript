@@ -114,6 +114,9 @@
 # 34. Changing Elements of a Date and Time
     Learned how to modify date and time values using methods like setFullYear(), setMonth(), setDate(), etc.
     Explored updating time components with setHours(), setMinutes(), and setSeconds().
+# 35. Functions
+    Learned how to define and call functions in JavaScript using the function keyword.
+    Explored function parameters and return values.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
