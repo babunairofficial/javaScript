@@ -573,3 +573,35 @@ var endDateWithTime = new Date("September 7, 2025 17:30:00");
 // note: time is written in 24-hr format
 // colons separate hours, minutes and seconds
 console.log(endDateWithTime);
+
+
+/* Changing elements of a date and time */
+
+//create a new Date object
+var dDay = new Date();
+//display the Date object
+console.log(dDay);
+
+//sets the year of an existing Date object
+dDay.setFullYear(2001);
+
+//sets the month of an existing date object
+dDay.setMonth(1);
+
+//sets the day of the month ofan existing Date object
+dDay.setDate(1);
+
+//sets the hours of an existing date object
+dDay.setHours(1);
+
+//sets the minutes of an existing Date object
+dDay.setMinutes(1);
+
+//sets the seconds of an existing Date object
+dDay.setSeconds(1);
+
+//sets the milliseconds of an existing Date object
+dDay.setMilliseconds(1);
+
+//display the new date
+console.log ("changed date is " + dDay);
