@@ -14,3 +14,49 @@ function multiply() {
 multiply();
 
 //note: naming of functions is similar to naming a variable, it follows the same properties.
+
+4
+/* Passing data to functions */
+
+//in addition to calling a function, data too can be passed with it. 
+//the data that is passed is called an argument
+
+var message = "Welcome!";
+
+//define a function
+function displayMessage(message) { //the function parameter name can be anything
+    return message;
+}
+
+//call the function
+console.log(displayMessage(message));
+//note: function has been called along with an argument
+
+//a variable having a value 76
+var number = 76;
+
+//define the function
+function multipleOfFive(n) { //notice that the parameter of the function is have a different name
+    //there is no need to declare this variable, as the declaration is implicit when used as  parament of a function
+    return n * 5;
+}
+
+//call the function, with argument as the variable named, number
+var product = multipleOfFive(number);
+//storing the end result in another variable named, product
+
+//log the result for debugging
+console.log("multiple of 5 is " + product);
+
+//in a function argument, any number of arguments separated by commas can be passed.
+//the naming of arguments do not have to match with that of arguments. 
+// only the order in which the variables are used matter
+//the variables used as arguments are matched with the variables used as parameter in the order they are used with the function parenthesis.
+
+var month = "february";
+function winnerOfMonth(a, str, w) { //notice three variables used as parameters
+    alert(a + str + w);
+}
+
+//notice three arguments are passed
+winnerOfMonth(month, "'s winner number is ", 15);
