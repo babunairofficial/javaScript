@@ -117,6 +117,9 @@
 # 35. Functions
     Learned how to define and call functions in JavaScript using the function keyword.
     Explored function parameters and return values.
+# 36. Functions - Passing Them Data
+    Learned how to pass arguments to functions for dynamic behavior.
+    Explored handling multiple parameters and default values.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
