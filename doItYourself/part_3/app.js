@@ -60,3 +60,17 @@ function winnerOfMonth(a, str, w) { //notice three variables used as parameters
 
 //notice three arguments are passed
 winnerOfMonth(month, "'s winner number is ", 15);
+
+
+/* Passing data back from Functions */
+
+//declare a function with paramenters
+function sum(x, y) {
+    return x + y;
+    //returns a single value
+}
+
+//call a function with parameters
+var ans = sum(3, 4);
+//log the result
+console.log(ans);
