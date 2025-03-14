@@ -74,3 +74,28 @@ function sum(x, y) {
 var ans = sum(3, 4);
 //log the result
 console.log(ans);
+
+
+/* Local vs Global variables */
+
+//Variables declared Globally (outside any function) have Global Scope.
+var y = 1000; //global scope
+
+//Variables declared inside a { } block cannot be accessed from outside the block
+{
+    let x = 5;
+}
+
+//Variables declared within a JavaScript function, are LOCAL to the function:
+function myFunction() {
+    let person = "sachin";
+    // code here CAN use person
+  }
+  
+//a parameter is a local variable
+
+function message(word1, word2) {
+    var text = word1 + word2; //local scope
+    return text; //transfer the value of local variable to global varable
+}
+var output = message("hello", "world"); //global scope
