@@ -123,6 +123,9 @@
 # 37. Functions - Passing Data Back from Them
     Learned how to return values from functions using the return statement.
     Explored using returned values in expressions and assignments.
+# 38. Functions - Local vs. Global Variables
+    Learned the difference between local and global scope in JavaScript.
+    Explored how variables declared inside functions are local, while those declared outside are global.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
