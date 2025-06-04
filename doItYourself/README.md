@@ -126,6 +126,10 @@
 # 38. Functions - Local vs. Global Variables
     Learned the difference between local and global scope in JavaScript.
     Explored how variables declared inside functions are local, while those declared outside are global.
+# Chapter 39: Switch Statements - 1
+    Learned how to use switch statements as an alternative to multiple if...else conditions.
+    Explored syntax including case, break, and default.
+    Practiced using switch for cleaner, more readable multi-condition logic.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
