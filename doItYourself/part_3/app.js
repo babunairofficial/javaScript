@@ -94,8 +94,23 @@ function myFunction() {
   
 //a parameter is a local variable
 
-function message(word1, word2) {
+function message1(word1, word2) {
     var text = word1 + word2; //local scope
     return text; //transfer the value of local variable to global varable
 }
-var output = message("hello", "world"); //global scope
+var output = message1("hello", "world"); //global scope
+
+/* Switch statement */
+
+var dayOfWk = prompt("enter the day of the week"); //store the value of user-input in a variable
+
+switch(dayOfWk) { //check the value of variable against different cases 
+    case "saturday" :
+        alert("have a good weekend off");
+        break;
+    case "sunday" :
+        alert("enjoy your day off");
+        break;
+    default : //default value if cases do no match
+        alert("there is work to do!");
+}
