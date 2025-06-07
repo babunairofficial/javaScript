@@ -134,6 +134,10 @@
     Learned how to finalize switch statements using break to prevent fall-through.
     Explored the use of default for handling unmatched cases.
     Practiced writing complete switch blocks to manage various control flows effectively.
+# Chapter 41: While Loops
+    Learned how to use while loops to execute code repeatedly based on a condition.
+    Explored loop initialization, condition checking, and updating within the loop body.
+    
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
