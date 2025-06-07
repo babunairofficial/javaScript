@@ -123,3 +123,13 @@ while (i <= 3) { //loop limiter inside parantheses
     alert(i); // display the counter value
     i++; //counter update
 }
+
+/* do ... while loops */
+
+var n = 0; //counter defined beforehand
+do {
+    //code to execute
+    alert(n);
+    n = n + 2;
+} while (n < 0); //loop limiter after the block of instructions
+//as the condition is after the block of instructions, the block of instructions will execute once.
