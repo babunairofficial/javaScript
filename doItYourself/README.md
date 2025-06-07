@@ -130,6 +130,10 @@
     Learned how to use switch statements as an alternative to multiple if...else conditions.
     Explored syntax including case, break, and default.
     Practiced using switch for cleaner, more readable multi-condition logic.
+# Chapter 40: Switch Statements - How to Complete Them
+    Learned how to finalize switch statements using break to prevent fall-through.
+    Explored the use of default for handling unmatched cases.
+    Practiced writing complete switch blocks to manage various control flows effectively.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
