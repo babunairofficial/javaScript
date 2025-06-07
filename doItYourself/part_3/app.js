@@ -114,3 +114,12 @@ switch(dayOfWk) { //check the value of variable against different cases
     default : //default value if cases do no match
         alert("there is work to do!");
 }
+
+/* while loops */
+
+var i = 0; //counter defined beforehand
+while (i <= 3) { //loop limiter inside parantheses
+    //code to execute
+    alert(i); // display the counter value
+    i++; //counter update
+}
