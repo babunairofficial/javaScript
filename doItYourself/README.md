@@ -137,6 +137,10 @@
 # Chapter 41: While Loops
     Learned how to use while loops to execute code repeatedly based on a condition.
     Explored loop initialization, condition checking, and updating within the loop body.
+# Chapter 42: Do...While Loops
+    Learned how do...while loops execute the code block at least once before checking the condition.
+    Explored scenarios where do...while is preferred over while.
+    Practiced writing do...while loops for guaranteed first-time execution.
     
 
 # How to Use
