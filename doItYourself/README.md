@@ -141,6 +141,10 @@
     Learned how do...while loops execute the code block at least once before checking the condition.
     Explored scenarios where do...while is preferred over while.
     Practiced writing do...while loops for guaranteed first-time execution.
+# Chapter 43: Placing Scripts
+    Learned best practices for placing <script> tags in HTML documents.
+    Explored the impact of placing scripts in the <head> vs. before the closing </body> tag.
+    Understood how script placement affects page loading and performance.
     
 
 # How to Use
