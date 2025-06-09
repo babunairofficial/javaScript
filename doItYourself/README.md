@@ -145,6 +145,10 @@
     Learned best practices for placing <script> tags in HTML documents.
     Explored the impact of placing scripts in the <head> vs. before the closing </body> tag.
     Understood how script placement affects page loading and performance.
+# Chapter 44: Commenting
+    Learned how to write single-line comments using //.
+    Explored multi-line comments using /* */.
+    Practiced using comments to explain code, improve readability, and temporarily disable lines during debugging.
     
 
 # How to Use
