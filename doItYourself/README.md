@@ -149,6 +149,10 @@
     Learned how to write single-line comments using //.
     Explored multi-line comments using /* */.
     Practiced using comments to explain code, improve readability, and temporarily disable lines during debugging.
+# Chapter 45: Inline Event-handler
+    Learned how to handle inline link-related events or inline event-handler in JavaScript.
+    Explored using the onclick event to trigger JavaScript when a link is clicked.
+    Practiced creating interactive links that run scripts instead of navigating to a new page.
     
 
 # How to Use
