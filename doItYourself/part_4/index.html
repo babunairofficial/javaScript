@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself part 4</title>
+</head>
+<body>
+    
+    <!-- inline event-handler -->
+    <a href="#" onClick="alert('hi. back to the top')">Click Me</a> 
+    <br />
+
+    <!-- to avoid going back to the top of the page -->
+    <a href="JavaScript:void(0)" onClick="alert('Hi')">Click here</a> 
+    <br />
+
+    <!-- event-handler and functions -->
+    <a href="JavaScript:void(0)" onClick="popup('hello. I have used a function in event-handler')">Click Me too</a>
+    
+    <script>
+        function popup(message) {
+            alert(message);
+        }
+    </script>
+</body>
+</html>
