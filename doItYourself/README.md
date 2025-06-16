@@ -153,6 +153,9 @@
     Learned how to handle inline link-related events or inline event-handler in JavaScript.
     Explored using the onclick event to trigger JavaScript when a link is clicked.
     Practiced creating interactive links that run scripts instead of navigating to a new page.
+# Chapter 46: Events - Button
+    Learned how to attach onclick event handlers to buttons.
+    Explored executing JavaScript functions when a button is clicked.
     
 
 # How to Use
