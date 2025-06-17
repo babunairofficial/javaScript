@@ -156,6 +156,9 @@
 # Chapter 46: Events - Button
     Learned how to attach onclick event handlers to buttons.
     Explored executing JavaScript functions when a button is clicked.
+# Chapter 47: Events - Mouse
+    Learned how to use mouse events like onmouseover, onmouseout, and onclick.
+    Explored creating interactive effects triggered by user mouse actions.
     
 
 # How to Use
