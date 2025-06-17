@@ -22,6 +22,12 @@
     <!-- inline event-handler and a button -->
     <input type="button" onClick="alert('Hello world')" value="click this button">
     
+
+    <!-- mouse-over and mouse-out events -->
+    <h1 onMouseover="alert('Be sure to get your shopping done today.');">World Ends Tomorrow</h1>
+    <a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
+    <img src="images/before.jpg" onmouseover="src='images/after.jpg'" onmouseout="src='images/before.jpg'" style="width: 150px; height: auto;">
+
     <script>
         function popup(message) {
             alert(message);
