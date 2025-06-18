@@ -159,7 +159,10 @@
 # Chapter 47: Events - Mouse
     Learned how to use mouse events like onmouseover, onmouseout, and onclick.
     Explored creating interactive effects triggered by user mouse actions.
-    
+# Chapter 48: Events - Fields
+    Learned how to handle form field events such as onfocus, onblur, and onchange.
+    Explored dynamically responding to user input and field interactions.
+        
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
