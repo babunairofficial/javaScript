@@ -28,6 +28,12 @@
     <a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
     <img src="images/before.jpg" onmouseover="src='images/after.jpg'" onmouseout="src='images/before.jpg'" style="width: 150px; height: auto;">
 
+    <div>
+        <!-- events on fields using onFocus and onBlur -->
+        Email:<br> <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onblur="this.style.backgroundColor='white';">
+    </div>
+    
+
     <script>
         function popup(message) {
             alert(message);
