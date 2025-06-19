@@ -33,11 +33,24 @@
         Email:<br> <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onblur="this.style.backgroundColor='white';">
     </div>
     
+    <!-- reading from fields -->
+    <form onsubmit="checkAddress('email')">
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="Submit">
+    </form>
 
     <script>
         function popup(message) {
             alert(message);
         }
+
+        function checkAddress(fieldId) {
+            if (document.getElementById(fieldId).value === "") {
+                alert("Email address required");
+            }
+        }
+
     </script>
 </body>
 </html>
