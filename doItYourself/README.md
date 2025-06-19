@@ -162,7 +162,10 @@
 # Chapter 48: Events - Fields
     Learned how to handle form field events such as onfocus, onblur, and onchange.
     Explored dynamically responding to user input and field interactions.
-        
+# Chapter 49: Reading Field Values
+    Learned how to access and read user input from form fields using .value.
+    Explored retrieving data from <input> element.
+    Practiced capturing and using user-entered data in JavaScript functions.    
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
