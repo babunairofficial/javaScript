@@ -165,7 +165,10 @@
 # Chapter 49: Reading Field Values
     Learned how to access and read user input from form fields using .value.
     Explored retrieving data from <input> element.
-    Practiced capturing and using user-entered data in JavaScript functions.    
+    Practiced capturing and using user-entered data in JavaScript functions.
+# Chapter 50: Setting Field Values
+    Learned how to assign values to form fields using JavaScript.
+    Explored updating input elements dynamically with .value.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
