@@ -40,6 +40,17 @@
         <input type="submit" value="Submit">
     </form>
 
+    <!-- value assigning in fields -->
+    <form>
+        ZIP:
+        <br>
+        <input type="text" id="zip" onblur="fillCity()">
+        <br>
+        City
+        <br>
+        <input type="text" id="city">
+    </form>
+
     <script>
         function popup(message) {
             alert(message);
@@ -49,6 +60,23 @@
             if (document.getElementById(fieldId).value === "") {
                 alert("Email address required");
             }
+        }
+
+        function fillCity() {
+            var cityName;
+            var zipEntered = document.getElementById("zip").value;
+            switch (zipEntered) {
+                case "695015" :
+                    cityName = "Trivandrum";
+                    break;
+                case "751012" :
+                    cityName = "Bhubaneswar";
+                    break;
+                case "411023" :
+                    cityName = "Pune";
+                    break;                
+            }
+            document.getElementById("city").value = cityName;
         }
 
     </script>
