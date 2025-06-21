@@ -169,6 +169,10 @@
 # Chapter 50: Setting Field Values
     Learned how to assign values to form fields using JavaScript.
     Explored updating input elements dynamically with .value.
+# Chapter 51: Reading and Setting Paragraph Text
+    Learned how to read paragraph content using .innerHTML or .innerText.
+    Explored updating paragraph text dynamically with JavaScript.
+    Practiced modifying and displaying content within <p> tags based on user interaction or logic.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
