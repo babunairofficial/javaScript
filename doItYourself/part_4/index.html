@@ -51,6 +51,11 @@
         <input type="text" id="city">
     </form>
 
+    <p id="lion">
+        The lion is a large cat of the genus Panthera, native to Sub-Saharan Africa and India.
+        <a href="javascript:void(0);" onclick="expandLion();"><em>Click for more.</em></a>
+    </p>
+
     <script>
         function popup(message) {
             alert(message);
@@ -77,6 +82,15 @@
                     break;                
             }
             document.getElementById("city").value = cityName;
+        }
+
+        function expandLion() {
+            var expandedParagraph = "The lion is a large cat of the genus Panthera, native to Sub-Saharan Africa and India. It has a muscular, broad-chested body; a short, rounded head; round ears; and a dark, hairy tuft at the tip of its tail. It is sexually dimorphic; adult male lions are larger than females and have a prominent mane. <a href='javascript:void(0);' onclick='collapseLion();'><em>Click to collapse</em></a>";
+            document.getElementById("lion").innerHTML = expandedParagraph;
+        }
+        function collapseLion() {
+            var collapsedParagraph = "The lion is a large cat of the genus Panthera, native to Sub-Saharan Africa and India. <a href='javascript:void(0);' onclick='expandedLion();'><em>Click for more.</em></a>";
+            document.getElementById("lion").innerHTML = collapsedParagraph;
         }
 
     </script>
