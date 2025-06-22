@@ -173,6 +173,8 @@
     Learned how to read paragraph content using .innerHTML or .innerText.
     Explored updating paragraph text dynamically with JavaScript.
     Practiced modifying and displaying content within <p> tags based on user interaction or logic.
+# Chapter 52: Manipulating Images and Text
+    Learned how to change image sources dynamically using .src.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
