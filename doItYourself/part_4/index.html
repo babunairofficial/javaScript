@@ -56,6 +56,11 @@
         <a href="javascript:void(0);" onclick="expandLion();"><em>Click for more.</em></a>
     </p>
 
+    <!-- manipulating images -->
+    <div>
+        <img src="images/hide.png" id="hide" style="width: 150px; height: auto;" onclick="makeInvisible();">
+    </div>
+
     <script>
         function popup(message) {
             alert(message);
@@ -91,6 +96,11 @@
         function collapseLion() {
             var collapsedParagraph = "The lion is a large cat of the genus Panthera, native to Sub-Saharan Africa and India. <a href='javascript:void(0);' onclick='expandedLion();'><em>Click for more.</em></a>";
             document.getElementById("lion").innerHTML = collapsedParagraph;
+        }
+
+        function makeInvisible() {
+            document.getElementById("hide").hidden = true;
+            //Using the built-in hidden attribute
         }
 
     </script>
