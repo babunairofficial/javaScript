@@ -61,6 +61,11 @@
         <img src="images/hide.png" id="hide" style="width: 150px; height: auto;" onclick="makeInvisible();">
     </div>
 
+    <div>
+        <img src="images/before.jpg" id="before" onmouseover="swapPic();" style="width: 150px; height: auto;">
+        <br>
+    </div>
+
     <script>
         function popup(message) {
             alert(message);
@@ -101,6 +106,10 @@
         function makeInvisible() {
             document.getElementById("hide").hidden = true;
             //Using the built-in hidden attribute
+        }
+
+        function swapPic() {
+            document.getElementById("before").src = "images/after.jpg";
         }
 
     </script>
