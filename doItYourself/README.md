@@ -175,6 +175,9 @@
     Practiced modifying and displaying content within <p> tags based on user interaction or logic.
 # Chapter 52: Manipulating Images and Text
     Learned how to change image sources dynamically using .src.
+# Chapter 53: Swapping Images
+    Learned how to change images dynamically by updating the src attribute of <img> elements.
+    Explored image swapping on events like mouseover and mouseout.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
