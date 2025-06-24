@@ -66,6 +66,11 @@
         <br>
     </div>
 
+    <!-- setting classes -->
+    <div>
+        <a href="https://www.google.com/"  id="link">Google India</a>
+    </div>
+
     <script>
         function popup(message) {
             alert(message);
@@ -111,6 +116,15 @@
         function swapPic() {
             document.getElementById("before").src = "images/after.jpg";
         }
+
+        function getAddress(event) {
+            event.preventDefault(); // Prevent the link from navigating
+            var link = document.getElementById("link");
+            var address = link.href;
+            console.log(address);
+            link.className = "googleIndia";
+        }
+        document.getElementById("link").addEventListener("click", getAddress);
 
     </script>
 </body>
