@@ -71,6 +71,17 @@
         <a href="https://www.google.com/"  id="link">Google India</a>
     </div>
 
+    <!-- setting styles -->
+    <div>
+        <h1 id="title">Click buttons to change my style!</h1>
+        <p id="text">This text will also change styles.</p>
+    
+        <button onclick="changeColor()">Change Color</button>
+        <button onclick="changeFontSize()">Change Font Size</button>
+        <button onclick="changeBackground()">Change Background</button>
+        <button onclick="resetStyles()">Reset</button>
+    </div>
+
     <script>
         function popup(message) {
             alert(message);
@@ -126,6 +137,25 @@
         }
         document.getElementById("link").addEventListener("click", getAddress);
 
+        function changeColor() {
+            document.getElementById('title').style.color = 'blue';
+            document.getElementById('text').style.color = 'red';
+        }
+
+        function changeFontSize() {
+            document.getElementById('title').style.fontSize = '40px';
+            document.getElementById('text').style.fontSize = '20px';
+        }
+
+        function changeBackground() {
+            document.getElementById('title').style.backgroundColor = 'yellow';
+            document.getElementById('text').style.backgroundColor = 'lightgreen';
+        }
+
+        function resetStyles() {
+            document.getElementById('title').style = '';
+            document.getElementById('text').style = '';
+        }
     </script>
 </body>
 </html>
