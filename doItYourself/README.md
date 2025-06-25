@@ -180,6 +180,10 @@
     Explored image swapping on events like mouseover and mouseout.
 # Chapter 54: Swapping Images and Setting Classes
     Learned how to change an image’s src and modify its className or classList.
+# Chapter 55: Setting Styles
+    Learned how to modify an element’s CSS styles directly using the .style property.
+    Explored changing properties like color, fontSize, backgroundColor, etc.
+    Practiced dynamically updating styles in response to user actions and events.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
