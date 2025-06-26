@@ -184,6 +184,9 @@
     Learned how to modify an element’s CSS styles directly using the .style property.
     Explored changing properties like color, fontSize, backgroundColor, etc.
     Practiced dynamically updating styles in response to user actions and events.
+# Chapter 56: Target All Elements by Tag Name
+    Learned how to select multiple elements using getElementsByTagName().
+    Explored accessing and looping through collections of elements.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
