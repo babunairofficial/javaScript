@@ -82,6 +82,17 @@
         <button onclick="resetStyles()">Reset</button>
     </div>
 
+    <div>
+        <h1>My First Heading</h1>
+        <p>This is paragraph 1.</p>
+        <p>This is paragraph 2.</p>
+        <p>This is paragraph 3.</p>
+        <h1>My Second Heading</h1>
+
+        <button onclick="selectParagraphs()">Select All Paragraphs</button>
+        <button onclick="selectHeadings()">Select All Headings</button>
+    </div>
+
     <script>
         function popup(message) {
             alert(message);
@@ -155,6 +166,32 @@
         function resetStyles() {
             document.getElementById('title').style = '';
             document.getElementById('text').style = '';
+        }
+
+        function selectParagraphs() {
+            // Select all paragraph elements
+            let paragraphs = document.getElementsByTagName('p');
+            
+            // Loop through the collection
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.backgroundColor = 'yellow';
+                paragraphs[i].style.padding = '10px';
+            }
+            
+            alert('Found ' + paragraphs.length + ' paragraphs');
+        }
+
+        function selectHeadings() {
+            // Select all h1 elements
+            let headings = document.getElementsByTagName('h1');
+            
+            // Loop through the collection
+            for (let i = 0; i < headings.length; i++) {
+                headings[i].style.color = 'blue';
+                headings[i].style.fontSize = '30px';
+            }
+            
+            alert('Found ' + headings.length + ' headings');
         }
     </script>
 </body>
