@@ -93,6 +93,14 @@
         <button onclick="selectHeadings()">Select All Headings</button>
     </div>
 
+    <!-- select elements by tag name -->
+    <div>
+        <button onclick="selectFirst()">Select First</button>
+        <button onclick="selectLast()">Select Last</button>
+        <button onclick="selectMiddle()">Select Middle Two</button>
+        <button onclick="resetAll()">Reset All</button>
+    </div>
+
     <script>
         function popup(message) {
             alert(message);
@@ -192,6 +200,29 @@
             }
             
             alert('Found ' + headings.length + ' headings');
+        }
+
+        function selectFirst() {
+            const paragraphs = document.getElementsByTagName('p');
+            paragraphs[0].style.backgroundColor = 'yellow';
+        }
+        
+        function selectLast() {
+            const paragraphs = document.getElementsByTagName('p');
+            paragraphs[paragraphs.length - 1].style.backgroundColor = 'lightblue';
+        }
+        
+        function selectMiddle() {
+            const paragraphs = document.getElementsByTagName('p');
+            paragraphs[1].style.backgroundColor = 'lightgreen';
+            paragraphs[2].style.backgroundColor = 'lightgreen';
+        }
+        
+        function resetAll() {
+            const paragraphs = document.getElementsByTagName('p');
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.backgroundColor = '';
+            }
         }
     </script>
 </body>
