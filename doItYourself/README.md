@@ -187,6 +187,9 @@
 # Chapter 56: Target All Elements by Tag Name
     Learned how to select multiple elements using getElementsByTagName().
     Explored accessing and looping through collections of elements.
+# Chapter 57: Target Some Elements by Tag Name
+    Learned how to select specific elements from a group returned by getElementsByTagName().
+    Explored accessing elements by index and applying changes selectively.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
