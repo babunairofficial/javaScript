@@ -190,6 +190,8 @@
 # Chapter 57: Target Some Elements by Tag Name
     Learned how to select specific elements from a group returned by getElementsByTagName().
     Explored accessing elements by index and applying changes selectively.
+# Chapter 58: The DOM
+    Learned about the Document Object Model (DOM) and how it represents the structure of an HTML page.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
