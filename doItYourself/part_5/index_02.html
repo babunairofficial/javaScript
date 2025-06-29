@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - parent and child</title>
+</head>
+<body>
+    <h1>HTML DOM Tree Structure</h1>
+    <div>
+        <h2>Parent Element (div)</h2>
+        <div>
+            <h3>Child 1 (div)</h3>
+            <p>Grandchild 1 (paragraph)</p>
+            <p>Grandchild 2 (paragraph)</p>
+        </div>
+        <div>
+            <h3>Child 2 (div)</h3>
+            <span>Grandchild 3 (span)</span>
+        </div>
+        <ul>
+            <h3>Child 3 (unordered list)</h3>
+            <li>Grandchild 4 (lit item)</li>
+            <li>Grandchild 5 (list item)</li>
+        </ul>
+    </div>
+    <footer>
+        <h2>DOM Hierarchy Explanation:</h2>
+        <ul>
+            <li>html - Root element</li>
+            <li>body - Child of html</li>
+            <li>div (parent) - Child of body</li>
+            <li>div (child1, child2). ul(child3) - Children of parent div</li>
+            <li>p, span, li elements - Grandchildren of parent div</li>
+        </ul>
+    </footer>
+</body>
+</html>
