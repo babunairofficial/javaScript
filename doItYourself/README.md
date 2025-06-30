@@ -194,6 +194,9 @@
     Learned about the Document Object Model (DOM) and how it represents the structure of an HTML page.
 # Chapter 59: The DOM - Parents and Children
     Learned how to navigate DOM hierarchy using parent-child relationships.
+# Chapter 60: The DOM - Finding Children
+    Learned how to access child elements using .children.
+    Practiced locating and updating specific children within a parent element in the DOM.
 
 
 # How to Use
