@@ -197,7 +197,10 @@
 # Chapter 60: The DOM - Finding Children
     Learned how to access child elements using .children.
     Practiced locating and updating specific children within a parent element in the DOM.
-
+# Chapter 61: The DOM - Junk Artifacts and nodeType
+    Learned how whitespace and line breaks can create unwanted text nodes in the DOM.
+    Explored the use of nodeType to identify different node kinds (e.g., element nodes vs. text nodes).
+    Practiced filtering out junk nodes while navigating and manipulating the DOM.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
