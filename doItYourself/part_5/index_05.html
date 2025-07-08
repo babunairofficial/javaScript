@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM Navigation</title>
+    <style>
+        .highlight { background-color: yellow; }
+        button { margin: 5px; padding: 5px 10px; }
+        div { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>DOM Navigation Basics</h1>
+    
+    <!-- Section 1: getElementById -->
+    <h2>1. getElementById()</h2>
+    <p id="myParagraph">This paragraph has id="myParagraph"</p>
+    <button onclick="findById()">Find by ID</button>
+    <div id="result1"></div>
+    
+    <!-- Section 2: Parent and Children -->
+    <h2>2. Parent and Children</h2>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="getFirst()">Get First Child</button>
+    <button onclick="getLast()">Get Last Child</button>
+    <div id="result2"></div>
+    
+    <!-- Section 3: Siblings -->
+    <h2>3. Siblings</h2>
+    <div id="container">
+        <p id="para1">Paragraph 1</p>
+        <p id="para2">Paragraph 2</p>
+        <p id="para3">Paragraph 3</p>
+    </div>
+    <button onclick="getNext()">Next Sibling of Para 2</button>
+    <button onclick="getPrev()">Previous Sibling of Para 2</button>
+    <div id="result3"></div>
+    
+    <button onclick="clearAll()">Clear All Highlights</button>
+
+    <script>
+        // 1. getElementById
+        function findById() {
+            var element = document.getElementById('myParagraph');
+            element.className = 'highlight';
+            document.getElementById('result1').innerHTML = 'Found element with text: ' + element.innerHTML;
+        }
+        
+        // 2. First and Last Child
+        function getFirst() {
+            var list = document.getElementById('myList');
+            var first = list.firstElementChild;
+            first.className = 'highlight';
+            document.getElementById('result2').innerHTML = 'First child: ' + first.innerHTML;
+        }
+        
+        function getLast() {
+            var list = document.getElementById('myList');
+            var last = list.lastElementChild;
+            last.className = 'highlight';
+            document.getElementById('result2').innerHTML = 'Last child: ' + last.innerHTML;
+        }
+        
+        // 3. Siblings
+        function getNext() {
+            var current = document.getElementById('para2');
+            var next = current.nextElementSibling;
+            current.className = 'highlight';
+            next.className = 'highlight';
+            document.getElementById('result3').innerHTML = 'Current: ' + current.innerHTML + ', Next: ' + next.innerHTML;
+        }
+        
+        function getPrev() {
+            var current = document.getElementById('para2');
+            var prev = current.previousElementSibling;
+            current.className = 'highlight';
+            prev.className = 'highlight';
+            document.getElementById('result3').innerHTML = 'Current: ' + current.innerHTML + ', Previous: ' + prev.innerHTML;
+        }
+        
+        // Clear all highlights
+        function clearAll() {
+            var elements = document.querySelectorAll('.highlight');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].className = '';
+            }
+            document.getElementById('result1').innerHTML = '';
+            document.getElementById('result2').innerHTML = '';
+            document.getElementById('result3').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
