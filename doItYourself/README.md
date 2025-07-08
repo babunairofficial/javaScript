@@ -201,6 +201,10 @@
     Learned how whitespace and line breaks can create unwanted text nodes in the DOM.
     Explored the use of nodeType to identify different node kinds (e.g., element nodes vs. text nodes).
     Practiced filtering out junk nodes while navigating and manipulating the DOM.
+# Chapter 62: The DOM - More Ways to Target Elements
+    Learned how to navigate the DOM using firstChild, lastChild, nextSibling, and previousSibling.
+    Explored accessing elements relative to others within the DOM hierarchy.
+    Practiced using document.getElementById() to directly target elements by their unique ID.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
