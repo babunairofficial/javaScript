@@ -205,6 +205,8 @@
     Learned how to navigate the DOM using firstChild, lastChild, nextSibling, and previousSibling.
     Explored accessing elements relative to others within the DOM hierarchy.
     Practiced using document.getElementById() to directly target elements by their unique ID.
+# Chapter 63: The DOM - Getting a Target's Name
+    Learned how to identify the name or tag of a target element using .nodeName.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
