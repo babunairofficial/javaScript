@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Elements</title>
+    
+</head>
+<body>
+    <div id="liElements">
+        <h1>Li Element Counter and Empty Text Replacer</h1>
+    
+        <h2>Sample Lists</h2>
+        
+        <h3>Navigation Menu</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li></li>
+            <li>Services</li>
+            <li>   </li>
+            <li>Contact</li>
+        </ul>
+        
+        <h3>Product Features</h3>
+        <ul>
+            <li>Fast Performance</li>
+            <li></li>
+            <li>Easy Integration</li>
+            <li>24/7 Support</li>
+            <li></li>
+        </ul>
+        
+        <h3>Task List</h3>
+        <ul>
+            <li>Complete project documentation</li>
+            <li>Review code changes</li>
+            <li>
+            </li>
+            <li>Deploy to production</li>
+            <li></li>
+            <li>Send status update</li>
+        </ul>
+        
+        <button onclick="processLiElements()">Process Li Elements</button>
+        
+        <div id="output"></div>
+    </div>
+
+    <div id="childNodeElements">
+        
+        <h1>Child Nodes Processor</h1>
+        
+        <div class="target-selector">
+            <label for="targetSelect">Select Target Node:</label>
+            <select id="targetSelect">
+                <option value="container1">Navigation Container</option>
+                <option value="container2">Product Container</option>
+                <option value="container3">Mixed Content Container</option>
+            </select>
+            <button onclick="processChildNodes()">Process Child Nodes</button>
+        </div>
+        
+        <h2>Target Containers</h2>
+        
+        <div id="container1" class="target-container">
+            <h3>Navigation Container</h3>
+            <div class="child-element">Home</div>
+            <div class="child-element"></div>
+            <div class="child-element">About</div>
+            <div class="child-element">   </div>
+            <div class="child-element">Contact</div>
+            <span class="child-element"></span>
+        </div>
+        
+        <div id="container2" class="target-container">
+            <h3>Product Container</h3>
+            <p class="child-element">Premium Features</p>
+            <p class="child-element"></p>
+            <div class="child-element">Fast Performance</div>
+            <div class="child-element">
+            </div>
+            <span class="child-element">24/7 Support</span>
+            <div class="child-element"></div>
+        </div>
+        
+        <div id="container3" class="target-container">
+            <h3>Mixed Content Container</h3>
+            <h4>Task List</h4>
+            <ul>
+                <li class="child-element">Complete documentation</li>
+                <li class="child-element"></li>
+                <li class="child-element">Review changes</li>
+            </ul>
+            <p class="child-element"></p>
+            <div class="child-element">Deploy application</div>
+            <span class="child-element">   </span>
+        </div>
+        
+        <div id="output2"></div>            
+        
+    </div>
+    
+    
+    <script>
+        function processLiElements() {
+            const output = document.getElementById('output');
+            let logOutput = '';
+            
+            // Get all li elements
+            const liElements = document.getElementsByTagName('li');
+            
+            // Count the number of li elements
+            const liCount = liElements.length;
+            logOutput += `Total number of li elements: ${liCount}\n`;
+            
+            let replacedCount = 0;
+            
+            // Cycle through the collection and replace empty ones
+             for (let i = 0; i < liElements.length; i++) {
+                const li = liElements[i];
+                // Check if the li element has no text content (or only whitespace)
+                if (!li.textContent || li.textContent.trim() === '') {
+                    li.textContent = 'coming soon';
+                    li.classList.add('coming-soon');
+                    logOutput += `Replaced empty li element at index ${index}\n`;
+                    replacedCount++;
+                }
+            }
+            
+            logOutput += `\nProcessing complete! Replaced ${replacedCount} empty li elements.`;
+            output.textContent = logOutput;
+        }
+
+        
+        function processChildNodes() {
+            const output2 = document.getElementById('output2');
+            const targetSelect = document.getElementById('targetSelect');
+            const targetId = targetSelect.value;
+            
+            let logOutput = '';
+            
+            // Get the target node by ID
+            const targetNode = document.getElementById(targetId);
+            
+            if (!targetNode) {
+                logOutput = 'Target node not found!';
+                output.textContent = logOutput;
+                return;
+            }
+            
+            logOutput += `Processing target node: ${targetNode.tagName} with ID "${targetId}"\n`;
+            logOutput += `Target node contains: ${targetNode.querySelector('h3').textContent}\n\n`;
+            
+            // Get all child nodes of the target node
+            const childNodes = targetNode.childNodes;
+            
+            // Count the total number of child nodes
+            const totalChildNodes = childNodes.length;
+            logOutput += `Total number of child nodes: ${totalChildNodes}\n`;
+            
+            let elementNodes = 0;
+            let textNodes = 0;
+            let emptyElements = 0;
+            let replacedCount = 0;
+            
+            // Cycle through all child nodes using a for loop
+            for (let i = 0; i < childNodes.length; i++) {
+                const node = childNodes[i];
+                
+                // Check node type
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    elementNodes++;
+                    logOutput += `Node ${i}: Element - ${node.tagName}`;
+                    
+                    // Check if element node has no text content (or only whitespace)
+                    if (!node.textContent || node.textContent.trim() === '') {
+                        node.textContent = 'coming soon';
+                        node.classList.add('empty-node');
+                        logOutput += ' (REPLACED - was empty)';
+                        emptyElements++;
+                        replacedCount++;
+                    } else {
+                        logOutput += ` - Content: "${node.textContent.trim()}"`;
+                    }
+                    logOutput += '\n';
+                    
+                } else if (node.nodeType === Node.TEXT_NODE) {
+                    textNodes++;
+                    const textContent = node.textContent.trim();
+                    if (textContent) {
+                        logOutput += `Node ${i}: Text - "${textContent}"\n`;
+                    } else {
+                        logOutput += `Node ${i}: Text - (whitespace/empty)\n`;
+                    }
+                } else {
+                    logOutput += `Node ${i}: Other node type (${node.nodeType})\n`;
+                }
+            }
+            
+            logOutput += `\nSummary:\n`;
+            logOutput += `- Element nodes: ${elementNodes}\n`;
+            logOutput += `- Text nodes: ${textNodes}\n`;
+            logOutput += `- Empty elements found: ${emptyElements}\n`;
+            logOutput += `- Elements replaced: ${replacedCount}\n`;
+            logOutput += `\nProcessing complete!`;
+            
+            output2.textContent = logOutput;
+        }
+            
+    </script>
+</body>
+</html>
