@@ -207,6 +207,11 @@
     Practiced using document.getElementById() to directly target elements by their unique ID.
 # Chapter 63: The DOM - Getting a Target's Name
     Learned how to identify the name or tag of a target element using .nodeName.
+# Chapter 64: The DOM - Counting Elements
+- Learned how to count elements using collections like `getElementsByTagName()` and `children`.
+- Explored using the `.length` property to determine the number of matched or child elements.
+- Practiced iterating over collections to analyze or modify multiple elements dynamically.
+
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
