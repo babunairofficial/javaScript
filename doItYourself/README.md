@@ -211,7 +211,10 @@
 - Learned how to count elements using collections like `getElementsByTagName()` and `children`.
 - Explored using the `.length` property to determine the number of matched or child elements.
 - Practiced iterating over collections to analyze or modify multiple elements dynamically.
-
+# Chapter 65: The DOM - Attributes
+- Learned how to work with HTML element attributes using .hasAttribute(), .getAttribute() and .setAttribute().
+- Explored retrieving and modifying attributes like href, src, class, and id.
+- Practiced dynamically changing element behavior and appearance by manipulating attributes.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
