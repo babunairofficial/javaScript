@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Attributes</title>
+</head>
+<body>
+    <h1>Learning DOM Attributes</h1>
+    
+    <!-- Simple elements -->
+    <div id="navbar">This is a navbar</div>
+    <img src="https://via.placeholder.com/100x100/blue/white?text=1" alt="demo image" id="myImage">
+    <a href="#" id="myLink">Click me</a>
+    
+    <hr>
+    
+    <!-- Buttons -->
+    <button onclick="testHasAttribute()">1. hasAttribute()</button>
+    <button onclick="testGetAttribute()">2. getAttribute()</button>
+    <button onclick="testSetAttribute()">3. setAttribute()</button>
+    
+    <hr>
+    
+    <!-- Output -->
+    <p id="result">Click buttons to see results!</p>
+
+    <script>
+        // 1. Check if element HAS an attribute
+        function testHasAttribute() {
+            var navbar = document.getElementById("navbar");
+            
+            var result = "Does navbar have 'id'? " + navbar.hasAttribute("id") + "<br>";
+            result += "Does navbar have 'class'? " + navbar.hasAttribute("class");
+            
+            document.getElementById("result").innerHTML = result;
+        }
+        
+        // 2. GET the value of an attribute
+        function testGetAttribute() {
+            var navbar = document.getElementById("navbar");
+            var image = document.getElementById("myImage");
+            
+            var result = "navbar id: " + navbar.getAttribute("id") + "<br>";
+            result += "image src: " + image.getAttribute("src") + "<br>";
+            result += "image alt: " + image.getAttribute("alt");
+            
+            document.getElementById("result").innerHTML = result;
+        }
+        
+        // 3. SET/change an attribute
+        function testSetAttribute() {
+            var navbar = document.getElementById("navbar");
+            var image = document.getElementById("myImage");
+            var link = document.getElementById("myLink");
+            
+            // Change attributes
+            navbar.setAttribute("class", "red-background");
+            image.setAttribute("src", "https://via.placeholder.com/100x100/green/white?text=NEW");
+            link.setAttribute("href", "https://www.google.com");
+            
+            var result = "Changed navbar class to 'red-background'<br>";
+            result += "Changed image to green<br>";
+            result += "Changed link to google.com";
+            
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
