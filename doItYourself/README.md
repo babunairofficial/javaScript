@@ -215,6 +215,10 @@
 - Learned how to work with HTML element attributes using .hasAttribute(), .getAttribute() and .setAttribute().
 - Explored retrieving and modifying attributes like href, src, class, and id.
 - Practiced dynamically changing element behavior and appearance by manipulating attributes.
+# Chapter 66: The DOM - Attribute Names and Values
+- Learned how to access all attribute names and values of an element using .attributes.
+- Explored iterating over attribute collections and reading attribute name and value pairs.
+- Practiced dynamically inspecting and modifying multiple attributes of DOM elements.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
