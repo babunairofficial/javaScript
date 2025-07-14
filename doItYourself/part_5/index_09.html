@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Attributes and Value</title>
+</head>
+<body>
+    <h1>Element Attributes Demo</h1>
+    
+    <!-- Sample element with multiple attributes -->
+    <div id="myElement" 
+         class="test-class" 
+         data-info="sample data" 
+         data-count="42" 
+         title="This is a title" 
+         hidden="false">
+        This is a sample element
+    </div>
+    
+    <br>
+    
+    <button onclick="showAllAttributes()">Show All Attributes</button>
+    <button onclick="iterateAttributes()">Iterate Attributes</button>
+    <button onclick="showAttributeDetails()">Show Details</button>
+    <button onclick="addAttribute()">Add New Attribute</button>
+    
+    <br><br>
+    
+    <div id="output"></div>
+    
+    <script>
+        const element = document.getElementById('myElement');
+        const output = document.getElementById('output');
+        
+        function showAllAttributes() {
+            const attributes = element.attributes;
+            let html = '<h3>All Attributes:</h3>';
+            html += '<p>Total attributes: ' + attributes.length + '</p>';
+            
+            for (let i = 0; i < attributes.length; i++) {
+                const attr = attributes[i];
+                html += '<p>' + (i + 1) + '. ' + attr.name + ' = "' + attr.value + '"</p>';
+            }
+            
+            output.innerHTML = html;
+        }
+        
+        function iterateAttributes() {
+            const attributes = element.attributes;
+            let html = '<h3>Iterating Through Attributes:</h3>';
+            
+            html += '<h4>Method 1: for...of loop</h4>';
+            for (const attr of attributes) {
+                html += '<p>' + attr.name + ': ' + attr.value + '</p>';
+            }
+            
+            html += '<h4>Method 2: Traditional for loop</h4>';
+            for (let i = 0; i < attributes.length; i++) {
+                const attr = attributes[i];
+                html += '<p>[' + i + '] ' + attr.name + ': ' + attr.value + '</p>';
+            }
+            
+            html += '<h4>Method 3: Array.from() with forEach</h4>';
+            Array.from(attributes).forEach(function(attr, index) {
+                html += '<p>' + index + ': ' + attr.name + ' = "' + attr.value + '"</p>';
+            });
+            
+            output.innerHTML = html;
+        }
+        
+        function showAttributeDetails() {
+            const attributes = element.attributes;
+            let html = '<h3>Attribute Details:</h3>';
+            
+            for (const attr of attributes) {
+                html += '<h4>Attribute: ' + attr.name + '</h4>';
+                html += '<p>Value: "' + attr.value + '"</p>';
+                html += '<p>Node Type: ' + attr.nodeType + '</p>';
+                html += '<p>Node Name: ' + attr.nodeName + '</p>';
+                html += '<p>Value Length: ' + attr.value.length + ' characters</p>';
+                html += '<hr>';
+            }
+            
+            output.innerHTML = html;
+        }
+        
+        function addAttribute() {
+            const timestamp = new Date().getTime();
+            element.setAttribute('data-timestamp', timestamp);
+            element.setAttribute('data-random', Math.floor(Math.random() * 100));
+            
+            let html = '<h3>Added New Attributes:</h3>';
+            html += '<p>Added: data-timestamp = "' + timestamp + '"</p>';
+            html += '<p>Added: data-random = "' + element.getAttribute('data-random') + '"</p>';
+            
+            html += '<h4>All Current Attributes:</h4>';
+            for (const attr of element.attributes) {
+                html += '<p>' + attr.name + ': ' + attr.value + '</p>';
+            }
+            
+            output.innerHTML = html;
+        }
+        
+        // Example of accessing attributes programmatically
+        console.log('Element attributes:', element.attributes);
+        console.log('Total attributes:', element.attributes.length);
+        console.log('First attribute name:', element.attributes[0].name);
+        console.log('First attribute value:', element.attributes[0].value);
+        
+        // Show initial state
+        window.onload = function() {
+            output.innerHTML = '<p>Click any button above to explore element attributes!</p>';
+        };
+    </script>
+</body>
+</html>
