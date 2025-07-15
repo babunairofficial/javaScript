@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Adding Nodes</title>
+</head>
+<body>
+    <h1>DOM Element Creation and Insertion</h1>
+    
+    <h2>1. createElement() Demo</h2>
+    <button onclick="createParagraph()">Create Paragraph</button>
+    <button onclick="createDiv()">Create Div</button>
+    <div id="container"></div>
+    
+    <h2>2. appendChild() Demo</h2>
+    <button onclick="appendItem()">Add List Item</button>
+    <ul id="list"></ul>
+    
+    <h2>3. insertBefore() Demo</h2>
+    <button onclick="insertFirst()">Insert at Beginning</button>
+    <div id="insert-container">
+        <p>Last item</p>
+    </div>
+
+    <script>
+        let counter = 0;
+
+        // createElement() examples
+        function createParagraph() {
+            const p = document.createElement('p');
+            p.textContent = `New paragraph ${++counter}`;
+            document.getElementById('container').appendChild(p);
+        }
+
+        function createDiv() {
+            const div = document.createElement('div');
+            div.innerHTML = `<strong>New div ${++counter}</strong>`;
+            document.getElementById('container').appendChild(div);
+        }
+
+        // appendChild() example
+        function appendItem() {
+            const li = document.createElement('li');
+            li.textContent = `List item ${++counter}`;
+            document.getElementById('list').appendChild(li);
+        }
+
+        // insertBefore() example
+        function insertFirst() {
+            const p = document.createElement('p');
+            p.textContent = `Inserted item ${++counter}`;
+            
+            const container = document.getElementById('insert-container');
+            const firstChild = container.firstElementChild;
+            container.insertBefore(p, firstChild);
+        }
+    </script>
+</body>
+</html>
