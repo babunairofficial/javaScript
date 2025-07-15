@@ -219,6 +219,9 @@
 - Learned how to access all attribute names and values of an element using .attributes.
 - Explored iterating over attribute collections and reading attribute name and value pairs.
 - Practiced dynamically inspecting and modifying multiple attributes of DOM elements.
+# Chapter 67: The DOM - Adding Nodes
+- Learned how to create new elements using document.createElement().
+- Explored adding new nodes to the DOM with methods like appendChild() and insertBefore().
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
