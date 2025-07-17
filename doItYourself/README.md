@@ -222,6 +222,9 @@
 # Chapter 67: The DOM - Adding Nodes
 - Learned how to create new elements using document.createElement().
 - Explored adding new nodes to the DOM with methods like appendChild() and insertBefore().
+# Chapter 68: The DOM - Inserting Nodes
+- Learned how to insert nodes at specific positions in the DOM using insertBefore().
+- Explored combining createElement() and insertBefore() to dynamically add elements.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
