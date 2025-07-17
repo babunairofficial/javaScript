@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Inserting Nodes</title>
+</head>
+<body>
+    
+    <h1>insertBefore() Demo</h1>
+    
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    
+    <button onclick="insertItem2()">Insert Item 2</button>
+    <button onclick="insertAtBeginning()">Insert at Beginning</button>
+    <button onclick="insertAtEnd()">Insert at End</button>
+    
+    <script>
+        function insertItem2() {
+            const list = document.getElementById('list');
+            const newItem = document.createElement('li');
+            newItem.textContent = 'Item 2';
+            const item3 = list.children[1]; // Reference to "Item 3"
+            list.insertBefore(newItem, item3);
+        }
+        
+        function insertAtBeginning() {
+            const list = document.getElementById('list');
+            const newItem = document.createElement('li');
+            newItem.textContent = 'First Item';
+            list.insertBefore(newItem, list.firstChild);
+        }
+        
+        function insertAtEnd() {
+            const list = document.getElementById('list');
+            const newItem = document.createElement('li');
+            newItem.textContent = 'Last Item';
+            list.insertBefore(newItem, null); // null means insert at end
+        }
+    </script>
+
+</body>
+</html>
