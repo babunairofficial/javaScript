@@ -225,6 +225,9 @@
 # Chapter 68: The DOM - Inserting Nodes
 - Learned how to insert nodes at specific positions in the DOM using insertBefore().
 - Explored combining createElement() and insertBefore() to dynamically add elements.
+# Chapter 69: Objects
+- Learned the basic differences between a variable and array
+- Explored storing data as key-value pairs inside objects.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
