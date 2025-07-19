@@ -228,6 +228,9 @@
 # Chapter 69: Objects
 - Learned the basic differences between a variable and array
 - Explored storing data as key-value pairs inside objects.
+# Chapter 70: Objects - Properties
+- Learned how to define and access properties within objects.
+- Explored adding, updating, and deleting properties using dot notation and bracket notation.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
