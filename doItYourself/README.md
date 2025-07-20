@@ -231,6 +231,10 @@
 # Chapter 70: Objects - Properties
 - Learned how to define and access properties within objects.
 - Explored adding, updating, and deleting properties using dot notation and bracket notation.
+# Chapter 71: Objects - Methods
+- Learned how to define functions inside objects, known as methods.
+- Explored calling methods using dot notation.
+- Practiced creating objects with both data (properties) and behavior (methods) to model real-world entities.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
