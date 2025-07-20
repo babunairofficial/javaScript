@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Methods Demo</title>
+</head>
+<body>
+    <h1>Object Methods Example</h1>
+    <div id="output"></div>
+
+    <script>
+        // Define objects with properties and methods
+        const car = {
+            brand: "Toyota",
+            model: "Camry", 
+            year: 2023,
+            isRunning: false,
+            
+            // Methods (functions inside objects)
+            start: function() {
+                this.isRunning = true;
+                return `${this.brand} ${this.model} is now running!`;
+            },
+            
+            stop: function() {
+                this.isRunning = false;
+                return `${this.brand} ${this.model} has stopped.`;
+            },
+            
+            getInfo: function() {
+                return `${this.year} ${this.brand} ${this.model} - Running: ${this.isRunning}`;
+            }
+        };
+
+        const person = {
+            name: "John",
+            age: 25,
+            
+            greet: function() {
+                return `Hello, I'm ${this.name} and I'm ${this.age} years old.`;
+            },
+            
+            haveBirthday: function() {
+                this.age++;
+                return `Happy birthday! ${this.name} is now ${this.age}.`;
+            }
+        };
+
+        // Using dot notation to call methods
+        const output = document.getElementById('output');
+        
+        output.innerHTML = `
+            <p>${car.getInfo()}</p>
+            <p>${car.start()}</p>
+            <p>${car.getInfo()}</p>
+            <p>${car.stop()}</p>
+            <br>
+            <p>${person.greet()}</p>
+            <p>${person.haveBirthday()}</p>
+            <p>${person.greet()}</p>
+        `;
+    </script>
+</body>
+</html>
