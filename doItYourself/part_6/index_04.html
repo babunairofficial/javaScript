@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Function Example</title>
+</head>
+<body>
+    <h1>Constructor Function Demonstration</h1>
+    <div id="output"></div>
+
+    <script>
+        // Define a constructor function named 'Book'
+        function Book(title, author, year) {
+            this.title = title;
+            this.author = author;
+            this.year = year;
+
+            // Define a method directly within the constructor
+            this.getSummary = function() {
+                return `${this.title} by ${this.author}, published in ${this.year}.`;
+            };
+        }
+
+        // Instantiate objects using the 'new' keyword
+        const book1 = new Book('The Hobbit', 'J.R.R. Tolkien', 1937);
+        const book2 = new Book('1984', 'George Orwell', 1949);
+        const book3 = new Book('To Kill a Mockingbird', 'Harper Lee', 1960);
+
+        // Get the output div
+        const outputDiv = document.getElementById('output');
+
+        // Display information from the created objects
+        outputDiv.innerHTML += `<p>Book 1: ${book1.getSummary()}</p>`;
+        outputDiv.innerHTML += `<p>Book 2: ${book2.getSummary()}</p>`;
+        outputDiv.innerHTML += `<p>Book 3: ${book3.getSummary()}</p>`;
+
+        // You can also access properties directly:
+        // outputDiv.innerHTML += `<p>Book 1 Title: ${book1.title}</p>`;
+    </script>
+</body>
+</html>
