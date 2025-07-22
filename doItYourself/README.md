@@ -235,6 +235,10 @@
 - Learned how to define functions inside objects, known as methods.
 - Explored calling methods using dot notation.
 - Practiced creating objects with both data (properties) and behavior (methods) to model real-world entities.
+# Chapter 72: Objects - Constructors
+- Learned how to create constructor functions to generate multiple objects with similar structure.
+- Explored using the new keyword to instantiate objects from constructors.
+- Practiced defining properties and methods within constructors for reusable object creation.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
