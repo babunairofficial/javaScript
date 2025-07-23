@@ -239,6 +239,10 @@
 - Learned how to create constructor functions to generate multiple objects with similar structure.
 - Explored using the new keyword to instantiate objects from constructors.
 - Practiced defining properties and methods within constructors for reusable object creation.
+# Chapter 73: Objects - Constructors for Methods
+- Learned how to define methods directly inside constructor functions.
+- Explored assigning functions to object instances during construction.
+- Practiced creating reusable object templates with both properties and behavior encapsulated within constructors.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
