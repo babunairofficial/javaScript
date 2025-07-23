@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects - Constructor methods</title>
+</head>
+<body>
+    
+    <div id="output"></div>
+
+    <script>
+        // Constructor function with methods defined inside
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            
+            // Method defined inside constructor
+            this.greet = function() {
+                return `Hello, I'm ${this.name} and I'm ${this.age} years old.`;
+            };
+            
+            this.haveBirthday = function() {
+                this.age++;
+                return `Happy birthday! I'm now ${this.age}.`;
+            };
+        }
+
+        // Constructor for Car objects
+        function Car(brand, model) {
+            this.brand = brand;
+            this.model = model;
+            this.speed = 0;
+            
+            this.start = function() {
+                return `${this.brand} ${this.model} is starting...`;
+            };
+            
+            this.accelerate = function(amount) {
+                this.speed += amount;
+                return `Accelerating to ${this.speed} mph`;
+            };
+        }
+
+        // Create instances and test methods
+        const person1 = new Person("Alice", 25);
+        const person2 = new Person("Bob", 30);
+        const car1 = new Car("Toyota", "Camry");
+
+        const output = document.getElementById('output');
+        output.innerHTML = `
+            <p>${person1.greet()}</p>
+            <p>${person1.haveBirthday()}</p>
+            <p>${person2.greet()}</p>
+            <p>${car1.start()}</p>
+            <p>${car1.accelerate(30)}</p>
+            <p>${car1.accelerate(20)}</p>
+        `;
+    </script>
+
+     
+</body>
+</html>
