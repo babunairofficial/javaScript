@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects - prototypes</title>
+</head>
+<body>
+   
+    <h1>JavaScript Prototype Demo</h1>
+    <div id="output"></div>
+
+    <script>
+        // Constructor function
+        function Animal(name, type) {
+            this.name = name;
+            this.type = type;
+        }
+
+        // Adding methods to prototype (shared across all instances)
+        Animal.prototype.speak = function() {
+            return this.name + " makes a sound";
+        };
+
+        Animal.prototype.getInfo = function() {
+            return this.name + " is a " + this.type;
+        };
+
+        // Create instances
+        const dog = new Animal("Rex", "dog");
+        const cat = new Animal("Whiskers", "cat");
+
+        // Output to page
+        const output = document.getElementById("output");
+        output.innerHTML = `
+            <p>${dog.speak()}</p>
+            <p>${cat.getInfo()}</p>
+            <p>dog.speak === cat.speak: ${dog.speak === cat.speak}</p>
+            <p>Prototype chain: ${dog.__proto__ === Animal.prototype}</p>
+        `;
+
+        // Console demonstrations
+        console.log("=== Prototype Chain Demo ===");
+        console.log("dog.speak === cat.speak:", dog.speak === cat.speak); // true - same method reference
+        console.log("dog.__proto__ === Animal.prototype:", dog.__proto__ === Animal.prototype);
+        console.log("Animal.prototype.constructor === Animal:", Animal.prototype.constructor === Animal);
+    </script>
+
+</body>
+</html>
