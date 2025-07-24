@@ -243,6 +243,10 @@
 - Learned how to define methods directly inside constructor functions.
 - Explored assigning functions to object instances during construction.
 - Practiced creating reusable object templates with both properties and behavior encapsulated within constructors.
+# Chapter 74: Objects - Prototypes
+- Learned how to add shared properties and methods to constructor functions using .prototype.
+- Explored how JavaScript’s prototype chain allows object instances to inherit from their constructor’s prototype.
+- Practiced optimizing memory usage by placing common functionality on the prototype instead of each instance.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
