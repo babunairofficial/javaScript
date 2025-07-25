@@ -247,6 +247,10 @@
 - Learned how to add shared properties and methods to constructor functions using .prototype.
 - Explored how JavaScript’s prototype chain allows object instances to inherit from their constructor’s prototype.
 - Practiced optimizing memory usage by placing common functionality on the prototype instead of each instance.
+# Chapter 75: Objects - Checking for Properties and Methods
+- Learned how to verify the existence of properties or methods using the in operator and hasOwnProperty().
+- Explored distinguishing between an object’s own properties and inherited ones.
+- Practiced writing safer, conditional logic based on whether certain keys or behaviors exist in an object.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
