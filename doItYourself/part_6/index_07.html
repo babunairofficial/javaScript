@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects - checking properties and methods</title>
+</head>
+<body>
+    
+    <h1>Property Verification</h1>
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+        
+        // Create parent object
+        function Parent() {
+            this.parentProp = 'I am from parent';
+        }
+        Parent.prototype.inheritedMethod = function() {
+            return 'Inherited method';
+        };
+        
+        // Create child object
+        function Child() {
+            Parent.call(this);
+            this.ownProp = 'I am own property';
+        }
+        Child.prototype = Object.create(Parent.prototype);
+        Child.prototype.ownMethod = function() {
+            return 'Own method';
+        };
+        
+        const obj = new Child();
+        
+        function log(text) {
+            output.innerHTML += text + '<br>';
+        }
+        
+        log('<b>Object properties:</b>');
+        log('ownProp: ' + obj.ownProp);
+        log('parentProp: ' + obj.parentProp);
+        
+        log('<br><b>Using "in" operator (checks own + inherited):</b>');
+        log('"ownProp" in obj: ' + ('ownProp' in obj));
+        log('"parentProp" in obj: ' + ('parentProp' in obj));
+        log('"inheritedMethod" in obj: ' + ('inheritedMethod' in obj));
+        log('"toString" in obj: ' + ('toString' in obj));
+        
+        log('<br><b>Using hasOwnProperty() (checks only own):</b>');
+        log('obj.hasOwnProperty("ownProp"): ' + obj.hasOwnProperty('ownProp'));
+        log('obj.hasOwnProperty("parentProp"): ' + obj.hasOwnProperty('parentProp'));
+        log('obj.hasOwnProperty("inheritedMethod"): ' + obj.hasOwnProperty('inheritedMethod'));
+        
+        log('<br><b>Safer conditional logic:</b>');
+        
+        // Safe property access
+        if ('ownProp' in obj) {
+            log('✓ ownProp exists: ' + obj.ownProp);
+        }
+        
+        // Check for method before calling
+        if ('ownMethod' in obj && typeof obj.ownMethod === 'function') {
+            log('✓ ownMethod exists and is callable: ' + obj.ownMethod());
+        }
+        
+        // Distinguish own vs inherited
+        function checkProperty(obj, prop) {
+            if (prop in obj) {
+                if (obj.hasOwnProperty(prop)) {
+                    return prop + ' is OWN property';
+                } else {
+                    return prop + ' is INHERITED property';
+                }
+            }
+            return prop + ' does NOT exist';
+        }
+        
+        log('<br><b>Property classification:</b>');
+        log(checkProperty(obj, 'ownProp'));
+        log(checkProperty(obj, 'parentProp'));
+        log(checkProperty(obj, 'inheritedMethod'));
+        log(checkProperty(obj, 'nonExistent'));
+    </script>
+
+</body>
+</html>
