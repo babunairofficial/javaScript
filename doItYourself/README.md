@@ -251,6 +251,10 @@
 - Learned how to verify the existence of properties or methods using the in operator and hasOwnProperty().
 - Explored distinguishing between an object’s own properties and inherited ones.
 - Practiced writing safer, conditional logic based on whether certain keys or behaviors exist in an object.
+# Chapter 76: Browser Control - Getting and Setting the URL
+- Learned how to access and manipulate the browser's URL using the location object.
+- Explored properties like location.href, location.hostname, and location.pathname.
+- Practiced redirecting users by setting location.href to a new URL.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
