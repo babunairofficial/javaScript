@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Object</title>
+</head>
+<body>
+    
+    <h1>URL Manipulation with Location Object</h1>
+    
+    <div id="info"></div>
+    
+    <button onclick="showLocationInfo()">Show URL Info</button>
+    <button onclick="redirectToGoogle()">Redirect to Google</button>
+    <button onclick="changeHash()">Change Hash</button>
+    
+    <script>
+        function showLocationInfo() {
+            const info = document.getElementById('info');
+            info.innerHTML = `
+                <h3>Current URL Information:</h3>
+                <p><strong>Full URL (href):</strong> ${location.href}</p>
+                <p><strong>Hostname:</strong> ${location.hostname}</p>
+                <p><strong>Pathname:</strong> ${location.pathname}</p>
+                <p><strong>Protocol:</strong> ${location.protocol}</p>
+                <p><strong>Port:</strong> ${location.port}</p>
+                <p><strong>Hash:</strong> ${location.hash}</p>
+            `;
+        }
+        
+        function redirectToGoogle() {
+            location.href = 'https://www.google.com';
+        }
+        
+        function changeHash() {
+            location.hash = '#section' + Math.floor(Math.random() * 10);
+            showLocationInfo();
+        }
+        
+        // Show initial info when page loads
+        showLocationInfo();
+    </script>
+
+</body>
+</html>
