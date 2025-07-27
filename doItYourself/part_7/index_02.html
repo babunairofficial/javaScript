@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Control - Getting and Setting URL</title>
+</head>
+<body>
+    
+    <h2>Location Object Demo</h2>
+    
+    <div id="info"></div>
+    
+    <button onclick="showLocationInfo()">Show Current URL Info</button>
+    <button onclick="modifyHash()">Modify Hash</button>
+    <button onclick="modifySearch()">Modify Search Params</button>
+    <button onclick="assignNew()">Assign New URL</button>
+    <button onclick="replaceUrl()">Replace Current URL</button>
+    
+    <script>
+        function showLocationInfo() {
+            const info = document.getElementById('info');
+            info.innerHTML = `
+                <strong>Current URL Components:</strong><br>
+                href: ${location.href}<br>
+                protocol: ${location.protocol}<br>
+                host: ${location.host}<br>
+                pathname: ${location.pathname}<br>
+                search: ${location.search}<br>
+                hash: ${location.hash}
+            `;
+        }
+        
+        function modifyHash() {
+            location.hash = '#section' + Math.floor(Math.random() * 100);
+            showLocationInfo();
+        }
+        
+        function modifySearch() {
+            location.search = '?param=' + Math.floor(Math.random() * 100);
+        }
+        
+        function assignNew() {
+            // Assigns to a new page (can go back)
+            location.assign('https://example.com');
+        }
+        
+        function replaceUrl() {
+            // Replaces current page 
+            location.replace('https://httpbin.org/html');
+        }
+                
+        function alternativeMethods() {
+            
+            const url = new URL(location.href);
+            console.log('Parsed URL:', url);
+                        
+            url.searchParams.set('test', 'value');
+            
+        }        
+        
+        showLocationInfo();
+    </script>
+
+</body>
+</html>
