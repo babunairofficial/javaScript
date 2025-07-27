@@ -255,6 +255,10 @@
 - Learned how to access and manipulate the browser's URL using the location object.
 - Explored properties like location.href, location.hostname, and location.pathname.
 - Practiced redirecting users by setting location.href to a new URL.
+# Chapter 77: Browser Control - Getting and Setting the URL Another Way
+- Explored alternative ways to work with the location object.
+- Learned how to assign a new URL using location.assign() and replace the current page with location.replace().
+- Practiced reading and modifying different components of the URL more flexibly.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
