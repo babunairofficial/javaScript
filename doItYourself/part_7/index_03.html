@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser control : Forward and Reverse</title>
+</head>
+<body>
+    
+    <h1>Browser History Navigation</h1>
+    
+    <button onclick="goBack()">← Back</button>
+    <button onclick="goForward()">Forward →</button>
+    <button onclick="addPage()">Add New Page</button>
+    
+    <p>Current page: <span id="currentPage">Page 1</span></p>
+    <p>History length: <span id="historyLength">1</span></p>
+    
+    <div id="content">
+        <h2>Welcome to Page 1</h2>
+        <p>Use the navigation buttons to explore browser history.</p>
+    </div>
+
+    <script>
+        let pageCount = 1;
+        
+        function goBack() {
+            history.back();
+        }
+        
+        function goForward() {
+            history.forward();
+        }
+        
+        function addPage() {
+            pageCount++;
+            const newUrl = `#page${pageCount}`;
+            history.pushState({page: pageCount}, `Page ${pageCount}`, newUrl);
+            updatePage(pageCount);
+        }
+        
+        function updatePage(page) {
+            document.getElementById('currentPage').textContent = `Page ${page}`;
+            document.getElementById('historyLength').textContent = history.length;
+            document.getElementById('content').innerHTML = `
+                <h2>Welcome to Page ${page}</h2>
+                <p>This is dynamically generated content for page ${page}.</p>
+            `;
+        }
+        
+        window.addEventListener('popstate', function(event) {
+            if (event.state && event.state.page) {
+                updatePage(event.state.page);
+            } else {
+                updatePage(1);
+            }
+        });
+    </script>
+
+</body>
+</html>
