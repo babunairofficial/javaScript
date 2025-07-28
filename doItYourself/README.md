@@ -259,6 +259,10 @@
 - Explored alternative ways to work with the location object.
 - Learned how to assign a new URL using location.assign() and replace the current page with location.replace().
 - Practiced reading and modifying different components of the URL more flexibly.
+# Chapter 78: Browser Control - Forward and Reverse
+- Learned how to navigate browser history using the history object.
+- Explored methods like history.back() and history.forward() to simulate back and forward button behavior.
+- Practiced basic browser navigation control for enhancing user interaction.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
