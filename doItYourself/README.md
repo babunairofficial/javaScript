@@ -263,6 +263,10 @@
 - Learned how to navigate browser history using the history object.
 - Explored methods like history.back() and history.forward() to simulate back and forward button behavior.
 - Practiced basic browser navigation control for enhancing user interaction.
+# Chapter 79: Browser Control - Filling the Window with Content
+- Learned how to open new browser windows using window.open().
+- Explored setting dimensions and controlling features of the new window.
+- Practiced dynamically generating pop-up windows for displaying external or internal content.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
