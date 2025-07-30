@@ -267,6 +267,10 @@
 - Learned how to open new browser windows using window.open().
 - Explored setting dimensions and controlling features of the new window.
 - Practiced dynamically generating pop-up windows for displaying external or internal content.
+# Chapter 80: Browser Control - Controlling the Window's Size and Location
+- Learned how to manipulate window size and position using window.resizeTo(), window.moveTo(), window.resizeBy(), and window.moveBy().
+- Explored controlling popup window dimensions and placement on the screen.
+- Practiced creating dynamic window behaviors to enhance user interface control.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
