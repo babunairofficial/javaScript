@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Control - Window Manipulaton</title>
+</head>
+<body>
+    
+    <h2>Window Manipulation</h2>
+    
+    <h3>Current Window Controls</h3>
+    <button onclick="window.resizeTo(800, 600)">Resize to 800x600</button>
+    <button onclick="window.resizeBy(100, 50)">Resize by +100x50</button>
+    <button onclick="window.moveTo(100, 100)">Move to (100,100)</button>
+    <button onclick="window.moveBy(50, 30)">Move by (50,30)</button>
+    
+    <h3>Popup Window Controls</h3>
+    <button onclick="createPopup()">Create Popup</button>
+    <button onclick="createCenteredPopup()">Create Centered Popup</button>
+    <button onclick="createAnimatedPopup()">Create Animated Popup</button>
+    <button onclick="closeAllPopups()">Close All Popups</button>
+    
+    <h3>Dynamic Behaviors</h3>
+    <button onclick="startBounce()">Start Window Bounce</button>
+    <button onclick="stopBounce()">Stop Bounce</button>
+    <button onclick="startResize()">Start Resize Animation</button>
+    <button onclick="stopResize()">Stop Resize</button>
+
+    <script>
+        let popups = [];
+        let bounceInterval;
+        let resizeInterval;
+        let x = 0, y = 0, dx = 5, dy = 3;
+        let w = 400, h = 300, dw = 10, dh = 8;
+
+        function createPopup() {
+            let popup = window.open('', 'popup1', 'width=400,height=300,left=200,top=200');
+            popup.document.write('<h3>Basic Popup</h3><button onclick="window.close()">Close</button>');
+            popups.push(popup);
+        }
+
+        function createCenteredPopup() {
+            let w = 500, h = 400;
+            let left = (screen.width - w) / 2;
+            let top = (screen.height - h) / 2;
+            let popup = window.open('', 'popup2', `width=${w},height=${h},left=${left},top=${top}`);
+            popup.document.write('<h3>Centered Popup</h3><button onclick="window.close()">Close</button>');
+            popups.push(popup);
+        }
+
+        function createAnimatedPopup() {
+            let popup = window.open('', 'popup3', 'width=300,height=200,left=0,top=0');
+            popup.document.write('<h3>Animated Popup</h3><button onclick="window.close()">Close</button>');
+            popups.push(popup);
+            
+            let pos = 0;
+            let movePopup = setInterval(() => {
+                if (popup.closed) {
+                    clearInterval(movePopup);
+                    return;
+                }
+                popup.moveTo(pos, pos);
+                pos += 5;
+                if (pos > 200) pos = 0;
+            }, 50);
+        }
+
+        function closeAllPopups() {
+            popups.forEach(popup => {
+                if (!popup.closed) popup.close();
+            });
+            popups = [];
+        }
+
+        function startBounce() {
+            bounceInterval = setInterval(() => {
+                x += dx;
+                y += dy;
+                if (x <= 0 || x >= screen.width - 800) dx = -dx;
+                if (y <= 0 || y >= screen.height - 600) dy = -dy;
+                window.moveTo(x, y);
+            }, 20);
+        }
+
+        function stopBounce() {
+            clearInterval(bounceInterval);
+        }
+
+        function startResize() {
+            resizeInterval = setInterval(() => {
+                w += dw;
+                h += dh;
+                if (w <= 300 || w >= 1000) dw = -dw;
+                if (h <= 200 || h >= 700) dh = -dh;
+                window.resizeTo(w, h);
+            }, 100);
+        }
+
+        function stopResize() {
+            clearInterval(resizeInterval);
+        }
+    </script>
+
+</body>
+</html>
