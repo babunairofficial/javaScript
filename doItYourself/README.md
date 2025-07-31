@@ -271,6 +271,10 @@
 - Learned how to manipulate window size and position using window.resizeTo(), window.moveTo(), window.resizeBy(), and window.moveBy().
 - Explored controlling popup window dimensions and placement on the screen.
 - Practiced creating dynamic window behaviors to enhance user interface control.
+# Chapter 81: Browser Control - Testing for Popup Blockers
+- Learned how to detect whether a popup was successfully opened using window.open().
+- Explored checking if the returned window object is null or undefined to confirm popup blocker activity.
+- Practiced writing fallback logic when popups are blocked to ensure graceful user experience.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
