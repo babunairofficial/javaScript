@@ -275,6 +275,10 @@
 - Learned how to detect whether a popup was successfully opened using window.open().
 - Explored checking if the returned window object is null or undefined to confirm popup blocker activity.
 - Practiced writing fallback logic when popups are blocked to ensure graceful user experience.
+# Chapter 82: Form Validation - Text Fields
+- Learned how to validate text input fields using JavaScript.
+- Explored checking for empty values, minimum lengths, and invalid characters.
+- Practiced preventing form submission when text inputs do not meet specified criteria.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
