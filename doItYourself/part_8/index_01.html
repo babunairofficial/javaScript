@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - text fields</title>
+</head>
+<body>
+    
+    <form id="form" onsubmit="return validate()">
+        <input id="name" placeholder="Name (min 3 chars)" required>
+        <input id="email" placeholder="Email" required>
+        <input id="phone" placeholder="Phone (numbers only)" required>
+        <button type="submit">Submit</button>
+        <div id="error"></div>
+    </form>
+
+<script>
+    function validate() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const error = document.getElementById('error');
+    
+    // Check empty values
+    if (!name || !email || !phone) {
+        error.innerHTML = 'All fields required';
+        return false;
+    }
+    
+    // Check minimum length
+    if (name.length < 3) {
+        error.innerHTML = 'Name must be at least 3 characters';
+        return false;
+    }
+    
+    // Check invalid characters
+    if (!/^\d+$/.test(phone)) {
+        error.innerHTML = 'Phone must contain only numbers';
+        return false;
+    }
+    
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        error.innerHTML = 'Invalid email format';
+        return false;
+    }
+    
+    error.innerHTML = 'Form submitted successfully!';
+    return false; // Prevent actual submission for demo
+    }
+</script>
+
+</body>
+</html>
