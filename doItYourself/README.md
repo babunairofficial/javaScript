@@ -279,6 +279,10 @@
 - Learned how to validate text input fields using JavaScript.
 - Explored checking for empty values, minimum lengths, and invalid characters.
 - Practiced preventing form submission when text inputs do not meet specified criteria.
+# Chapter 83: Form Validation - Drop-downs
+- Learned how to validate <select> elements to ensure a valid option is chosen.
+- Explored checking the selected index or value to detect default or unselected options.
+- Practiced providing user feedback and preventing form submission when no valid choice is made.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
