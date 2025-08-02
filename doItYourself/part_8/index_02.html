@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Select Validation</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <label>Choose a category:</label>
+        <select id="category">
+            <option value="">-- Select Category --</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+        </select>
+        
+        <label>Choose a country:</label>
+        <select id="country">
+            <option value="">-- Select Country --</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+        <div id="error"></div>
+    </form>
+
+    <script>
+        document.getElementById('myForm').onsubmit = function(e) {
+            e.preventDefault();
+            
+            const category = document.getElementById('category');
+            const country = document.getElementById('country');
+            const error = document.getElementById('error');
+            
+            error.innerHTML = '';
+            
+            // Check if valid options are selected
+            if (category.selectedIndex === 0 || category.value === '') {
+                error.innerHTML += 'Please select a category.<br>';
+            }
+            
+            if (country.selectedIndex === 0 || country.value === '') {
+                error.innerHTML += 'Please select a country.<br>';
+            }
+            
+            // If no errors, form is valid
+            if (error.innerHTML === '') {
+                alert('Form submitted successfully!');
+            }
+        };
+    </script>
+
+</body>
+</html>
