@@ -283,6 +283,10 @@
 - Learned how to validate <select> elements to ensure a valid option is chosen.
 - Explored checking the selected index or value to detect default or unselected options.
 - Practiced providing user feedback and preventing form submission when no valid choice is made.
+# Chapter 84: Form Validation - Radio Buttons
+- Learned how to validate groups of radio buttons to ensure that an option is selected.
+- Explored accessing radio button groups using document.getElementsByName() or querySelectorAll().
+- Practiced writing logic to check user selection before allowing form submission.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
