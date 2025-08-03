@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button validation</title>
+</head>
+<body>
+    
+    <h2>Survey Form</h2>
+    
+    <form id="myForm">
+        <p>Choose your favorite color:</p>
+        <input type="radio" name="color" value="red" id="red">
+        <label for="red">Red</label><br>
+        <input type="radio" name="color" value="blue" id="blue">
+        <label for="blue">Blue</label><br>
+        <input type="radio" name="color" value="green" id="green">
+        <label for="green">Green</label><br><br>
+        
+        <p>Choose your age group:</p>
+        <input type="radio" name="age" value="18-25" id="young">
+        <label for="young">18-25</label><br>
+        <input type="radio" name="age" value="26-40" id="middle">
+        <label for="middle">26-40</label><br>
+        <input type="radio" name="age" value="40+" id="old">
+        <label for="old">40+</label><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('myForm').onsubmit = function(e) {
+            e.preventDefault();
+            
+            // Method 1: Using getElementsByName()
+            let colorSelected = false;
+            let colorRadios = document.getElementsByName('color');
+            for(let i = 0; i < colorRadios.length; i++) {
+                if(colorRadios[i].checked) {
+                    colorSelected = true;
+                    break;
+                }
+            }
+            
+            // Method 2: Using querySelectorAll()
+            let ageSelected = document.querySelectorAll('input[name="age"]:checked').length > 0;
+            
+            if(!colorSelected || !ageSelected) {
+                document.getElementById('result').innerHTML = 'Please select both color and age group!';
+                return false;
+            }
+            
+            document.getElementById('result').innerHTML = 'Form submitted successfully!';
+            return true;
+        };
+    </script>
+
+</body>
+</html>
