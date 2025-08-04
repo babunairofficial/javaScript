@@ -287,6 +287,10 @@
 - Learned how to validate groups of radio buttons to ensure that an option is selected.
 - Explored accessing radio button groups using document.getElementsByName() or querySelectorAll().
 - Practiced writing logic to check user selection before allowing form submission.
+# Chapter 85: Form Validation - ZIP Codes
+- Learned how to validate ZIP code inputs using string length and character checks.
+- Explored using regular expressions to match valid ZIP code formats.
+- Practiced restricting user input to ensure numeric and correctly formatted ZIP codes before form submission.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
