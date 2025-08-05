@@ -291,6 +291,10 @@
 - Learned how to validate ZIP code inputs using string length and character checks.
 - Explored using regular expressions to match valid ZIP code formats.
 - Practiced restricting user input to ensure numeric and correctly formatted ZIP codes before form submission.
+# Chapter 86: Form Validation - Email
+- Learned how to validate email addresses using pattern matching.
+- Explored using indexOf("@") and indexOf(".") to check basic email structure.
+- Practiced writing simple custom validation logic to ensure the input resembles a valid email format before submission.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
