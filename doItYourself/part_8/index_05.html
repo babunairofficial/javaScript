@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms : Email Validation</title>
+</head>
+<body>
+
+    <h2>Email Validation</h2>
+    
+    <form id="emailForm">
+        <input type="text" id="email" placeholder="Enter email address">
+        <button type="submit">Validate</button>
+    </form>
+    
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const result = document.getElementById('result');
+            
+            // Basic validation using indexOf
+            const atIndex = email.indexOf('@');
+            const dotIndex = email.indexOf('.');
+            
+            if (atIndex > 0 && dotIndex > atIndex + 1 && dotIndex < email.length - 1) {
+                result.innerHTML = '<p>✓ Valid email format</p>';
+            } else {
+                result.innerHTML = '<p>✗ Invalid email format</p>';
+            }
+        });
+    </script>
+
+</body>
+</html>
