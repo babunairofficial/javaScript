@@ -295,6 +295,10 @@
 - Learned how to validate email addresses using pattern matching.
 - Explored using indexOf("@") and indexOf(".") to check basic email structure.
 - Practiced writing simple custom validation logic to ensure the input resembles a valid email format before submission.
+# Chapter 87: Exceptions - Try and Catch
+- Learned how to handle runtime errors using try...catch blocks.
+- Explored placing potentially error-prone code inside try and managing errors in catch.
+- Practiced writing scripts that handle exceptions gracefully without breaking program flow.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
