@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceptions - try and catch</title>
+</head>
+<body>
+
+    <h1>JavaScript Error Handling with try...catch</h1>
+    
+    <button onclick="divideNumbers()">Divide by Zero Test</button>
+    <button onclick="parseJSON()">Parse Invalid JSON</button>
+    <button onclick="accessProperty()">Access Undefined Property</button>
+    <button onclick="throwCustomError()">Throw Custom Error</button>
+    
+    <div id="output"></div>
+
+    <script>
+        function log(message) {
+            document.getElementById('output').innerHTML += '<p>' + message + '</p>';
+        }
+
+        function divideNumbers() {
+            try {
+                let result = 10 / 0;
+                if (!isFinite(result)) {
+                    throw new Error('Division resulted in infinity');
+                }
+                log('Result: ' + result);
+            } catch (error) {
+                log('Error caught: ' + error.message);
+            }
+        }
+
+        function parseJSON() {
+            try {
+                let invalidJson = '{"name": "John", "age": 30,}'; // Invalid JSON
+                let parsed = JSON.parse(invalidJson);
+                log('Parsed successfully: ' + JSON.stringify(parsed));
+            } catch (error) {
+                log('JSON Parse Error: ' + error.message);
+            }
+        }
+
+        function accessProperty() {
+            try {
+                let obj = null;
+                let value = obj.someProperty; // This will throw an error
+                log('Property value: ' + value);
+            } catch (error) {
+                log('Property Access Error: ' + error.message);
+            } finally {
+                log('Finally block executed - cleanup code goes here');
+            }
+        }
+
+        function throwCustomError() {
+            try {
+                let userAge = -5;
+                if (userAge < 0) {
+                    throw new Error('Age cannot be negative');
+                }
+                log('Valid age: ' + userAge);
+            } catch (error) {
+                log('Custom Error: ' + error.message);
+            }
+        }
+
+        // Example with nested try-catch
+        function nestedErrorHandling() {
+            try {
+                log('Outer try block');
+                try {
+                    throw new Error('Inner error');
+                } catch (innerError) {
+                    log('Inner catch: ' + innerError.message);
+                    throw new Error('Re-throwing from inner catch');
+                }
+            } catch (outerError) {
+                log('Outer catch: ' + outerError.message);
+            }
+        }
+
+        // Run nested example on page load
+        window.onload = function() {
+            log('=== Page loaded - Running nested error example ===');
+            nestedErrorHandling();
+            log('=== Program continues normally after error handling ===');
+        };
+    </script>
+
+</body>
+</html>
