@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceptions - throw</title>
+</head>
+<body>
+
+    <h2>Custom Error Handling</h2>
+    
+    <div>
+        <input type="number" id="ageInput" placeholder="Enter age">
+        <button onclick="validateAge()">Validate Age</button>
+    </div>
+    
+    <div>
+        <input type="email" id="emailInput" placeholder="Enter email">
+        <button onclick="validateEmail()">Validate Email</button>
+    </div>
+    
+    <div>
+        <input type="number" id="numInput" placeholder="Enter number">
+        <button onclick="divide()">Divide by 10</button>
+    </div>
+    
+    <div id="result"></div>
+
+    <script>
+        function showResult(message, isError = false) {
+            const result = document.getElementById('result');
+            result.innerHTML = `<p style="color: ${isError ? 'red' : 'green'}">${message}</p>`;
+        }
+
+        // Custom error classes
+        class ValidationError extends Error {
+            constructor(message) {
+                super(message);
+                this.name = 'ValidationError';
+            }
+        }
+
+        class RangeError extends Error {
+            constructor(message) {
+                super(message);
+                this.name = 'RangeError';
+            }
+        }
+
+        // Age validation with custom errors
+        function validateAge() {
+            try {
+                const age = document.getElementById('ageInput').value;
+                
+                if (!age) {
+                    throw new ValidationError('Age is required');
+                }
+                
+                const ageNum = parseInt(age);
+                
+                if (isNaN(ageNum)) {
+                    throw new ValidationError('Age must be a valid number');
+                }
+                
+                if (ageNum < 0) {
+                    throw new RangeError('Age cannot be negative');
+                }
+                
+                if (ageNum > 150) {
+                    throw new RangeError('Age seems unrealistic (over 150)');
+                }
+                
+                showResult(`Valid age: ${ageNum} years old`);
+                
+            } catch (error) {
+                showResult(`${error.name}: ${error.message}`, true);
+            }
+        }
+
+        // Email validation
+        function validateEmail() {
+            try {
+                const email = document.getElementById('emailInput').value;
+                
+                if (!email) {
+                    throw new ValidationError('Email is required');
+                }
+                
+                if (!email.includes('@')) {
+                    throw new ValidationError('Email must contain @ symbol');
+                }
+                
+                if (email.split('@').length !== 2) {
+                    throw new ValidationError('Email format is invalid');
+                }
+                
+                showResult(`Valid email: ${email}`);
+                
+            } catch (error) {
+                showResult(`Error: ${error.message}`, true);
+            }
+        }
+
+        // Division with error handling
+        function divide() {
+            try {
+                const num = document.getElementById('numInput').value;
+                
+                if (!num) {
+                    throw new Error('Number is required');
+                }
+                
+                const numValue = parseFloat(num);
+                
+                if (isNaN(numValue)) {
+                    throw new TypeError('Input must be a valid number');
+                }
+                
+                if (numValue === 0) {
+                    throw new Error('Cannot divide zero by 10 (result would be 0)');
+                }
+                
+                const result = numValue / 10;
+                showResult(`${numValue} ÷ 10 = ${result}`);
+                
+            } catch (error) {
+                showResult(`${error.constructor.name}: ${error.message}`, true);
+            } finally {
+                console.log('Division operation completed');
+            }
+        }
+
+        // Demonstrate programmatic error throwing
+        function demonstrateErrors() {
+            console.log('=== Custom Error Examples ===');
+            
+            try {
+                throw new ValidationError('This is a custom validation error');
+            } catch (e) {
+                console.log(`Caught: ${e.name} - ${e.message}`);
+            }
+            
+            try {
+                throw new Error('Generic error example');
+            } catch (e) {
+                console.log(`Caught: ${e.constructor.name} - ${e.message}`);
+            }
+        }
+
+        // Run demo on page load
+        demonstrateErrors();
+    </script>
+
+</body>
+</html>
