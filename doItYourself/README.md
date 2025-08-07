@@ -299,6 +299,10 @@
 - Learned how to handle runtime errors using try...catch blocks.
 - Explored placing potentially error-prone code inside try and managing errors in catch.
 - Practiced writing scripts that handle exceptions gracefully without breaking program flow.
+# Chapter 88: Exceptions - throw
+- Learned how to manually create and throw custom errors using the throw statement.
+- Practiced combining throw with try...catch to build more informative and controlled error-handling flows.
+- Explored use cases where custom exceptions improve code robustness and user feedback.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
