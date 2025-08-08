@@ -303,6 +303,10 @@
 - Learned how to manually create and throw custom errors using the throw statement.
 - Practiced combining throw with try...catch to build more informative and controlled error-handling flows.
 - Explored use cases where custom exceptions improve code robustness and user feedback.
+# Chapter 89: Handling Events Within JavaScript
+- Learned how to attach event handlers directly in JavaScript instead of embedding them in HTML attributes.
+- Used addEventListener for modern event handling and understood its advantages over inline event attributes.
+- Practiced removing event listeners with removeEventListener to prevent memory leaks or unwanted triggers.
 
 # How to Use
     Feel free to browse through the code and progress updates. Suggestions and feedback are welcome!
