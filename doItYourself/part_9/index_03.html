@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    
+    <button id="btn">Click Me</button>
+    <button id="toggle">Toggle Handler</button>
+    <p id="output">Ready</p>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const toggle = document.getElementById('toggle');
+        const output = document.getElementById('output');
+        
+        let handlerActive = true;
+        
+        // Event handler function
+        function handleClick() {
+            output.textContent = `Clicked at ${new Date().toLocaleTimeString()}`;
+        }
+        
+        // Add event listener
+        btn.addEventListener('click', handleClick);
+        
+        // Toggle handler on/off
+        toggle.addEventListener('click', function() {
+            if (handlerActive) {
+                btn.removeEventListener('click', handleClick);
+                toggle.textContent = 'Add Handler';
+                output.textContent = 'Handler removed';
+            } else {
+                btn.addEventListener('click', handleClick);
+                toggle.textContent = 'Remove Handler';
+                output.textContent = 'Handler added';
+            }
+            handlerActive = !handlerActive;
+        });
+    </script>
+
+</body>
+</html>
